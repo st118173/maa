@@ -2,14 +2,14 @@
 # ======================
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
-
+set :stage, "production"
 # server 'example.com', user: 'deploy', roles: %w{app db web}, my_property: :my_value
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 set :branch, 'master'
 set :rails_env,'production'
 set :deploy_via, :remote_cache
-server 'web14.cs.ait.ac.th',
+server '52.24.112.148',
        user: 'deploy',
        roles: %w{web app db},
        ssh_options: {forward_agent: true}
@@ -27,25 +27,25 @@ server 'web14.cs.ait.ac.th',
 # role :web, %w{user1@primary.com user2@additional.com}, other_property: :other_value
 # role :db,  %w{deploy@example.com}
 
-role :app, %w{deploy@web14.cs.ait.ac.th}
-role :web, %w{deploy@web14.cs.ait.ac.th}
-role :db,  %w{deploy@web14.cs.ait.ac.th}, :primary => true
+role :app, %w{deploy@52.24.112.148}
+role :web, %w{deploy@52.24.112.148}
+role :db,  %w{deploy@52.24.112.148}, :primary => true
 
-set :default_env,{
-    'BAZOOKA_USER' => ENV['BAZOOKA_USER'],
-
-    "http_proxy" => "http://192.41.170.23:3128",
-    "https_proxy" => "http://192.41.170.23:3128",
-    "ftp_proxy" => "http://192.41.170.23:3128",
-    "rsync_proxy" => "http://192.41.170.23:3128",
-    "no_proxy" => "localhost,127.0.0.1,localaddress,.localdomain.com",
-
-    "HTTP_PROXY" => $http_proxy,
-    "HTTPS_PROXY" => $https_proxy,
-    "FTP_PROXY" => $ftp_proxy,
-    "RSYNC_PROXY" => $rsync_proxy,
-    "NO_PROXY" => $no_proxy
-}
+# set :default_env,{
+#     'BAZOOKA_USER' => ENV['BAZOOKA_USER'],
+#
+#     "http_proxy" => "http://192.41.170.23:3128",
+#     "https_proxy" => "http://192.41.170.23:3128",
+#     "ftp_proxy" => "http://192.41.170.23:3128",
+#     "rsync_proxy" => "http://192.41.170.23:3128",
+#     "no_proxy" => "localhost,127.0.0.1,localaddress,.localdomain.com",
+#
+#     "HTTP_PROXY" => $http_proxy,
+#     "HTTPS_PROXY" => $https_proxy,
+#     "FTP_PROXY" => $ftp_proxy,
+#     "RSYNC_PROXY" => $rsync_proxy,
+#     "NO_PROXY" => $no_proxy
+# }
 
 # Configuration
 # =============
