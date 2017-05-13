@@ -67,7 +67,7 @@
 # Change these
 server '52.24.112.148', roles: [:web, :app, :db], primary: true
 
-set :repo_url,        "git@github.com:st118173/mac.git"
+set :repo_url,        "git@github.com:st118173/maa.git"
 set :application,     'mac'
 set :user,            'deploy'
 set :puma_threads,    [4, 16]
