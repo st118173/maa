@@ -152,17 +152,21 @@ ActiveRecord::Schema.define(version: 20161205210937) do
     t.datetime "purchased_at"
   end
 
-  create_table "media", force: :cascade do |t|
-    t.string   "file_name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "messages", force: :cascade do |t|
     t.text     "body"
     t.integer  "sender_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.string   "post"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "name"
+    t.string   "email"
+    t.integer  "program_id"
+    t.index ["program_id"], name: "index_posts_on_program_id", using: :btree
   end
 
   create_table "programs", force: :cascade do |t|
@@ -258,10 +262,25 @@ ActiveRecord::Schema.define(version: 20161205210937) do
     t.index ["role_id"], name: "index_users_on_role_id", using: :btree
   end
 
+  create_table "votes", force: :cascade do |t|
+    t.string   "votable_type"
+    t.integer  "votable_id"
+    t.string   "voter_type"
+    t.integer  "voter_id"
+    t.boolean  "vote_flag"
+    t.string   "vote_scope"
+    t.integer  "vote_weight"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["votable_id", "votable_type", "vote_scope"], name: "index_votes_on_votable_id_and_votable_type_and_vote_scope", using: :btree
+    t.index ["voter_id", "voter_type", "vote_scope"], name: "index_votes_on_voter_id_and_voter_type_and_vote_scope", using: :btree
+  end
+
   add_foreign_key "card_transactions", "cards"
   add_foreign_key "card_transactions", "users"
   add_foreign_key "cards", "mdos"
   add_foreign_key "cards", "regs"
+  add_foreign_key "posts", "programs"
   add_foreign_key "regs", "users"
   add_foreign_key "userpersnaldets", "users"
   add_foreign_key "users", "cards"
