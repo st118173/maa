@@ -159,7 +159,6 @@
     <orderEntry type="library" scope="PROVIDED" name="capistrano-secrets-yml (v1.0.0, rbenv: 2.2.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capistrano3-puma (v2.0.0, rbenv: 2.2.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capybara (v2.10.2, rbenv: 2.2.4) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="carrierwave (v0.11.2, rbenv: 2.2.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="climate_control (v0.0.3, rbenv: 2.2.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="cocaine (v0.5.8, rbenv: 2.2.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coderay (v1.1.1, rbenv: 2.2.4) [gem]" level="application" />

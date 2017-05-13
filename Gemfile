@@ -11,7 +11,7 @@ gem 'country_select'
 gem 'acts_as_votable'
 gem 'bourbon'
 gem 'alertify-rails'
-gem 'carrierwave'
+
 gem 'cancancan'
 gem 'font-awesome-rails'
 gem 'devise_lastseenable'
