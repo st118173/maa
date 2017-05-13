@@ -84,8 +84,6 @@ production:
   encoding: unicode
   pool: 5
   database: maa_production
-  username: web14
-  password: <%= ENV['MAC_DATABASE_PASSWORD'] %>
 
 
 cucumber:
