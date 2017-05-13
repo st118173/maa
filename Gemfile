@@ -74,12 +74,11 @@ gem "capistrano-db-tasks", require: false
 gem 'devise_security_extension'
 #end
 group :development do
-
-  gem 'capistrano-rbenv', '~> 2.0.4'
-  gem 'capistrano-rbenv-install', '~> 1.2.0'
-
-  gem 'capistrano-secrets-yml'
+  gem 'capistrano-ssh-doctor', '~> 1.0'
 end
+
+gem 'capistrano-rails-collection'
+
 group :development do
   gem 'capistrano',         require: false
   gem 'capistrano-rvm',     require: false
