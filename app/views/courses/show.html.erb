@@ -1,0 +1,31 @@
+
+
+<h1>
+  File Name: <%= @course.name %>
+  <%= link_to content_tag(:i, "", class: "glyphicon glyphicon-pencil"), edit_course_path(@course) %>
+or
+  <%= link_to 'Back', '/courses' %>
+</h1>
+<hr/>
+<div class="empty-space"></div>
+<h3>
+  Material details
+</h3>
+<div class="padding-left">
+  <div class="row">
+    <%= @course.details %>
+  </div>
+
+</div>
+<h3>
+  Uploaded Material
+</h3>
+<div class="padding-left">
+  <div class="row">
+    <%= @course.upload_file_name + " (" + number_to_human_size(@course.upload_file_size.to_s) + ")" %>
+  </div>
+  <div class="row">
+    <%= link_to content_tag(:i, "", class: "glyphicon glyphicon-download") + " Download", @course.upload.url, class: "btn btn-lg btn-success" %>
+  </div>
+</div>
+

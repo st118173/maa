@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @donate_education_material.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @donate_education_material.email %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @donate_education_material.address %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @donate_education_material.contact %>
+</p>
+
+<p>
+  <strong>Text donation:</strong>
+  <%= @donate_education_material.text_donation %>
+</p>
+
+<%= link_to 'Edit', edit_donate_education_material_path(@donate_education_material) %> |
+<%= link_to 'Back', donate_education_materials_path %>

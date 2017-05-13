@@ -1,0 +1,53 @@
+<%= form_for @course, html: { multipart: true, id: "fileupload" } do |f| %>
+    <% if @course.errors.any? %>
+        <div id="error_explanation">
+          <h2>
+            <%= "#{pluralize(@course.errors.count, "error")} prohibited this course from being saved:" %>
+          </h2>
+          <ul>
+            <% @course.errors.full_messages.each do |msg| %>
+                <li>
+                  <%= msg %>
+                </li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+    <div class="col-md-5">
+      <div class="row">
+        <h3>
+          Material name
+        </h3>
+        <div class="padding-left">
+          <%= f.text_field :name %>
+        </div>
+        <h3>
+          Material details
+        </h3>
+        <div class="padding-left">
+          <%= f.text_area :details %>
+        </div>
+      </div>
+      <% if @course.upload_done? %>
+          <div class="row">
+            <h3>
+              Uploaded material
+            </h3>
+            <div class="padding-left">
+              <div class="row">
+                <%= @course.upload_file_name + " (" + number_to_human_size(@course.upload_file_size.to_s) + ")" %>
+              </div>
+              <div class="row">
+                <%= check_box_tag :delete_upload, 'yes', false %>
+                <%= label_tag :delete_upload, 'delete this file', class: 'text-danger' %>
+              </div>
+            </div>
+          </div>
+      <% end %>
+      <div class="empty-space"></div>
+      <div class="row">
+        <% submit_text = controller_name == 'new' ? "Create" : "Save" %>
+        <%= f.submit submit_text, class: "btn btn-success" %>
+      </div>
+    </div>
+<% end %>

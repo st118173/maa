@@ -1,0 +1,14 @@
+
+<% if @userpersnaldets.nil?  %>
+
+    <script type="text/javascript">
+      window.location.href="/programs"  // put your correct path in a string here
+    </script>
+<% else %>
+    <h1 align="center">Personal Details</h1>
+
+    <%= render 'form', userpersnaldet: @userpersnaldet %>
+
+<%= link_to 'Back', userpersnaldets_path %>
+
+<% end %>

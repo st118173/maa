@@ -1,0 +1,17 @@
+<div class="bigbox">
+	<div class="box">
+		<% @messages.each do |message| %>
+        <%# form_for(@messages, remote: true) do |message| %>
+			<div class="message">
+				<div class="top-message">
+					<li class="writing"><%= message.message.body %></li>
+				</div>
+
+				<div class="bottom-message">
+					<span>From </span><%= message.message.sender.email %>
+				</div>
+			</div>
+		<% end %>
+	</div>
+</div>
+<br><br><br><br><br><br>

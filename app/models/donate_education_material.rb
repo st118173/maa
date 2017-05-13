@@ -1,0 +1,2 @@
+class DonateEducationMaterial < ApplicationRecord
+end

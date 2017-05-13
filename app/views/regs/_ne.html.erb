@@ -1,0 +1,401 @@
+
+<!--*******************************< scripts >**************************-->
+<script>
+  $(document).ready(function(){
+
+    $("#cardinfo").hide();
+
+    $("input:radio[name='payment']").change(function(){
+
+      if(this.value == 'card' && this.checked){
+        <% @check_pay = "card" %>
+        $("#cardinfo").show();
+        $("#donatewithpaypal").hide()
+      }else{
+        <% @check_pay = "paypal" %>
+        $("#cardinfo").hide();
+        $("#donatewithpaypal").show()
+      }
+
+    });
+
+  });
+</script>
+<!--*******************************< scripts >**************************-->
+<style>
+  #ull{
+    width: 2cm;
+  }
+</style>
+<script>
+  function mouseDown() {
+    document.getElementById("myP").style.color = "red";
+  }
+
+  function mouseUp() {
+    document.getElementById("myP").style.color = "green";
+  }
+</script>
+
+
+<!--<p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()"> You can click here mes] (5.1ms)-->
+<!--Rendered /home/arunkumar/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)-->
+<!--Rendering /home/arunkumar/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb-->
+<!--Rendered /home/arunkumar/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)-->
+<!--Rendered /home/arunkumar/.rbenv/versions/2.2.4/</p>-->
+
+<ul><ul><ul><ul>
+  <div class="row">
+    <div id="stream" style="width: 27.215cm;height: 15cm;align-content: center"; align="center">
+      <%= form_for Reg.new , :html => { id: "payment-form", method: "POST", action: "javascript:void(0);" } do |f| %>
+          <ul>
+            <div id="stream-list" class="follow-list" style="height: 13.7cm">
+
+              <span class="list-group-item" style="width: 5.5cm;height: 2cm" >
+    <div class="field">
+      <%= f.label :member_role %>
+      <%= f.select :member_role, [["Volunteer", "Volunteer"], ["Member", "Member"]] %>
+    </div></span>
+
+              <span class="list-group-item" style="width: 5.65cm">
+    <div class="field" >
+      <%= f.label :full_name %>
+      <%= f.text_field :full_name %>
+    </div></span>
+
+              <span class="list-group-item" style="width: 6.83cm">
+    <div class="field">
+      <%= f.label :Email %>
+      <%= f.email_field :email %>
+    </div></span>
+              <span class="list-group-item" style="width: 6.92cm">
+    <div class="field">
+      <%= f.label :Telephone %>
+      <%= f.text_field :telephone %>
+    </div></span>
+
+              <span class="list-group-item" style="width: 25.15cm" >
+    <ul>
+    <div class="field">
+
+      <%= f.label 'Address/company' %>
+      <%= f.text_area :company %>
+    </div> </ul></span>
+              <span class="list-group-item" style="width: 12.3cm" >
+
+           <%= f.label :card_payment  %><%= radio_button_tag('payment','card','checked = false',class: "payment_method") %>
+                <%= image_tag('credit-card.png', :style => "z-index:19; position: relative; ", size: '280x190',id: 'img') %>
+
+                <div class="field">
+
+          </div></span>
+
+              <span class="list-group-item" style="width: 12.565cm;height: 6.43cm">
+<div class="field">
+  <%= f.label :paypal %><%= radio_button_tag('payment','paypal','checked = true',class: "payment_method")%>
+  <%= image_tag('ppcom.svg', :style => "z-index:19; position: relative; ", size: '230x150') %>
+           </div>
+       </span>
+              <%= f.submit "Donate",id: 'donatewithpaypal', class: "btn btn-primary btn-lg btn-block" , style: "color: white;background: gray;", params: {check: :"paypal" }, data: {disable_with: "Submitting..."}%>
+
+
+              <script>
+                $(document).ready(function(){
+
+                  $("#cardinfo").hide();
+
+                  $("input:radio[name='payment']").change(function(){
+
+                    if(this.value == 'card' && this.checked){
+                      <% @check_pay = "card" %>
+                      $("#cardinfo").show();
+                      $("#donatewithpaypal").hide()
+                    }else{
+                      <% @check_pay = "paypal" %>
+                      $("#cardinfo").hide();
+                      $("#donatewithpaypal").show()
+                    }
+
+                  });
+
+                });
+              </script>
+
+
+
+
+
+              <!--
+              PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+              AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+              LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+              OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+              THE SOFTWARE.
+              &ndash;&gt;
+              -->
+              <!-- Vendor libraries -->
+              <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+              <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
+              <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/1.2.3/jquery.payment.min.js"></script>
+
+              <!-- If you're using Stripe for payments -->
+
+            </div>
+
+            <div id='cardinfo' align="center">
+
+              <ul><ul><ul><ul><ul><ul><ul><ul>
+                <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+
+                <div class="container">
+                  <div class="row">
+                    <!-- You can make it whatever width you want. I'm making it full width
+                         on <= small devices and 4/12 page width on >= medium devices -->
+                    <div class="col-xs-12 col-md-4">
+
+
+                      <!-- CREDIT CARD FORM STARTS HERE -->
+                      <div class="panel panel-default credit-card-box">
+                        <div class="panel-heading display-table" >
+                          <div class="row display-tr" >
+                            <h3 class="panel-title display-td" >Payment Details</h3>
+                            <div class="display-td" >
+                              <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel-body">
+
+                          <%= f.fields_for :card do |c| %>
+                              <div class="row">
+                                <div class="col-xs-12">
+                                  <div class="form-group">
+                                    <label for="couponCode">NAME ON CARD</label>
+                                    <%= c.text_field :first_name, class: 'form-control',placeholder: 'Enter Name on card' %>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-xs-12">
+                                  <div class="form-group">
+                                    <label for="couponCode">CARD TYPE</label>
+                                    <%= c.select :card_type, [["Visa", "visa"], ["MasterCard", "master"], ["Discover", "discover"], ["American Express", "american_express"]]%>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-xs-12">
+                                  <div class="form-group">
+
+                                    <label for="reg_card_attributes_card_number">CARD NUMBER</label>
+                                    <div class="input-group">
+
+                                      <%= c.text_field :card_number, class: 'form-control',placeholder: 'Valid Card Number',autofocus: 'true' %>
+                                      <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-xs-7 col-md-7">
+                                  <div class="form-group">
+                                    <label for="reg_card_attributes_card_type"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+
+                                    <%= c.date_select :card_expires_on, discard_day: true, start_year: Date.today.year, end_year: (Date.today.year+10), add_month_numbers: true, class: 'form-control',autocomplete:'cc-exp',autofocus: 'true' %>
+                                  </div>
+                                </div>
+                                <div class="col-xs-5 col-md-5 pull-right">
+                                  <div class="form-group">
+                                    <label for="reg_card_attributes_card_verification">CVC CODE</label>
+                                    <%= c.text_field :card_verification, class: 'form-control',placeholder: 'CVC/CVV',autocomplete:'cc-csc',autofocus: 'true' %>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-xs-12">
+
+                                  <%= f.submit "Donate", class: "btn btn-primary btn-lg btn-block" , style: "color: white;background: gray;", params: {check: :"paypal" }, data: {disable_with: "Submitting..."}%>
+                                  <%#= button_tag "Reset",class: "subscribe btn btn-success btn-lg btn-block" , style: "color: white;background: gray;", type: :reset %>
+
+
+                                </div>
+                              </div>
+                              <div class="row" style="display:none;">
+                                <div class="col-xs-12">
+                                  <p class="payment-errors"></p>
+                                </div>
+                              </div>
+
+
+
+
+                              </div>
+
+                              </div>
+                              <!-- CREDIT CARD FORM ENDS HERE -->
+
+
+                              </div>
+
+
+
+                              </div>
+                              </div>
+                          <% end %>
+                          </ul></ul></ul></ul></ul></ul></ul></ul></div>
+          </ul></div></div></ul></ul>
+          <%#= button_tag "Reset",class: "subscribe btn btn-success btn-lg btn-block" , style: "color: white;background: gray;", type: :reset %>
+
+          </ul> </ul><% end %>
+      </div>
+      </ul>
+      <script>
+        /*
+         The MIT License (MIT)
+
+         Copyright (c) 2015 William Hilton
+
+         Permission is hereby granted, free of charge, to any person obtaining a copy
+         of this software and associated documentation files (the "Software"), to deal
+         in the Software without restriction, including without limitation the rights
+         to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+         copies of the Software, and to permit persons to whom the Software is
+         furnished to do so, subject to the following conditions:
+
+         The above copyright notice and this permission notice shall be included in
+         all copies or substantial portions of the Software.
+
+         THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+         IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+         FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+         AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+         LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+         OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+         THE SOFTWARE.
+         */
+        var $form = $('#payment-form');
+        $form.find('.subscribe').on('click', payWithStripe);
+
+        /* If you're using Stripe for payments */
+        function payWithStripe(e) {
+          e.preventDefault();
+
+          /* Abort if invalid form data */
+          if (!validator.form()) {
+            return;
+          }
+
+          /* Visual feedback */
+          $form.find('.subscribe').html('Validating <i class="fa fa-spinner fa-pulse"></i>').prop('disabled', true);
+
+          var PublishableKey = 'pk_test_6pRNASCoBOKtIshFeQd4XMUh'; // Replace with your API publishable key
+          Stripe.setPublishableKey(PublishableKey);
+
+          /* Create token */
+          var expiry = $form.find('[id=reg_card_attributes_card_type]').payment('reg_card_attributes_card_typeVal');
+          var ccData = {
+            number: $form.find('[id=reg_card_attributes_card_number]').val().replace(/\s/g,''),
+            cvc: $form.find('[id=reg_card_attributes_card_verification]').val(),
+            exp_month: expiry.month,
+            exp_year: expiry.year
+          };
+
+          Stripe.card.createToken(ccData, function stripeResponseHandler(status, response) {
+            if (response.error) {
+              /* Visual feedback */
+              $form.find('.subscribe').html('Try again').prop('disabled', false);
+              /* Show Stripe errors on the form */
+              $form.find('.payment-errors').text(response.error.message);
+              $form.find('.payment-errors').closest('.row').show();
+            } else {
+              /* Visual feedback */
+              $form.find('.subscribe').html('Processing <i class="fa fa-spinner fa-pulse"></i>');
+              /* Hide Stripe errors on the form */
+              $form.find('.payment-errors').closest('.row').hide();
+              $form.find('.payment-errors').text("");
+              // response contains id and card, which contains additional card details
+              console.log(response.id);
+              console.log(response.card);
+              var token = response.id;
+              // AJAX - you would send 'token' to your server here.
+              $.post('/account/stripe_card_token', {
+                token: token
+              })
+              // Assign handlers immediately after making the request,
+                  .done(function(data, textStatus, jqXHR) {
+                    $form.find('.subscribe').html('Payment successful <i class="fa fa-check"></i>');
+                  })
+                  .fail(function(jqXHR, textStatus, errorThrown) {
+                    $form.find('.subscribe').html('There was a problem').removeClass('success').addClass('error');
+                    /* Show Stripe errors on the form */
+                    $form.find('.payment-errors').text('Try refreshing the page and trying again.');
+                    $form.find('.payment-errors').closest('.row').show();
+                  });
+            }
+          });
+        }
+        /* Fancy restrictive input formatting via jQuery.payment library*/
+        $('input[id=reg_card_attributes_card_number]').payment('formatCardNumber');
+        $('input[id=reg_card_attributes_card_verification]').payment('formatCardCVC');
+        $('input[id=reg_card_attributes_card_type]').payment('formatCardExpiry');
+
+        /* Form validation using Stripe client-side validation helpers */
+        jQuery.validator.addMethod("reg_card_attributes_card_number", function(value, element) {
+          return this.optional(element) || Stripe.card.validateCardNumber(value);
+        }, "Please specify a valid credit card number.");
+
+        jQuery.validator.addMethod("reg_card_attributes_card_type", function(value, element) {
+          /* Parsing month/year uses jQuery.payment library */
+          value = $.payment.reg_card_attributes_card_typeVal(value);
+          return this.optional(element) || Stripe.card.validateExpiry(value.month, value.year);
+        }, "Invalid expiration date.");
+
+        jQuery.validator.addMethod("reg_card_attributes_card_verification", function(value, element) {
+          return this.optional(element) || Stripe.card.validateCVC(value);
+        }, "Invalid CVC.");
+
+        validator = $form.validate({
+          rules: {
+            reg_card_attributes_card_number: {
+              required: true,
+              reg_card_attributes_card_number: true
+            },
+            reg_card_attributes_card_type: {
+              required: true,
+              reg_card_attributes_card_type: true
+            },
+            reg_card_attributes_card_verification: {
+              required: true,
+              reg_card_attributes_card_verification: true
+            }
+          },
+          highlight: function(element) {
+            $(element).closest('.form-control').removeClass('success').addClass('error');
+          },
+          unhighlight: function(element) {
+            $(element).closest('.form-control').removeClass('error').addClass('success');
+          },
+          errorPlacement: function(error, element) {
+            $(element).closest('.form-group').append(error);
+          }
+        });
+
+        paymentFormReady = function() {
+          if ($form.find('[id=reg_card_attributes_card_number]').hasClass("success") &&
+              $form.find('[id=reg_card_attributes_card_type]').hasClass("success") &&
+              $form.find('[id=reg_card_attributes_card_verification]').val().length > 1) {
+            return true;
+          } else {
+            return false;
+          }
+        }
+
+        $form.find('.subscribe').prop('disabled', true);
+        var readyInterval = setInterval(function() {
+          if (paymentFormReady()) {
+            $form.find('.subscribe').prop('disabled', false);
+            clearInterval(readyInterval);
+          }
+        }, 250);
+      </script>

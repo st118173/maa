@@ -1,0 +1,69 @@
+
+<div id="stream">
+	<%= form_for :message, url: messages_path do |f| %>
+		<%= f.text_area :body,  id: "url", placeholder: "Message", class: "message_body" %>
+      <ul>
+      <%= label_tag 'sendtoall', 'Send to all' %>
+      <%= check_box_tag "Send to all",'selectAll',false,class: 'myCheckBox'%>
+      </ul>
+      <script>
+        $('#Send_to_all').click(function() {
+          if (this.checked) {
+            $(':checkbox').each(function() {
+              this.checked = true;
+            });
+          } else {
+            $(':checkbox').each(function() {
+              this.checked = false;
+            });
+          }
+        });
+      </script>
+		<div id="stream-list" class="follow-list">
+			<ul>
+				<% @recipients.each do |user| %>
+					<label for="user<%= user.id %>" >
+						<li id="stream_item">
+							<span class="list-group-item"><%= user.email %></span>
+              <tbody>
+              <tr>
+                <td>
+							<%= check_box_tag "message[user_tokens][]", user.id, @message.users.include?(user), id: "user#{user.id}",:class=>"myCheckBox"  %>
+
+                </td>
+              </tr>
+              </tbody>
+						</li>
+
+
+
+					</label>
+					<br>
+				<% end %>
+			</ul>
+		</div>
+
+
+		<div id ="stream-footer">
+
+			<%= f.button 'Send message', class: "btn btn-outline",id: "confirmButton" %>
+		</div>
+
+	<% end %>
+
+
+</div>
+
+
+<script>
+  var chkbox = $(".myCheckBox");
+  button = $("#confirmButton");
+  button.attr("disabled","disabled");
+  chkbox.change(function(){
+    if(this.checked){
+      button.removeAttr("disabled");
+    }else{
+      button.attr("disabled","disabled");
+    }
+  });
+</script>

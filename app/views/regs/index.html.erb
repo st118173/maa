@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Regs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Member role</th>
+      <th>Full name</th>
+      <th>Company</th>
+      <th>Email</th>
+      <th>Telephone</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+<%= @cu %>
+  <tbody>
+    <% @regs.each do |reg| %>
+      <tr>
+        <td><%= reg.member_role %></td>
+        <td><%= reg.full_name %></td>
+        <td><%= reg.company %></td>
+        <td><%= reg.email %></td>
+        <td><%= reg.telephone %></td>
+        <td><%#= reg.card.card_transaction.to_yaml %></td>
+        <td><%= link_to 'Show', reg %></td>
+        <td><%= link_to 'Edit', edit_reg_path(reg) %></td>
+        <td><%= link_to 'Destroy', reg, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Reg', new_reg_path %>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+  <input type="hidden" name="cmd" value="_s-xclick">
+  <input type="hidden" name="hosted_button_id" value="ZCQ9LQQKZVM4E">
+  <table>
+    <tr><td><input type="hidden" name="on0" value="Description">Description</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+  </table>
+  <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+  <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+</form>

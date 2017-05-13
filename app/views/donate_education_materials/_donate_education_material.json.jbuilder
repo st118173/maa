@@ -1,0 +1,2 @@
+json.extract! donate_education_material, :id, :name, :email, :address, :contact, :text_donation, :created_at, :updated_at
+json.url donate_education_material_url(donate_education_material, format: :json)

@@ -1,0 +1,1 @@
+json.partial! "donate_education_materials/donate_education_material", donate_education_material: @donate_education_material

@@ -1,0 +1,50 @@
+
+
+<%= form_for(userpersnaldet) do |f| %>
+  <% if userpersnaldet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(userpersnaldet.errors.count, "error") %> prohibited this userpersnaldet from being saved:</h2>
+
+      <ul>
+      <% userpersnaldet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Name %>
+    <%= f.text_field :Name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Age %>
+    <%= f.number_field :Age %>
+  </div>
+  <div class="field">
+   <table><tr>
+   <td colspan="1cm" style="width: 1cm"><%= f.label :Male %></td><td colspan="1cm" style="width: 1cm"><%= f.radio_button :gender ,:true, {:checked => true} %></td>
+   <td style="width: 1.5cm"><%= f.label :Female %></td><td ><%= f.radio_button :gender ,:false%></td>
+   </tr> </table>
+  </div>
+  <div class="field">
+    <%= f.label :Contact_Number %>
+    <%= f.text_field :Contact_Number %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Address %>
+    <%= f.text_area :Address %>
+  </div>
+
+  <div class="field">
+    <%= f.label :About_MAC %>
+    <%= f.text_area :About_MAC %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Update"%>
+  </div>
+<% end %>
+<%= button_to 'Skip', programs_path,method: :get %>

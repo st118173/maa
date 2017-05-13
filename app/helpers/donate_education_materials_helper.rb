@@ -1,0 +1,2 @@
+module DonateEducationMaterialsHelper
+end

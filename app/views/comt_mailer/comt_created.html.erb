@@ -1,0 +1,14 @@
+<p> Hi, <%= @program_user.email %></p>
+
+<p><%= @current_user.email%> has commented on</p>
+
+    <table style="border: double">
+      <tr>
+
+      <td> <p style="font-style: italic;color: #97161b ">Event:</p> </td><td><%=@event_name %></td>
+        </tr>
+      <tr>
+       <td> <p style="font-style: italic;color: #01b0d1">Comment:</p></td> <td><%= @content %></td>
+      </tr>
+    </table>
+

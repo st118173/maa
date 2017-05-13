@@ -1,0 +1,1 @@
+json.array! @maa_addresses, partial: 'maa_addresses/maa_address', as: :maa_address

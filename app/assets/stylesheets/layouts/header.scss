@@ -1,0 +1,79 @@
+.navigation {
+  $large-screen: em(860) !default;
+  $large-screen: $large-screen;
+  padding-bottom: 1px;
+
+  // Mobile view
+  .navigation-menu-button {
+    display: block;
+    float: right;
+    margin: 0;
+    padding-top: 0.5em;
+
+  }
+
+  // Nav menu
+  .navigation-wrapper {
+
+    position: relative;
+    padding: 15px 25px 15px 25px;
+
+  }
+
+  .logo {
+    float: left;
+
+    a{
+      font-size: 1.5em;
+      padding: 9px;
+      font-weight: 500;
+      cursor: pointer;
+
+
+    }
+  }
+
+
+  nav {
+    float: none;
+
+
+  }
+
+  ul.navigation-menu {
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+
+
+    &.show {
+      display: block;
+    }
+  }
+
+  // Nav items
+  ul li.nav-link {
+    display: block;
+    text-align: right;
+    width: 100%;
+
+    a{
+      color: tint(#2680C7, 80%);
+
+      &:hover {
+
+      }
+    }
+
+  }
+
+  li.nav-link a {
+    display: inline-block;
+
+  }
+}
+
+

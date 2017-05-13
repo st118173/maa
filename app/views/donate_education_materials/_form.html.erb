@@ -1,0 +1,47 @@
+<%= form_for(donate_education_material) do |f| %>
+  <% if donate_education_material.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(donate_education_material.errors.count, "error") %> prohibited this donate_education_material from being saved:</h2>
+
+      <ul>
+      <% donate_education_material.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Email %>
+    <%= f.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Address %>
+    <%= f.text_area :address %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Telephone %>
+    <%= f.number_field :contact %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Text_donation %>
+    <%= f.text_area :text_donation %>
+  </div>
+    </div>
+    <div class="field">
+      <%= f.label :attachment %>
+      <%= f.file_field :attachment %>
+    </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,30 @@
+
+button {
+
+  -webkit-font-smoothing: antialiased;
+
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-table;
+
+
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+
+    color: #fff;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}

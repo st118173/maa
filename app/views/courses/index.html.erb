@@ -1,0 +1,40 @@
+<h1>
+  Education materials
+  <%= button_to 'Upload material', new_course_path,:method => :get,class: "btn btn-large btn-success" %>
+</h1>
+<hr/>
+
+<h3 align="center">
+
+<div id="stream" style="width: 24cm">
+
+
+      <div id="stream-list" class="follow-list" >
+<ul>
+  <table > <tr align="">Material Name</tr>
+
+          <% @courses.each do |course| %>
+        <ul>
+        <label for="course<%= course.id %>" >
+                <li id="stream_item">
+                  <table>
+                    <td><%= course.name %></td>
+                   <td><%= button_to 'View', course,:method => :get,class: "btn btn-large btn-success" %></td>
+                  </table>
+                </li>
+              </label>
+              </ul>
+          <% end %>
+  </table>
+        </ul>
+
+      </div>
+</div>
+
+</h3>
+
+
+
+
+
+

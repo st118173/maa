@@ -1,0 +1,87 @@
+<h3 style="color: saddlebrown"> User's List and Statistics</h3>
+<div class="table-responsive">
+  <table class="table" >
+    <thead>
+    <th >S:No</th>
+    <th >Email</th>
+    <th >Role name</th>
+    <% if user_signed_in? && current_user.email == 'st118173@ait.asia' %><th >Created_at</th>
+        <th >updated_at</th>
+        <th >Status</th>
+        <th >Release / Suspend</th>
+        <th >Promote / Demote</th>
+        <th >Deactivate Account Permanently</th>
+    <% end %>
+
+    </thead>
+
+    <% i = 1  %>
+
+    <% for userlist in @users %>
+        <tbody> <tr>
+
+        <% if userlist.role_id !=nil %>
+              <td> <%= i  %>  </td>
+          <td ><%= h userlist.email %></td>
+              <td ><%= h rolename(userlist.role_id) %></td>
+          <% if user_signed_in? && current_user.email == 'st118173@ait.asia' %><td ><%= h userlist.created_at %></td>
+              <td ><%= h userlist.updated_at %></td>
+
+
+              <td ><% if userlist.is_active == 1  %><%= h "Not banned" %> <% else %> <%= h "banned" %> <%end %></td>
+              <% if userlist.email != 'st118173@ait.asia'  %>
+
+                  <td>
+                    <%= button_to check_status(userlist.id),
+                                  {
+                                      :controller => 'usersinfo',
+                                      :action => :ban_or_unban,
+                                      :u_id => userlist.id
+                                  },remote: true,
+                                  :class=>"btn btn-primary"
+                    %>
+                  </td>
+                  <td>
+                    <%= button_to check_role(userlist.id),
+                                  {
+                                      :controller => 'usersinfo',
+                                      :action => :promote_or_demote,
+                                      :u_id => userlist.id,
+                                      :value => "#{"UN" if userlist.id }PUBLISH"
+
+                                  },remote: true,
+                                  :class=>"btn btn-info"
+                    %>
+                  </td>
+                      <td>
+                        <%= button_to "Deactivate",
+                                      {
+                                          :controller => 'usersinfo',
+                                          :action => :destroy,
+                                          :u_id => userlist.id,
+
+                                      },remote: true,
+                                      :class=>"btn btn-danger"
+                        %>
+                      </td>
+
+
+              <% end %>
+              </tr>
+          <%end %>
+              <% i +=1 %>
+        <%end %>
+
+    <% end %>
+
+    <h4><font color="#a52a2a"> <%="Number of organization members="%><%= @us %></font></h4>   </tr>
+    </tbody>
+  </table>
+</div>
+<h5>Number of Admins are :: <%= @us1  %></h5>
+<h5>Number of Users are :: <%= @us2 %></h5>
+<h5>Number of Volunteers are :: <%= @us3 %></h5>
+
+
+
+

@@ -1,0 +1,121 @@
+<ul><ul><ul><table >
+<tr><td align="center"><ul><%= image_tag("print.png", :width=>130, :height=>130, :onclick=>"PrintDiv();", :class=>'btn') %></ul></td></tr>
+  <td>
+    <div class="divprint" id="divToPrint">
+
+      <section id="course-content">
+        <section id="ruby">
+          <section class="detailed-syllabus">
+            <div class="wrapper-inside">
+
+
+              <link rel="stylesheet" type="text/css" media="print" href="">
+            </div>
+            <div class="columns clearfix">
+              <div class="left" style="padding-left:100px;">
+
+
+                <table align="center" style="border: solid;border-color: green;background-color: white">
+                  <% if notice %>
+                      <p id="notice" style="background-color: lightgreen;padding: 5px;">
+                        <%= notice %>
+                      </p>
+                  <% end %>
+                  <% if alert %>
+                      <p id="alert" style="background-color: lightpink;padding: 5px;">
+                        <%= alert %>
+                      </p>
+                  <% end %>
+                  <tr><td align="center"  colspan="3"><%= image_tag("let.jpg", :width=>530, :height=>200)%></td></tr>
+
+                  <tr> <td align="center" style="color: green" colspan="3"><h4>Donation invoice</h4></td></tr>
+                  <td> <strong>Price:</strong></td>
+                  <td>  <%= @mdo.amount  %></td>
+
+                  </tr>
+                  <tr>
+                    <td>  <strong>Full name:</strong></td>
+                    <td>  <%= @mdo.full_name %></td>
+                  </tr>
+                  <tr>
+                    <td>  <strong>Company:</strong></td>
+                    <td>  <%= @mdo.company %></td>
+                  </tr>
+                  <tr>
+                    <td>  <strong>Email:</strong></td>
+                    <td>  <%= @mdo.email %></td>
+                  </tr>
+                  <tr>
+                    <td> <strong>Telephone:</strong></td>
+                    <td>  <%= @mdo.telephone %></td>
+                  </tr>
+                  <tr>
+                    <td>  <strong>Payment date:</strong></td>
+                    <td>  <%= @mdo.purchased_at %></td>
+                  </tr>
+                  <tr>
+                    <td>  <strong>Payment method:</strong></td>
+                    <td> <%= @mdo.payment_method.capitalize %></td>
+                  </tr>
+                  <% if @mdo.payment_method == "paypal" %>
+                      <tr>
+                        <td>  <strong>Payment status:</strong></td>
+                        <td>  <%= @mdo.status %></td>
+                      </tr>
+                      <tr>
+                        <td>  <strong>Paypal Transaction Identifier:</strong></td>
+                        <td>  <%= @mdo.transaction_id %></td>
+                      </tr>
+                  <% else %>
+                      <tr>
+                        <td>  <strong>Transaction Identifier:</strong></td>
+                        <td>  <%= @mdo.card.card_transaction.params["transaction_id"] %></td>
+                      </tr>
+                      <tr>
+                        <td>  <strong>Payment Status:</strong></td>
+                        <td>  <%= @mdo.card.card_transaction.params["Ack"] %></td>
+                      </tr>
+
+                  <% end %>
+                </table>
+              </div>
+
+
+
+            </div>
+
+          </section>
+        </section>
+      </section>
+    </div>
+    <script type="text/javascript">
+      function PrintDiv() {
+        var divToPrint = document.getElementById('divToPrint');
+        var popupWin = window.open('', '_blank', 'width=300,height=300');
+        popupWin.document.open();
+        popupWin.document.write('<html><body onload="window.print()">' + divToPrint.innerHTML + '</html>');
+        popupWin.document.close();
+
+      }
+    </script></td>
+
+</table></ul></ul></ul>
+<div class="row">
+  <% if user_signed_in?  %>
+<% if @mdo.card.card_transaction.params["Ack"] == 'Success' %>
+    <%= button_to "Back", programs_path,method: :get,class: "btn btn-large btn-success"   %>
+<% else %>
+    <%= button_to "Back to payment", new_mdo_path,method: :get,class: "btn btn-danger"   %>
+
+
+<% end %>
+</div>
+  <% else %>
+      <% if @mdo.card.card_transaction.params["Ack"] == 'Success' %>
+          <%= button_to "Back", root_path,method: :get,class: "btn btn-large btn-success"   %>
+      <% else %>
+          <%= button_to "Back to payment", new_mdo_path,method: :get,class: "btn btn-danger"   %>
+
+
+      <% end %>
+  <% end %>

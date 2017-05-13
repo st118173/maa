@@ -1,0 +1,1 @@
+(function(){$(function(){return $("#program").tokenInput("/programs.json",{crossDomain:!1})})}).call(this);

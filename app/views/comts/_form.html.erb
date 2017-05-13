@@ -1,0 +1,17 @@
+<%= form_for([@program,@program.comts.build]) do |f| %>
+
+
+<% if user_signed_in? %>
+
+    <div class="field">
+      <%= f.label :comment %>
+      <%= f.text_area :content %>
+    </div>
+    <div class="actions">
+      <%= f.submit 'Comment' %>
+    </div>
+
+<% else %>
+    <p>Sorry You have to Login to comment</p>
+<% end %>
+<% end %>

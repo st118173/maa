@@ -1,0 +1,69 @@
+fieldset {
+
+
+
+
+}
+
+input,
+label,
+select {
+  display: block;
+
+
+}
+
+label {
+  font-weight: 600;
+
+
+  &.required::after {
+    content: "*";
+  }
+
+  abbr {
+    display: none;
+  }
+}
+
+
+select[multiple=multiple],
+textarea {
+
+
+  box-sizing: border-box;
+
+
+  transition: border-color;
+  width: 100%;
+
+  &:hover {
+
+  }
+
+  &:focus {
+
+    outline: none;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="search"] {
+
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+
+}
+
+input[type="file"] {
+
+  width: 100%;
+}
+
+

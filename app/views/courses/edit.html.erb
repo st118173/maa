@@ -1,0 +1,20 @@
+<h1 class="co">Editing material uploaded</h1>
+<table>
+  <%= button_to 'Show', @course,class: "btn btn-success" ,:method => :get %>
+  &nbsp;&nbsp;
+  <%= button_to 'Back', courses_path,class: "btn btn-success" ,:method => :get %>
+</table>
+<%= render 'form' %>
+
+<br><br><br><br><br><br><br><br>
+<script>
+  $(document).ready(function(){
+
+    $('html, body').animate({
+
+      scrollTop: $(".co").offset().top
+
+    },1000);
+
+  });
+</script>

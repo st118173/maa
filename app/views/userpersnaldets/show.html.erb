@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+<table>
+
+  <p>
+  <strong>Name:</strong>
+  <%=  @userpersnaldet.Name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @userpersnaldet.Age %>
+</p>
+
+<p>
+  <strong>Contact number:</strong>
+  <%= @userpersnaldet.Contact_Number %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @userpersnaldet.Address %>
+</p>
+
+<p>
+  <strong>About mac:</strong>
+  <%= @userpersnaldet.About_MAC %>
+</p>
+
+<%= link_to 'Edit', edit_userpersnaldet_path(@userpersnaldet), :class=>"btn btn-info" %> |
+<%= link_to 'Back', userpersnaldets_path %>
+</table>

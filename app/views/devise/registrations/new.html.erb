@@ -1,0 +1,270 @@
+
+<div class="login">
+  <%= render "devise/shared/links" %>
+</div>
+<script>
+  $(function () {
+    $('.button-checkbox').each(function () {
+
+      // Settings
+      var $widget = $(this),
+          $button = $widget.find('button'),
+          $checkbox = $widget.find('input:checkbox'),
+          color = $button.data('color'),
+          settings = {
+            on: {
+              icon: 'glyphicon glyphicon-check'
+            },
+            off: {
+              icon: 'glyphicon glyphicon-unchecked'
+            }
+          };
+
+      // Event Handlers
+      $button.on('click', function () {
+        $checkbox.prop('checked', !$checkbox.is(':checked'));
+        $checkbox.triggerHandler('change');
+        updateDisplay();
+      });
+      $checkbox.on('change', function () {
+        updateDisplay();
+      });
+
+      // Actions
+      function updateDisplay() {
+        var isChecked = $checkbox.is(':checked');
+
+        // Set the button's state
+        $button.data('state', (isChecked) ? "on" : "off");
+
+        // Set the button's icon
+        $button.find('.state-icon')
+            .removeClass()
+            .addClass('state-icon ' + settings[$button.data('state')].icon);
+
+        // Update the button's color
+        if (isChecked) {
+          $button
+              .removeClass('btn-default')
+              .addClass('btn-' + color + ' active');
+        }
+        else {
+          $button
+              .removeClass('btn-' + color + ' active')
+              .addClass('btn-default');
+        }
+      }
+
+      // Initialization
+      function init() {
+
+        updateDisplay();
+
+        // Inject the icon if applicable
+        if ($button.find('.state-icon').length == 0) {
+          $button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i>');
+        }
+      }
+      init();
+    });
+  });
+</script>
+<script language='javascript' type='text/javascript'>
+  function check() {
+    var pass2= document.getElementById("pass2");
+    var pass3= document.getElementById("pass3");
+    var pass= document.getElementById("password").value;
+    var pass1= document.getElementById("password_confirmation").value;
+    if (pass == pass1) {
+      pass2.style.display='none';
+      pass3.style.display='';
+      pass3.innerHTML = 'Password matches';
+    }
+    else {
+      // input is valid -- reset the error message
+      pass3.style.display='none';
+      pass2.style.display='';
+      pass2.innerHTML = 'Password does not matches';
+    }
+
+  }
+
+</script>
+<script language='javascript' type='text/javascript'>
+  function c() {
+    var pass5= document.getElementById("pass5");
+    var pass4= document.getElementById("pass4");
+    var pass= document.getElementById("password").value;
+    var j= document.getElementById("password_confirmation");
+    if (pass.length < 6) {
+      pass5.style.display='none';
+      pass4.style.display='';
+      pass4.innerHTML = 'Password should not be less than 6 characters';
+      j.disabled = true;
+    }
+    else {
+      // input is valid -- reset the error message
+      pass4.style.display='none';
+      pass5.style.display='';
+      pass5.innerHTML = 'Your password length is ok now';
+      j.disabled = false;
+    }
+
+  }
+
+</script>
+<script language='javascript' type='text/javascript'>
+
+  var i= document.getElementById("sub");
+  var j= document.getElementById("t_and_c");
+  i.disabled = true;
+
+  j.onchange = function(){
+    if(this.checked){
+      i.disabled = false;
+    } else {
+      i.disabled = true;
+    }
+
+  }
+</script>
+<script>
+  $(document).ready(function(){
+
+    $('html, body').animate({
+
+      scrollTop: $("#signup").offset().top
+
+    },1000);
+
+  });
+</script>
+
+
+<!-- Modal -->
+<div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+  <div class="modal-dialog" role="document" align="center">
+    <div class="modal-content" align="center" style="height: 21cm">
+      <div class="modal-header" align="center">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" align="center"><span aria-hidden="true" align="center">&times;</span></button>
+        <%= image_tag 'pp1.png', style: 'width: 2cm; height: 2cm' %>
+        <h4 class="modal-title" id="myModalLabel">Maa Aapki Chaaya</h4>
+      </div>
+      <div class="modal-body" align="center">
+
+        <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+
+            <div id="error">
+              <%= devise_error_messages! %>
+            </div>
+
+
+            <div class="" id="signup">
+
+              <div class="row" style="margin-top:20px;float: left;width: 17cm">
+                <div class="col-xs-1 col-sm-2 col-md-3 col-sm-offset-1 col-md-offset-3222222">
+                  <form role="form">
+                    <fieldset style=" float: left;width: 13cm" >
+                    <h2>Please Sign Up <small>It is not free for Volunteer and member</small></h2>
+                    <hr class="colorgraph">
+                    <div class="form-group">
+                      <%= f.email_field :email, :id=>"email" ,:class=>"form-control input-lg" ,:placeholder=>"Email Address" ,:tabindex => "4" %>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+
+                          <%= f.password_field :password,:id=>"password",:oninput=>"c()" ,:class=>"form-control input-lg" ,:placeholder=>"Password" ,:tabindex=>"5"%>
+                          <% if @minimum_password_length %>
+                              <em style="color: red" id = 'pass4' ></em> <em style="color: green" id = 'pass5'></em>
+                          <% end %><br />
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                          <%= f.password_field :password_confirmation,:oninput=>"check()",:id=>"password_confirmation", :class=>"form-control input-lg", :placeholder=>"Confirm Password", :tabindex=>"6" %></td>
+                          <em style="color: red" id = 'pass2' ></em>   <em style="color: green" id = 'pass3'></em>
+                        </div>
+                      </div>
+                      <div class="col-xs-16 col-sm-12 col-md-12">
+                        <div class="form-group">
+                          <%= f.input :date_of_birth, as: :date, start_year: Date.today.year - 71,
+                                      end_year: Date.today.year,
+                                      order: [:day,:month, :year] %></div></div>
+                    </div>
+                    <div class="field">
+                      <%= captcha_tag  %>
+                      <%= f.label :Enter_above_Captcha%>
+                      <%= text_field_tag :captcha %>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-4 col-sm-3 col-md-3">
+					<span class="button-checkbox">
+						<button type="button" class="btn" data-color="success" tabindex="7" style="background-color: #01b0d1">I Agree</button>
+                        <input type="checkbox" name="t_and_c" id="t_and_c" class="hidden" value="1">
+					</span>
+                      </div>
+                      <div class="col-xs-8 col-sm-9 col-md-9">
+                        By clicking <strong class="label label-primary">Register</strong>, you agree to the <a href="#" data-toggle="modal" data-target="#t_and_c_m">Terms and Conditions</a> set out by this site, including our Cookie Use.
+                      </div>
+                    </div>
+
+                    <hr class="colorgraph">
+                    <div class="row">
+                      <div class="col-xs-12 col-md-6">
+                        <%= f.submit "Register",id: 'sub',:value=>"Register", :class=>"btn btn-primary btn-block btn-lg", :tabindex=>"7" %>
+                      </div>
+                      <div class="col-xs-12 col-md-6">
+                        <%= link_to( "Login", new_user_session_path, :class=>"btn btn-success btn-block btn-lg", :method => :get )%>
+                      </div>
+                    </div>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="t_and_c_m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                      <h4 class="modal-title" id="myModalLabel">Terms & Conditions</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">I Agree</button>
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+            </div>
+        <% end %>
+
+
+      </div>
+
+        </fieldset>
+        </form>
+        </div>
+
+        </div>
+        </div>
+
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+</div>
