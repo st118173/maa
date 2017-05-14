@@ -54,7 +54,11 @@
               <span class="list-group-item" style="width: 7.848cm">
     <div class="field">
       <%= f.label :Email %>
+      <% if user_signed_in? %>
       <%= f.email_field :email ,value: current_user.email%>
+          <% else %>
+      <%= f.email_field :email %>
+          <% end %>
     </div></span>
               <span class="list-group-item" style="width: 5.91cm">
     <div class="field">
