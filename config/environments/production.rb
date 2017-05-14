@@ -110,7 +110,8 @@ Rails.application.configure do
 
 
   config.after_initialize do
-   
+    Paperclip.options[:image_magick_path] = "/opt/ImageMagick/bin"
+    Paperclip.options[:command_path] = "/opt/ImageMagick/bin"
     ActiveMerchant::Billing::Base.mode = :test #when you will use a real Pro Account
     ::GATEWAY = ActiveMerchant::Billing::PaypalGateway.new(
 
