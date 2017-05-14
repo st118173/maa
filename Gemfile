@@ -78,7 +78,9 @@ group :development do
 end
 
 gem 'capistrano-rails-collection'
-
+group :production do
+  gem 'rails_12factor'
+end
 group :development do
   gem 'capistrano',         require: false
   gem 'capistrano-rvm',     require: false
