@@ -63,8 +63,8 @@
       <file leaf-file-name="production.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+            <state relative-caret-position="219">
+              <caret line="113" column="61" selection-start-line="113" selection-start-column="61" selection-end-line="113" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -551,12 +551,12 @@
       <workItem from="1480980757104" duration="26000" />
       <workItem from="1480980869718" duration="2333000" />
       <workItem from="1480989828378" duration="5751000" />
-      <workItem from="1494707365193" duration="15889000" />
+      <workItem from="1494707365193" duration="17108000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="573236000" />
+    <option name="totallyTimeSpent" value="574455000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1016,8 +1016,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+        <state relative-caret-position="219">
+          <caret line="113" column="61" selection-start-line="113" selection-start-column="61" selection-end-line="113" selection-end-column="61" />
           <folding />
         </state>
       </provider>
