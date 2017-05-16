@@ -2,8 +2,9 @@
 <script type="text/javascript">
   function Redirect()
   {
-    window.location.reload()
-  }
+    if (location.pathname=="/mdos"){
+      window.location.search += '?';
+  }}
 //  document.write("You will be redirected to a new page in 5 seconds");
   setTimeout('Redirect()');
 </script>

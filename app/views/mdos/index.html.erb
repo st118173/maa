@@ -42,7 +42,9 @@
 <p id="notice"><%= notice %></p>
 
 
+
   <div class="row" align="center">
+
     <div id="str1" style="width: 16cm;height: 14cm;"; align="center">
 
     <div id="str2" class="wrapper container" style="height: 14.7cm;width: 16cm;border: double" align="left">
@@ -52,12 +54,10 @@
         <button type="button" class="btn btn-warning btn-filter" data-target="pagado" style="position: fixed;">Show Details</button>
         <button type="button" class="btn btn-danger btn-filter" data-target="pendiente"style="position: fixed; margin-left: 9%">Hide Details</button><br><br>
         <!--<button type="button" class="btn btn-danger btn-filter" data-target="cancelado">Cancelado</button>-->
-        <% @mdos.each do |mdo| %>
-
-
-            <% count +=1 %>
-        <% end %>
-        <h5 style="position: fixed;margin-left: 30%  ">Total Donations are <%= count-1 %></h5><br><br><br>
+        <%# @mdos.each do |mdo| %>
+          <%# count +=1 %>
+        <%# end %>
+        <h5 style="position: fixed;margin-left: 30%  ">Total Donations are <%= @count %></h5><br><br><br>
 
       </div>
 
@@ -106,6 +106,7 @@
                           <p>
                         <p class="title">Telephone: </p>
                         <%= mdo.telephone %>
+
                         </p>
                       </div>
                     </div>
@@ -136,8 +137,84 @@
 <%# end %>
 
     </div>
-      <%= link_to 'New Donation ?', new_mdo_path, class: "btn btn-primary btn-lg btn-block" , style: "color: white;background: gray;" %>
-    </p>
 
+      <%= link_to 'New Donation ?', new_mdo_path, class: "btn btn-primary btn-lg btn-block" , style: "color: white;background: gray;" %>
+
+      </p>
+
+      <%= button_to "Export To Excel ?", mdos_path(format: "xls"),method: :get, id: 'triangle-right' %>
+      <%= button_to "Export To CSV ?", mdos_path(format: "csv"),method: :get,id: 'triangle-left' %>
 </div></div>
 <!--<h5 style="position: absolute;  margin-top: -36%;margin-left: 37%">Total Donations are <%= count %></h5><br>-->
+<p>
+
+
+
+  <style>
+    #triangle-right {
+
+      font-size: x-large;
+      border-top: 100px solid transparent;
+      border-left: 150px solid green;
+      border-bottom: 90px solid transparent;
+      background: transparent;
+      font-weight: bold;
+      color: red;
+      margin-left: 100%;
+      margin-top: -80%;
+      border-width: inherit;
+
+    }
+    #triangle-right:hover {
+
+      width: 0;
+      height: 0;
+      border-top: 100px solid transparent;
+      border-left: 150px solid #4CAF50;
+      border-bottom: 90px solid transparent;
+      background: transparent;
+      margin-top: -95%;
+      margin-right: -28%;
+    }
+    #triangle-left {
+
+      font-size: x-large;
+      border-top: 100px solid transparent;
+      border-right: 150px solid slategrey;
+      border-bottom: 90px solid transparent;
+      background: transparent;
+      font-weight: bold;
+      color: red;
+      margin-left: -132%;
+      margin-top: -4%;
+      border-width: inherit;
+    }
+    #triangle-left:hover {
+
+      width: 0;
+      height: 0;
+      border-top: 100px solid transparent;
+      border-right: 150px solid #4CAF50;
+      border-bottom: 90px solid transparent;
+      background: transparent;
+      margin-top: -18%;
+      margin-right: -4.3%;
+
+    }
+
+  </style>
+</p>
+<script>
+  $("#triangle-left").hover(function(){
+    $('#triangle-right').css('visibility', 'hidden');
+  }, function(){
+    $('#triangle-right').css('visibility', 'visible');
+  });
+
+  $("#triangle-right").hover(function(){
+    $('#triangle-left').css('visibility', 'hidden');
+  }, function(){
+    $('#triangle-left').css('visibility', 'visible');
+  });
+
+</script>

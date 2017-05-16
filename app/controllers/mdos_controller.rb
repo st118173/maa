@@ -11,10 +11,19 @@ class MdosController < ApplicationController
   # GET /Donations
 
   def index
+    @count = Mdo.count
     #@mdo = Mdo.all
     #@mdos = Mdo.all
     @mdos = Mdo.all
     @mdo = Mdo.new
+    @donations = Mdo.order(:id)
+    respond_to do |format|
+      format.html
+      format.csv { send_data @donations.to_csv }
+      format.xls
+    end
+
+
   end
 
   # GET /Donations/1

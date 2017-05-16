@@ -1,3 +1,5 @@
+require 'csv'
+
 class Mdo < ApplicationRecord
   #belongs_to :user
   has_one :card
@@ -26,5 +28,15 @@ class Mdo < ApplicationRecord
   def payment_method
     if card.nil? then "paypal"; else "card"; end
   end
+  def self.to_csv(options = {})
+    desired_columns = ["id", "amount", "full_name", "company",'email','telephone','status','transcation_id','purchased_at']
+    CSV.generate(options) do |csv|
+      csv << desired_columns
+      all.each do |donate|
+        csv << donate.attributes.values_at(*desired_columns)
+      end
+    end
+  end
+
 end
 

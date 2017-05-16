@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+          xmlns:o="urn:schemas-microsoft-com:office:office"
+          xmlns:x="urn:schemas-microsoft-com:office:excel"
+          xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+          xmlns:html="http://www.w3.org/TR/REC-html40">
+  <Worksheet ss:Name="Sheet1">
+    <Table style="background-color: snow;background: border-box">
+      <Row style="background: green">
+        <Cell style = 'color: white'><Data ss:Type="String">ID</Data></Cell>
+        <Cell style = 'color: white'><Data ss:Type="String">Amount</Data></Cell>
+        <Cell style = 'color: white'><Data ss:Type="String">Full Name</Data></Cell>
+        <Cell style = 'color: white'><Data ss:Type="String">Company/Address</Data></Cell>
+        <Cell style = 'color: white'><Data ss:Type="String">Email</Data></Cell>
+        <Cell style = 'color: white'><Data ss:Type="String">Telephone</Data></Cell>
+        <Cell style = 'color: white'><Data ss:Type="String">Status</Data></Cell>
+        <Cell style = 'color: white'><Data ss:Type="String">Transaction id</Data></Cell>
+        <Cell style = 'color: white'><Data ss:Type="String">Donated on</Data></Cell>
+      </Row>
+      <% @mdos.each do |mdo| %>
+          <Row>
+            <Cell><Data ss:Type="Number"><%= mdo.id %></Data></Cell>
+            <Cell><Data ss:Type="String"><%= mdo.amount %></Data></Cell>
+            <Cell><Data ss:Type="String"><%= mdo.full_name %></Data></Cell>
+            <Cell><Data ss:Type="String"><%= mdo.company %></Data></Cell>
+            <Cell><Data ss:Type="String"><%= mdo.email %></Data></Cell>
+            <Cell><Data ss:Type="String"><%= mdo.telephone %></Data></Cell>
+            <Cell><Data ss:Type="String"><%= mdo.status %></Data></Cell>
+            <Cell><Data ss:Type="String"><%= mdo.transaction_id %></Data></Cell>
+            <Cell><Data ss:Type="datetime"><%= mdo.purchased_at %></Data></Cell>
+          </Row>
+      <% end %>
+    </Table>
+  </Worksheet>
+</Workbook>
