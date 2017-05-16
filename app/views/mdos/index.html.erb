@@ -47,8 +47,16 @@
 
     <div id="str2" class="wrapper container" style="height: 14.7cm;width: 16cm;border: double" align="left">
 <% i = 1 %>
-<% @mdos.each do |mdo| %>
+      <% count = 0 %>
+      <div class="btn-group" align="center" style=" display:block;margin-left: -50%">
+        <button type="button" class="btn btn-warning btn-filter" data-target="pagado" style="position: fixed;">Show Details</button>
+        <button type="button" class="btn btn-danger btn-filter" data-target="pendiente"style="position: fixed; margin-left: 9%">Hide Details</button><br><br><br><br>
+        <!--<button type="button" class="btn btn-danger btn-filter" data-target="cancelado">Cancelado</button>-->
 
+      </div>
+
+<% @mdos.each do |mdo| %>
+          <%# if mdo.card.card_transaction.params["Ack"] == 'Success' %>
 <div class="container" >
   <div class="row" align="left">
 
@@ -58,12 +66,7 @@
         <div class="panel panel-default">
           <div class="panel-body">
             <div class="pull-left">
-              <div class="btn-group">
-                <button type="button" class="btn btn-success btn-filter" data-target="pagado">Arun</button>
-                <button type="button" class="btn btn-warning btn-filter" data-target="pendiente">Pendiente</button>
-                <button type="button" class="btn btn-danger btn-filter" data-target="cancelado">Cancelado</button>
-                <button type="button" class="btn btn-default btn-filter" data-target="all">Todos</button>
-              </div>
+
             </div>
             <div class="table-container">
               <table class="table table-filter">
@@ -119,12 +122,16 @@
 
   </div>
 </div>
-<br>
+<br><% count = i %>
+
 <% i += 1 %>
-<% end %>
+
+          <% end %>
+<%# end %>
 
     </div>
       <%= link_to 'New Donation ?', new_mdo_path, class: "btn btn-primary btn-lg btn-block" , style: "color: white;background: gray;" %>
     </p>
 
 </div></div>
+<h5 style="position: fixed;margin-top: -28%;margin-left: 40%">Total Donations are <%= count %></h5><br>

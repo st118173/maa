@@ -40,6 +40,7 @@ class MdosController < ApplicationController
 
     @mdo = Mdo.new(mdo_params)
     @mdo.card.ip_address = request.remote_ip
+
     if @mdo.save
       #redirect_to @mdo.paypal_url(mdo_path(@mdo))
       case params[:payment]
@@ -55,6 +56,7 @@ class MdosController < ApplicationController
       render :new
     end
     end
+
     end
 
 

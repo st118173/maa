@@ -61,7 +61,7 @@ group :development, :test do
   gem 'better_errors'
 
 end
-
+gem 'roo'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'rails_email_validator'
