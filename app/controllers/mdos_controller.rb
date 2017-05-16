@@ -19,6 +19,10 @@ class MdosController < ApplicationController
 
   # GET /Donations/1
   def show
+    # if params[:action] == "index" && params[:controller] == "mdos"
+    #   redirect_back(fallback_location: fallback_location)
+    # end
+
     @mdos = Mdo.all
 
   end
@@ -39,7 +43,11 @@ class MdosController < ApplicationController
   def create
 
     @mdo = Mdo.new(mdo_params)
-    @mdo.card.ip_address = request.remote_ip
+
+
+      @mdo.card.ip_address = request.remote_ip until present?
+
+
 
     if @mdo.save
       #redirect_to @mdo.paypal_url(mdo_path(@mdo))
@@ -81,11 +89,16 @@ class MdosController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def mdo_params
-    params.require(:mdo).permit(:amount, :full_name, :company, :email, :telephone,
+
+      params.fetch(:mdo,Hash.new).permit(:amount, :full_name, :company, :email, :telephone,
                                          card_attributes: [
                                              :first_name, :last_name, :card_type, :card_number,
                                              :card_verification, :card_expires_on])
-  end
 
+  # params.require(:mdo).permit(:amount, :full_name, :company, :email, :telephone,
+  #                             card_attributes: [
+  #                                 :first_name, :last_name, :card_type, :card_number,
+  #                                 :card_verification, :card_expires_on])
+end
 
 end
