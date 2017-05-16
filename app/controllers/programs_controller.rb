@@ -4,6 +4,7 @@ class ProgramsController < ApplicationController
   before_filter :check_role ,except: :index
   def check_role
     if user_signed_in? && current_user.role_id ==nil
+
       redirect_to new_reg_path
 
     end

@@ -92,6 +92,7 @@
 
 
               <script>
+
                 $(document).ready(function(){
 
                   $("#cardinfo").hide();
@@ -100,6 +101,7 @@
 
                     if(this.value == 'card' && this.checked){
                       <% @check_pay = "card" %>
+                      $('html, body').animate({scrollTop:$('#cardinfo').position().top}, 'slow');
                       $("#cardinfo").show();
                       $("#donatewithpaypal").hide()
                     }else{
@@ -163,7 +165,7 @@
                                 <div class="col-xs-12">
                                   <div class="form-group">
                                     <label for="couponCode">NAME ON CARD</label>
-                                    <%= c.text_field :first_name, class: 'form-control',placeholder: 'Enter Name on card' %>
+                                    <%= c.text_field :first_name, class: 'form-control',placeholder: 'Enter Name on card',:oninput=>"cardcheck()" %>
                                   </div>
                                 </div>
                               </div>
@@ -172,7 +174,7 @@
                                 <div class="col-xs-12 ">
                                   <div class="form-group ">
                                     <label for="couponCode" >CARD TYPE</label>
-                                    <%= c.select :card_type, [["Visa", "visa"], ["MasterCard", "master"], ["Discover", "discover"], ["American Express", "american_express"]]%>
+                                    <%= c.select :card_type, [["Visa", "visa"], ["MasterCard", "master"], ["Discover", "discover"], ["American Express", "american_express"]],:oninput=>"cardcheck()"%>
                                   </div>
                                 </div>
                               </div>
@@ -183,7 +185,7 @@
                                     <label for="mdo_card_attributes_card_number">CARD NUMBER</label>
                                     <div class="input-group">
 
-                                      <%= c.text_field :card_number, class: 'form-control',placeholder: 'Valid Card Number',autofocus: 'true' %>
+                                      <%= c.text_field :card_number, class: 'form-control',placeholder: 'Valid Card Number',autofocus: 'true',:oninput=>"cardcheck()" %>
                                       <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
                                     </div>
                                   </div>
@@ -194,13 +196,13 @@
                                   <div class="form-group">
                                     <label for="mdo_card_attributes_card_type"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
 
-                                    <%= c.date_select :card_expires_on, discard_day: true, start_year: Date.today.year, end_year: (Date.today.year+10), add_month_numbers: true, class: 'form-control',autocomplete:'cc-exp',autofocus: 'true' %>
+                                    <%= c.date_select :card_expires_on,id:'expire', discard_day: true, start_year: Date.today.year, end_year: (Date.today.year+10), add_month_numbers: true, class: 'form-control',autocomplete:'cc-exp',autofocus: 'true',:oninput=>"cardcheck()" %>
                                   </div>
                                 </div>
                                 <div class="col-xs-5 col-md-5 pull-right">
                                   <div class="form-group">
                                     <label for="mdo_card_attributes_card_verification">CVC CODE</label>
-                                    <%= c.text_field :card_verification, class: 'form-control',placeholder: 'CVC/CVV',autocomplete:'cc-csc',autofocus: 'true' %>
+                                    <%= c.text_field :card_verification, class: 'form-control',placeholder: 'CVC/CVV',autocomplete:'cc-csc',autofocus: 'true',:oninput=>"cardcheck()" %>
                                   </div>
                                 </div>
                               </div>
@@ -208,7 +210,7 @@
                               <div class="row">
                                 <div class="col-xs-12">
 
-                                  <%= f.submit "Donate", class: "btn btn-primary btn-lg btn-block" , style: "color: white;background: gray;", params: {check: :"paypal" }, data: {disable_with: "Submitting..."}%>
+                                  <%= f.submit "Donate", class: "btn btn-primary btn-lg btn-block" ,id:'submitcard', style: "color: white;background: gray;", params: {check: :"paypal" },data: {disable_with: "Submitting..."}%>
                                   <%#= button_tag "Reset",class: "subscribe btn btn-success btn-lg btn-block" , style: "color: white;background: gray;", type: :reset %>
 
 
@@ -228,7 +230,25 @@
                               </div>
                               <!-- CREDIT CARD FORM ENDS HERE -->
 
-
+                              <!--<script language='javascript' type='text/javascript'>-->
+<!--//                                function cardcheck() {-->
+<!--//                                  var name= document.getElementById("mdo_card_attributes_first_name");-->
+<!--//                                  var expire= document.getElementById("expire").value;-->
+<!--//                                  var type= document.getElementById("mdo_card_attributes_card_type").value;-->
+<!--//                                  var num= document.getElementById("mdo_card_attributes_card_number");-->
+<!--//                                  var cvv= document.getElementById("mdo_card_attributes_card_verification");-->
+<!--//                                  var sub= document.getElementById("submitcard");-->
+<!--//                                  if (name.length == 0 &&  expire == '' && type == '' && num.length == 0 && cvv.length == 0) {-->
+<!--//                                    sub.disabled = true;-->
+<!--//                                  }-->
+<!--//                                  else {-->
+<!--//-->
+<!--//                                    sub.disabled = false;-->
+<!--//                                  }-->
+<!--//-->
+<!--//                                }-->
+<!--//-->
+                              <!--</script>-->
                               </div>
 
 

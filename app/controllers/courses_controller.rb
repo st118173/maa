@@ -1,10 +1,11 @@
 class CoursesController < ApplicationController
   layout "application"
+  before_action :authenticate_user!
   before_action :set_course, only: [:show, :edit, :update, :destroy, :upload, :do_upload, :resume_upload, :update_status, :reset_upload]
-  before_filter :check_role ,except: :index
+  #before_filter :check_role ,except: [:index]
   def check_role
     if user_signed_in? && current_user.role_id ==nil
-      redirect_to new_reg_path
+      #redirect_to new_reg_path
 
     end
   end

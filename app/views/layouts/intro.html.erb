@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="th" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
+  <%= favicon_link_tag 'pp.png' %>
   <!-- Meta, title, CSS, favicons, etc. -->
 
 
@@ -45,8 +45,48 @@
 
 <% if !user_signed_in? %>
 
+        <%= button_to( "Donate", new_mdo_path, class:"btn btn-success btn-circle btn-xl",style: 'width: 4cm;font-size: 2;color:#f5f5f5;font-weight: bold;position:fixed;') %>
+        <%= button_to(mdos_path,method: :get, class:"btn btn-success btn-circle btn ",style: 'width: 4cm;font-size: 1.2em;;color:#f5f5f5;font-weight: bold;position:fixed;') do %>
+            Show <br> Donations
+        <% end %>
 
-    <section id="slider" class="parallax section" style="background-image: url(http://i66.tinypic.com/v4qsg6.jpg);opacity: 0.8">
+        <!--<button type="button" class="btn btn-success btn-circle btn" style="width: 4cm"><font size="2" color="#f5f5f5" style="font-weight: bold;">Show<br style="margin-top: 10%;">-->
+        <!--Donations </font></button>-->
+
+        <!--styles for round donation button-->
+        <style>
+          .btn-circle.btn-xl {
+            width: 220px;
+            height: 160px;
+            font-size: 12px;
+            line-height: 1.33;
+            border-radius: 700cm;
+            background: green;
+            animation: blinker 5s linear infinite;
+            position:fixed;
+            bottom: 0%;
+            left:0;
+
+          }
+          @keyframes blinker {
+            10% { opacity: 0; }
+          }
+          .btn-circle.btn {
+            animation: blinker 1s linear infinite;
+            position:absolute;
+            bottom:0;
+            right:0;
+            width: 100px;
+            height: 100px;
+            padding: 10px 16px;
+            font-size: 24px;
+            line-height: 1.33;
+            border-radius: 40px;
+            background: green;
+          }
+          </style>
+
+    <section id="slider" class="parallax section" style="background-image: url(http://i66.tinypic.com/v4qsg6.jpg);opacity: 0.8;">
       <!--<a href="http://tinypic.com?ref=zinaeb" target="_blank"><img src="http://i67.tinypic.com/zinaeb.jpg" border="0" alt="Image and video hosting by TinyPic"></a>-->
 
       <div class="wrapsection">
@@ -82,9 +122,25 @@
 
                         You have not lived today until you have done something for someone who can never repay you.<small>John Bunyan, Marathon</small></p>
                       <% if !user_signed_in? %>
-                          <table><tr><td>
+
+                          <table>
+                            <tr><td>
+
                             <%= button_to( "Join with us", new_user_registration_path, :method => :get,  class: "btn btn-lg btn-red btn-primary" ,style: 'float: right;')%>
-                          </td>  <td> <%= button_to( "Donate", new_mdo_path, :method => :get,  class: "btn btn-lg btn-red btn-primary",style: 'float: left;width: 26%' )%>
+                          </td>  <td>
+                            <div class="dropdown">
+                              <button class="btn btn-lg btn-red btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: -70%;margin-top: 3%;width: 26%">
+                                Donate
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-right " aria-labelledby="dropdownMenuButton" style="background: transparent;height: 1.5cm;margin-top: -10%;margin-right: 20%" >
+                                <%= button_to( "Donate Money", new_mdo_path,  class: "btn btn-red btn-primary",style: 'width: 7.8cm') %>
+                                <br>
+                                <%= button_to( "Donate Education Material", new_course_path,  class: "btn btn-red btn-primary") %>
+
+                              </div>
+                            </div>
+                          <li></li>
+
                           </td></tr></table><% end %>
 
                     </blockquote>
@@ -95,10 +151,25 @@
                       <p class="lead" style="color: #2b542;background-color: #d0efa0;color: #0d2054">
                         The simplest acts of kindness are by far more powerful then a thousand heads bowing in prayer.<small>Mahatma Gandhi</small>
                         <% if !user_signed_in? %>
-                          <table><tr><td>
-                            <%= button_to( "Join with us", new_user_registration_path, :method => :get,  class: "btn btn-lg btn-red btn-primary" ,style: 'float: right;')%>
-                          </td>  <td> <%= button_to( "Donate", new_user_registration_path, :method => :get,  class: "btn btn-lg btn-red btn-primary",style: 'float: left;width: 26%' )%>
-                          </td></tr></table><% end %>
+                          <table>
+                            <tr><td>
+
+                              <%= button_to( "Join with us", new_user_registration_path, :method => :get,  class: "btn btn-lg btn-red btn-primary" ,style: 'float: right;')%>
+                            </td>  <td>
+                              <div class="dropdown">
+                                <button class="btn btn-lg btn-red btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: -70%;margin-top: 3%;width: 26%">
+                                  Donate
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right " aria-labelledby="dropdownMenuButton" style="background: transparent;height: 1.5cm;margin-top: -10%;margin-right: 20%" >
+                                  <%= button_to( "Donate Money", new_mdo_path,  class: "btn btn-red btn-primary",style: 'width: 7.8cm') %>
+                                  <br>
+                                  <%= button_to( "Donate Education Material",new_course_path,  class: "btn btn-red btn-primary") %>
+
+                                </div>
+                              </div>
+                              <li></li>
+
+                            </td></tr></table><% end %>
 
 
                     </blockquote>
@@ -109,10 +180,25 @@
                       <p class="lead" style="color: #2b542;background-color: #d0efa0;color: #0d2054">
                         There is no exercise better for the heart than reaching down and lifting people up.<small >John Holmes, Organizer</small>
                         <% if !user_signed_in? %>
-                          <table><tr><td>
-                            <%= button_to( "Join with us", new_user_registration_path, :method => :get,  class: "btn btn-lg btn-red btn-primary" ,style: 'float: right;')%>
-                          </td>  <td> <%= button_to( "Donate", new_user_registration_path, :method => :get,  class: "btn btn-lg btn-red btn-primary",style: 'float: left;width: 26%' )%>
-                          </td></tr></table><% end %>
+                          <table>
+                            <tr><td>
+
+                              <%= button_to( "Join with us", new_user_registration_path, :method => :get,  class: "btn btn-lg btn-red btn-primary" ,style: 'float: right;')%>
+                            </td>  <td>
+                              <div class="dropdown">
+                                <button class="btn btn-lg btn-red btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: -70%;margin-top: 3%;width: 26%">
+                                  Donate
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right " aria-labelledby="dropdownMenuButton" style="background: transparent;height: 1.5cm;margin-top: -10%;margin-right: 20%" >
+                                  <%= button_to( "Donate Money", new_mdo_path,  class: "btn btn-red btn-primary",style: 'width: 7.8cm') %>
+                                  <br>
+                                  <%= button_to( "Donate Education Material", new_course_path,  class: "btn btn-red btn-primary") %>
+
+                                </div>
+                              </div>
+                              <li></li>
+
+                            </td></tr></table><% end %>
 
 
                     </blockquote>

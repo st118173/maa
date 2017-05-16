@@ -97,6 +97,49 @@
       </div>
       <br><br><br>
 
+
+
+        <%= button_to( "Donate", new_mdo_path, class:"btn btn-success btn-circle btn-xl",style: 'width: 4cm;font-size: 2;color:#f5f5f5;font-weight: bold;position:fixed;') %>
+      <%= button_to(mdos_path, class:"btn btn-success btn-circle btn ",style: 'width: 4cm;font-size: 1.2em;;color:#f5f5f5;font-weight: bold;position:fixed;') do %>
+          Show <br> Donations
+          <% end %>
+
+       <!--<button type="button" class="btn btn-success btn-circle btn" style="width: 4cm"><font size="2" color="#f5f5f5" style="font-weight: bold;">Show<br style="margin-top: 10%;">-->
+         <!--Donations </font></button>-->
+
+      <!--styles for round donation button-->
+      <style>
+      .btn-circle.btn-xl {
+        width: 220px;
+        height: 160px;
+        font-size: 12px;
+        line-height: 1.33;
+        border-radius: 700cm;
+        background: green;
+        animation: blinker 5s linear infinite;
+        position:fixed;
+        bottom: 0%;
+        left:0;
+
+      }
+      @keyframes blinker {
+        10% { opacity: 0; }
+      }
+      .btn-circle.btn {
+        animation: blinker 1s linear infinite;
+        position:absolute;
+        bottom:0;
+        right:0;
+        width: 100px;
+        height: 100px;
+        padding: 10px 16px;
+        font-size: 24px;
+        line-height: 1.33;
+        border-radius: 40px;
+        background: green;
+      }
+
+      </style>
       <h1 align="center" style="color: #B00100" >
         <%= image_tag 'pp1.png', style:'width:3cm;height: 3cm' %>
         Maa Aapki chaaya</h1>
