@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd17c730-0a42-45e9-8455-34889a581939" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/memberdetails_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/memberdetails_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memberdetails/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/memberdetails/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memberdetails/new.html.erb" afterPath="$PROJECT_DIR$/app/views/memberdetails/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/userpersnaldets/index.html.erb" afterPath="$PROJECT_DIR$/app/views/userpersnaldets/index.html.erb" />
     </list>
     <ignored path="maa.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,67 +27,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="77" column="70" selection-start-line="77" selection-start-column="70" selection-end-line="77" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/userpersnaldets/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/userpersnaldets/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="908">
-              <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/userpersnaldets/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="35" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/memberdetails/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/memberdetails/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-253">
-              <caret line="107" column="14" selection-start-line="107" selection-start-column="14" selection-end-line="107" selection-end-column="14" />
+            <state relative-caret-position="180">
+              <caret line="24" column="59" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="59" />
               <folding>
-                <marker date="1495562804919" expanded="false" signature="4827:4842" ph="..." />
-                <marker date="1495562804919" expanded="false" signature="4925:4940" ph="..." />
-                <marker date="1495562804919" expanded="false" signature="5023:5038" ph="..." />
-                <marker date="1495562804919" expanded="false" signature="5121:5136" ph="..." />
-                <marker date="1495562804919" expanded="false" signature="5221:5236" ph="..." />
+                <marker date="1495564254165" expanded="false" signature="4846:4861" ph="..." />
+                <marker date="1495564254165" expanded="false" signature="4944:4959" ph="..." />
+                <marker date="1495564254165" expanded="false" signature="5042:5057" ph="..." />
+                <marker date="1495564254165" expanded="false" signature="5140:5155" ph="..." />
+                <marker date="1495564254165" expanded="false" signature="5240:5255" ph="..." />
               </folding>
             </state>
           </provider>
@@ -152,9 +99,9 @@
         <option value="$PROJECT_DIR$/app/views/memberdetails/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/memberdetails_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/memberdetails/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/memberdetails/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/userpersnaldets/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/memberdetails/_form.html.erb" />
       </list>
     </option>
   </component>
@@ -256,7 +203,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="userpersnaldets" />
+              <option name="myItemId" value="memberdetails" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -595,12 +542,12 @@
       <workItem from="1494876819634" duration="19787000" />
       <workItem from="1494932063650" duration="17265000" />
       <workItem from="1495034863175" duration="17000" />
-      <workItem from="1495546271345" duration="17372000" />
+      <workItem from="1495546271345" duration="17973000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="631663000" />
+    <option name="totallyTimeSpent" value="632264000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1026,20 +973,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/memberdetails/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-253">
-          <caret line="107" column="14" selection-start-line="107" selection-start-column="14" selection-end-line="107" selection-end-column="14" />
-          <folding>
-            <marker date="1495562804919" expanded="false" signature="4827:4842" ph="..." />
-            <marker date="1495562804919" expanded="false" signature="4925:4940" ph="..." />
-            <marker date="1495562804919" expanded="false" signature="5023:5038" ph="..." />
-            <marker date="1495562804919" expanded="false" signature="5121:5136" ph="..." />
-            <marker date="1495562804919" expanded="false" signature="5221:5236" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/userpersnaldets/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1069,6 +1002,20 @@
         <state relative-caret-position="908">
           <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/memberdetails/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="24" column="59" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="59" />
+          <folding>
+            <marker date="1495564254165" expanded="false" signature="4846:4861" ph="..." />
+            <marker date="1495564254165" expanded="false" signature="4944:4959" ph="..." />
+            <marker date="1495564254165" expanded="false" signature="5042:5057" ph="..." />
+            <marker date="1495564254165" expanded="false" signature="5140:5155" ph="..." />
+            <marker date="1495564254165" expanded="false" signature="5240:5255" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
