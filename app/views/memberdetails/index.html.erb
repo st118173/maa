@@ -1,15 +1,15 @@
-<p id="notice"><%= notice %></p>
+
 
 <h1 align="center" style="color: #B00100">Member details for Photo ID</h1>
 
 <div style="">
-  <div style="float: left; width: 330px;margin-left: 11%">  <%= will_paginate @memberdetails, renderer: BootstrapPagination::Rails,:previous_label => 'Previous', :next_label => 'Next' %>
+  <div style="float: left; position: fixed;width: 330px;margin-left: 11%">  <%= will_paginate @memberdetails, renderer: BootstrapPagination::Rails,:previous_label => 'Previous', :next_label => 'Next' %>
   </div>
-  <div style="float: left; "><%= link_to new_memberdetail_path do %>
+  <div style=""><%= link_to new_memberdetail_path do %>
         <h1 align="center">Click here to Add New Member</h1>
     <% end %>
   </div>
-  <div style="float: left; width: 200px;">  <%= button_to "Export To Excel ?", memberdetails_path(format: "xls"),method: :get, id: 'triangle-right',class:"btn-change7" %>
+  <div style="float: left; width: 100px;">  <%= button_to "Export To Excel ?", memberdetails_path(format: "xls"),method: :get, id: 'triangle-right',class:"btn-change7" %>
   </div>
   <br style="clear: left;" />
 </div>
@@ -69,10 +69,13 @@
   }
 
   th, td {
-    text-align: left;
+
     padding: 8px;
     margin-left: auto;
     margin-right: auto;
+
+    text-align: center;
+    border: 2px dashed #f69c55;
   }
   td {text-align:center; vertical-align:middle;}
   tr:nth-child(even){background-color: lightgrey}
@@ -107,7 +110,7 @@
     border: transparent;
   }
   input#triangle-right {
-    margin-left: 70%;
-    margin-top: 13%;
+    margin-left: 1190px;
+    margin-top: -37%;
   }
 </style>
