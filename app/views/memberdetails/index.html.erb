@@ -32,7 +32,7 @@
           <th>Bloodgroup</th>
           <th>Photo</th>
           <th>Edit</th>
-          <!--<th>Delete</th>-->
+          <th>Delete</th>
         </tr>
         </thead>
         <tbody id="myTable">
@@ -47,7 +47,7 @@
           <td><%= link_to (image_tag memberdetail.image.url(:small),
                                      :border => 0), memberdetail.image.url %></td>
           <td><%= link_to 'Edit', edit_memberdetail_path(memberdetail) %></td>
-          <!--<td><%= link_to 'Destroy', memberdetail, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+          <td><%= link_to 'Destroy', memberdetail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
         <% i += 1 %>
         <% end %>
