@@ -56,10 +56,21 @@ text-align: left;
   </tbody>
 
   <tr>
-
+    <% if user_signed_in? && !username.nil?  %>
   <td ><br><%= button_to 'Edit', edit_userpersnaldet_path(@dets.id),method: :get , :class=>"btn btn-primary btn-sm btn-block"%></td>
-  <td ><br><%= button_to 'Skip', programs_path,method: :get , :class=>"btn btn-default btn-sm btn-block"%></td></tr>
-</table>
+        <style>
+          table {
+            background-color: transparent;
+            margin-top: -18%;
+          }
+        </style>
+    <% else if user_signed_in? && username.nil?%>
+            <td ><br><%= button_to 'Add details', edit_userpersnaldet_path(@dets.id),method: :get , :class=>"btn btn-primary btn-sm btn-block"%></td>
 
-<% end %>
+        <% end %>
+        <td ><br><%= button_to 'Skip', programs_path,method: :get , :class=>"btn btn-default btn-sm btn-block"%></td></tr>
+
+            </table>
+
+<% end %><% end %>
 <br>

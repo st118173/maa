@@ -75,7 +75,7 @@
                           <% elsif user_signed_in? %>
                               <li><a href=""><%= username %></a></li>
                           <% end %>
-                          <li><a href="#">My Profile</a></li>
+                          <li><%= link_to 'My Profile',userpersnaldets_path%></li>
                           <li><%= link_to 'Edit Profile',edit_user_registration_path%></li>
                         </ul>
                       </li>
@@ -85,7 +85,7 @@
                           <li><%= link_to "Inbox", messages_path %></li>
                         </ul>
                       </li>
-                      <li><%= link_to 'Edit Profile',edit_user_registration_path ,style: 'height: 2cm' %></li>
+                      <li><%= link_to 'Add ID Card Details',new_memberdetail_path ,style: 'height: 2cm' %></li>
                       <li class=""><%= link_to "Log out", destroy_user_session_path, method: :delete,style: 'height: 2cm'  %></li>
                   <%else%>
                       <li class=""> <a type="text" data-toggle="modal" data-target="#loginmodal" style="height: 2cm" class="glyphicon glyphicon-log-in">

@@ -1,6 +1,6 @@
 class MemberdetailsController < ApplicationController
   before_action :set_memberdetail, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
   # GET /memberdetails
   # GET /memberdetails.json
   def index
