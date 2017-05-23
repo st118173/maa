@@ -18,6 +18,7 @@
 //= require alertify
 //= require jquery-fileupload
 //= require jquery-fileupload/basic
+//= require bootstrap-select
 //= require_self
 //= require_tree .
 

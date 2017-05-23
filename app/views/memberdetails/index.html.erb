@@ -1,0 +1,113 @@
+<p id="notice"><%= notice %></p>
+
+<h1 align="center" style="color: #B00100">Member details for Photo ID</h1>
+
+<div style="">
+  <div style="float: left; width: 330px;margin-left: 11%">  <%= will_paginate @memberdetails, renderer: BootstrapPagination::Rails,:previous_label => 'Previous', :next_label => 'Next' %>
+  </div>
+  <div style="float: left; "><%= link_to new_memberdetail_path do %>
+        <h1 align="center">Click here to Add New Member</h1>
+    <% end %>
+  </div>
+  <div style="float: left; width: 200px;">  <%= button_to "Export To Excel ?", memberdetails_path(format: "xls"),method: :get, id: 'triangle-right',class:"btn-change7" %>
+  </div>
+  <br style="clear: left;" />
+</div>
+
+
+<div class="container" >
+</div>
+
+</table>
+<div class="container">
+  <div class="row">
+    <div class="table-responsive">
+      <table class="table table-hover" style="background-color: white; border: double">
+        <thead>
+        <tr>
+          <th>S:No</th>
+          <th>Full Name</th>
+          <th>Fathername</th>
+          <th>Phnumber</th>
+          <th>Bloodgroup</th>
+          <th>Photo</th>
+          <th>Edit</th>
+          <!--<th>Delete</th>-->
+        </tr>
+        </thead>
+        <tbody id="myTable">
+        <% i = 1 %>
+        <% @memberdetails.reverse_order.each do |memberdetail| %>
+        <tr>
+          <td><%= i %></td>
+          <td><%= memberdetail.fullname %></td>
+          <td><%= memberdetail.fathername %></td>
+          <td><%= memberdetail.phnumber %></td>
+          <td><%= memberdetail.bloodgroup %></td>
+          <td><%= link_to (image_tag memberdetail.image.url(:small),
+                                     :border => 0), memberdetail.image.url %></td>
+          <td><%= link_to 'Edit', edit_memberdetail_path(memberdetail) %></td>
+          <!--<td><%#= link_to 'Destroy', memberdetail, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+        </tr>
+        <% i += 1 %>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</div>
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    background-color: whitesmoke;
+    vertical-align:middle;
+
+  }
+
+  th, td {
+    text-align: left;
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  td {text-align:center; vertical-align:middle;}
+  tr:nth-child(even){background-color: lightgrey}
+
+  th {
+    background-color: darkgreen;
+    color: white;
+  }
+  table, th, td {
+    border: 1px solid black;
+  }
+  tr:hover{background-color:green}
+
+
+  .btn-change7{
+    height: 50px;
+    width: 150px;
+    background: lightseagreen;
+    margin: 40px;
+    float: left;
+    border:0px;
+    color:#fff;
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition-duration: 0.7s;
+    -webkit-transition-timing-function: linear;
+    box-shadow:0px 0 0 #31708f  inset;
+  }
+  .btn-change7:hover{
+    box-shadow:150px 0 0 #31708f inset;
+  }
+  table#t01 ,tr#t01, td#t01 {
+    border: transparent;
+  }
+  input#triangle-right {
+    margin-left: 70%;
+    margin-top: 13%;
+  }
+</style>

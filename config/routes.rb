@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :memberdetails
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :emails
   get 'ps/ps4'

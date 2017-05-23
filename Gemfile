@@ -61,7 +61,10 @@ group :development, :test do
   gem 'better_errors'
 
 end
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
 gem 'roo'
+gem 'bootstrap-select-wrapper-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'rails_email_validator'

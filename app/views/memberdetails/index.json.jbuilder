@@ -1,0 +1,1 @@
+json.array! @memberdetails, partial: 'memberdetails/memberdetail', as: :memberdetail

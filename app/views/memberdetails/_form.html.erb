@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- Website CSS style -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Website Font style -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+  <title>Admin</title>
+</head>
+<body>
+<div class="container">
+  <div class="row main">
+    <div class="main-login main-center">
+      <h5>Enter your details for ID card</h5>
+      <%= form_for @memberdetail, html: { multipart: true } do |f| %>
+
+        <div class="form-group">
+          <label for="name" class="cols-sm-2 control-label">Your Name</label>
+          <div class="cols-sm-10">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+              <!--<input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>-->
+              <%= f.text_field :fullname,class:"form-control"  , placeholder:"Enter your Name" %>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="fullname" class="cols-sm-2 control-label">Father Name</label>
+          <div class="cols-sm-10">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+              <!--<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your father name"/>-->
+              <%= f.text_field :fathername,class:"form-control"  , placeholder:"Enter your Father Name" %>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="username" class="cols-sm-2 control-label">Contact Number</label>
+          <div class="cols-sm-10">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+              <!--<input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>-->
+              <%= f.telephone_field :phnumber,class:"form-control" , placeholder:"Enter with country code" %>
+              <%#= f.text_field :phnumber, class: 'form-control', autofocus: true, placeholder: 'xxx-xxx-xxxx', value: number_to_phone(@my_variable.telephone, area_code: true, extension: 555) %>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password" class="cols-sm-2 control-label">Blood group</label>
+          <div class="cols-sm-10">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+              <!--<input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>-->
+              <div id="two_select">
+              <%#= f.select  :bloodgroup ,options_from_collection_for_select(@people, "id", "name")  %>
+                <%#= f.select(:bloodgroup) %>
+                <%#= select(:bloodgroup, [['Lisbon', 1], ['Madrid', 2]]) %>
+                <%= f.select :bloodgroup, [["Select Blood group", "nil"],
+                                           [ "A RhD positive (A+)", "A+"],
+                                           [ "A RhD negative (A-)", "A-"],
+                                           ["B RhD positive (B+)",  "B+"],
+                                           ["B RhD negative (B-)",  "B-"],
+                                           ["O RhD positive (O+)",  "O+"],
+                                           ["O RhD negative (O-)",  "O-"],
+                                           ["AB RhD positive (AB+)","AB+"],
+                                           ["AB RhD negative (AB-)","AB-"]], {}, { 'data-width' => "100%", :class => "selectpicker"} %>
+
+                <!--<select class="selectpicker" data-width="100px"   style="background-color: black;font-size: 250%"  onchange="validate_select()" data-live-search="true" id="dropone" size="1">-->
+                    <!--<option value="" style="font-size: 150%">Select Blood group</option>-->
+                    <!--<option value="a" style="font-size: 150%">A RhD positive (A+)</option>-->
+                    <!--<option value="b" style="font-size: 150%">A RhD negative (A-)</option>-->
+                    <!--<option value="c" style="font-size: 150%">B RhD positive (B+)</option>-->
+                    <!--<option value="c" style="font-size: 150%">B RhD negative (B-)</option>-->
+                    <!--<option value="c" style="font-size: 150%">O RhD positive (O+)</option>-->
+                    <!--<option value="c" style="font-size: 150%">O RhD negative (O-)</option>-->
+                    <!--<option value="c" style="font-size: 150%">AB RhD positive (AB+)</option>-->
+                    <!--<option value="c" style="font-size: 150%">AB RhD negative (AB-)</option>-->
+                  <!--</select>-->
+
+                <script>
+                  $('.selectpicker').selectpicker({
+                    style: 'btn-info',
+                    size: 5
+                  });
+                </script>
+                <br>
+              </div>
+
+            </div>
+          </div>
+        </div>
+          <p>
+            <%= f.file_field :image %>
+          </p>
+        <!--<div class="form-group">-->
+          <!--<label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>-->
+          <!--<div class="cols-sm-10">-->
+            <!--<div class="input-group">-->
+              <!--<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>-->
+              <!--<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password"/>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+
+        <div class="form-group ">
+          <!--<a href="http://deepak646.blogspot.in" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Register</a>-->
+          <%= f.button :submit , class:"btn btn-primary btn-lg btn-block login-button"%>
+        </div>
+
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+<style>
+  /*
+/* Created by Filipe Pina
+ * Specific styles of signin, register, component
+ */
+  /*
+   * General styles
+   */
+  #playground-container {
+    height: 500px;
+    overflow: hidden !important;
+    -webkit-overflow-scrolling: touch;
+  }
+  body, html{
+
+    font-family: 'Oxygen', sans-serif;
+    background-size: cover;
+  }
+
+  .main{
+    margin:50px 15px;
+  }
+
+  h1.title {
+    font-size: 50px;
+    font-family: 'Passion One', cursive;
+    font-weight: 400;
+  }
+
+  hr{
+    width: 10%;
+    color: #fff;
+  }
+
+  .form-group{
+    margin-bottom: 15px;
+  }
+
+  label{
+    margin-bottom: 15px;
+  }
+
+  input,
+  input::-webkit-input-placeholder {
+    font-size: 11px;
+    padding-top: 3px;
+  }
+
+  .main-login{
+    background-color: #fff;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+  }
+  .form-control {
+    height: auto!important;
+    padding: 8px 12px !important;
+  }
+  .input-group {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+  }
+  #button {
+    border: 1px solid #ccc;
+    margin-top: 28px;
+    padding: 6px 12px;
+    color: #666;
+    text-shadow: 0 1px #fff;
+    cursor: pointer;
+    -moz-border-radius: 3px 3px;
+    -webkit-border-radius: 3px 3px;
+    border-radius: 3px 3px;
+    -moz-box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    -webkit-box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    background: #f5f5f5;
+    background: -moz-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f5f5), color-stop(100%, #eeeeee));
+    background: -webkit-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -o-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -ms-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#eeeeee', GradientType=0);
+  }
+  .main-center{
+    margin-top: 30px;
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 10px 40px;
+    background:#009edf;
+    color: #FFF;
+    text-shadow: none;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+
+  }
+  span.input-group-addon i {
+    color: #009edf;
+    font-size: 17px;
+  }
+
+  .login-button{
+    margin-top: 5px;
+  }
+
+  .login-register{
+    font-size: 11px;
+    text-align: center;
+  }
+  button.btn.dropdown-toggle.bs-placeholder.btn-info {
+    width: 7.5cm;
+
+  }
+  span.text {
+    color: black;
+    font-size: smaller;
+    width: 6.4cm;
+
+  }
+</style>
+<script>
+  $(document).ready(function() {
+    $('.selectpicker').selectpicker();
+  });
+
+</script>

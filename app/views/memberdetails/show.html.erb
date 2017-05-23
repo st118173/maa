@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fullname:</strong>
+  <%= @memberdetail.fullname %>
+</p>
+
+<p>
+  <strong>Fathername:</strong>
+  <%= @memberdetail.fathername %>
+</p>
+
+<p>
+  <strong>Phnumber:</strong>
+  <%= @memberdetail.phnumber %>
+</p>
+
+<p>
+  <strong>Bloodgroup:</strong>
+  <%= @memberdetail.bloodgroup %>
+</p>
+
+<p>
+  <strong>Recent Image</strong>
+  <%= link_to (image_tag @memberdetail.image.url(:small),
+                         :border => 0), @memberdetail.image.url %>
+</p>
+
+<%= link_to 'Edit', edit_memberdetail_path(@memberdetail) %> |
+<%= link_to 'Back', memberdetails_path %>
