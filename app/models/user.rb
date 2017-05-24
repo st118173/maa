@@ -1,18 +1,20 @@
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  has_many :messages, foreign_key: :sender_id
-  has_many :programs
+  has_many :messages, foreign_key: :sender_id,  dependent: :destroy
+  has_many :programs,  dependent: :destroy
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable, :timeoutable, :confirmable
+         :recoverable, :rememberable, :trackable, :validatable, :timeoutable
+           #, :confirmable
   has_one :reg
-  belongs_to :role
-  has_one :userpersnaldet
+  belongs_to :role,  dependent: :destroy
+  has_one :userpersnaldet,  dependent: :destroy
   #before_save :assign_role
   before_save :assign_isactive
   before_save :assign_pid
   acts_as_commontator
-
+  before_create :admin? , :member? , :volunteer?
+  before_save :admin? , :member? , :volunteer?
 
 
   #default role is volunteer

@@ -4,7 +4,7 @@
 <h5 align="center">Note: <i style="color: red">we need <i style="color: forestgreen">green</i> color bar with success notification to verify</i></h5>
 
 <ul><ul><ul><table >
-  <tr><td align="center"><ul><%= image_tag("print.png", :width=>130, :height=>130, :onclick=>"PrintDiv();", :class=>'btn') %></ul></td></tr>
+  <tr><td align="center"><ul><%= image_tag("print.png", :width=>130, :height=>130, :onclick=>"PrintDiv();", :class=>'btn', style:'margin-left: 65%;margin-top: -7%;margin-bottom: -3%;') %></ul></td></tr>
   <td>
 <div class="divprint" id="divToPrint">
 
@@ -95,12 +95,12 @@
                   <td>  <%= @reg.card.card_transaction.params["Ack"] %></td>
                 </tr>
                 <% if @reg.card.card_transaction.params["Ack"] == 'Success' %>
-                    <%= button_to "Proceed", programs_path,method: :get,class: "btn btn-large btn-success"   %>
+                    <%= button_to "Proceed", programs_path,method: :get,class: "btn btn-large btn-success" ,style: 'margin-top: 2%'  %>
                 <% else %>
                     <%= button_to "Back to payment", new_reg_path,method: :get,class: "btn btn-danger"   %>
                 <% end %>
               <% else %>
-                <%= button_to "Proceed", programs_path,method: :get,style:"background-color: black" %>
+                <%= button_to "Proceed", programs_path,method: :get,class: "btn btn-large btn-success" ,style: '  margin-top: -6%;margin-left: 21.5%;'%>
             <% end %>
 
           </table>

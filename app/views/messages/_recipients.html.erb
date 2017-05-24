@@ -1,13 +1,25 @@
 
 <div id="stream">
-	<%= form_for :message, url: messages_path do |f| %>
-		<%= f.text_area :body,  id: "url", placeholder: "Message", class: "message_body" %>
+  <%= form_for :message, url: messages_path do |f| %>
+      <%= f.text_area :body,  id: "url", placeholder: "Message", class: "message_body" %>
       <ul>
-      <%= label_tag 'sendtoall', 'Send to all' %>
-      <%= check_box_tag "Send to all",'selectAll',false,class: 'myCheckBox'%>
+
+        <label for="cb">
+          <div style="padding: 1.5em; border-bottom: 1px solid white" class="hoverDiv" >
+            <h3 align="center" style="height: 0.5cm">Send To All</h3>
+            <div class="material-switch pull-right">
+              <!--<input name="cb" id="cb" type="checkbox">-->
+              <%= check_box_tag "Send to all",'selectAll',false,class: 'myCheckbox',name: 'cb',id: 'cb'%>
+            <label for="cb" class="label-success"></label>
+            </div></div>
+        </label>
+
+        <div class="content">
+
+        </div>
       </ul>
       <script>
-        $('#Send_to_all').click(function() {
+        $('#cb').click(function() {
           if (this.checked) {
             $(':checkbox').each(function() {
               this.checked = true;
@@ -19,51 +31,133 @@
           }
         });
       </script>
-		<div id="stream-list" class="follow-list">
-			<ul>
-				<% @recipients.each do |user| %>
-					<label for="user<%= user.id %>" >
-						<li id="stream_item">
-							<span class="list-group-item"><%= user.email %></span>
-              <tbody>
-              <tr>
-                <td>
-							<%= check_box_tag "message[user_tokens][]", user.id, @message.users.include?(user), id: "user#{user.id}",:class=>"myCheckBox"  %>
+      <div id="stream-list" class="follow-list">
+        <ul>
+          <% @recipients.each do |user| %>
+              <label for="user<%= user.id %>" >
+                <li>
+                  <span class="list-group-item"><%= user.email %></span>
 
-                </td>
-              </tr>
-              </tbody>
-						</li>
+                      <div class="material-switch pull-right">
+                        <br>
+                        <%= check_box_tag "message[user_tokens][]", user.id, @message.users.include?(user), id: "user#{user.id}", name:"someSwitchOption001" ,class:'myCheckbox' %>
+                        <label for="user#{user.id}" class="label-success"></label>
+                      </div>
 
+                </li>
 
 
-					</label>
-					<br>
-				<% end %>
-			</ul>
-		</div>
+
+              </label>
+              <br>
+          <% end %>
+        </ul>
+      </div>
 
 
-		<div id ="stream-footer">
+      <div id ="stream-footer">
 
-			<%= f.button 'Send message', class: "btn btn-outline",id: "confirmButton" %>
-		</div>
+        <%= f.button 'Send message', class: "btn btn-outline",id: "confirmButton",style: 'font-size: larger;font-weight: 900;' %>
+      </div>
 
-	<% end %>
+  <% end %>
 
 
 </div>
-
-
 <script>
-  var chkbox = $(".myCheckBox");
+  var chkbox = $(".myCheckbox");
   button = $("#confirmButton");
   button.attr("disabled","disabled");
   chkbox.change(function(){
     if(this.checked){
       button.removeAttr("disabled");
+     button.style.bgcolor='green';
     }else{
       button.attr("disabled","disabled");
     }
   });
 </script>
+<script>
+  $('.content').click(function(){
+    $(this).find('input[type=checkbox]').prop('checked', true);
+  })
+</script>
+<style>
+  form {
+    background-color: deepskyblue;
+  }
+  button#confirmButton {
+    width: 100%;
+  }
+</style>
+<style>
+  .material-switch > input[type="checkbox"] {
+    display: none;
+    margin-right: 200%;
+  }
+
+  .material-switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative;
+    width: 40px;
+  }
+
+  .material-switch > label::before {
+    background: rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    margin-top: -8px;
+    position:absolute;
+    opacity: 0.3;
+    transition: all 0.4s ease-in-out;
+    width: 40px;
+  }
+  .material-switch > label::after {
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 24px;
+    left: -4px;
+    margin-top: -8px;
+    position: absolute;
+    top: -4px;
+    transition: all 0.3s ease-in-out;
+    width: 24px;
+  }
+  .material-switch > input[type="checkbox"]:checked + label::before {
+    background: inherit;
+    opacity: 0.5;
+  }
+  .material-switch > input[type="checkbox"]:checked + label::after {
+    background: inherit;
+    left: 20px;
+  }
+  .hoverDiv {background: grey;}
+  .hoverDiv:hover {background: #f5f5f5;}
+  .btn.btn-outline:hover {background: lightgreen}
+  .box-shadow div:hover {
+    background-color: #F8F9FA;
+  }
+  .material-switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative;
+    width: 100px;
+  }
+  .form-bigbox {
+    width: 30cm;
+    align-content: center;
+    display: inline-block;
+    margin-bottom: 1%;
+  }
+  .form-box {
+    padding: 3%;
+    /* margin-top: 100px; */
+    border-radius: 3px;
+    margin-left: 25%;
+  }
+</style>

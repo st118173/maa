@@ -1,5 +1,5 @@
 class CardTransaction < ApplicationRecord
-  belongs_to :card
+  belongs_to :card,  dependent: :destroy
   serialize :params
 
   def response=(response)

@@ -3,7 +3,7 @@ class Card < ApplicationRecord
   belongs_to :mdo
 
   #belongs_to :course
-  has_one :card_transaction
+  has_one :card_transaction,  dependent: :destroy
 
   # These attributes won't be stored
   attr_accessor :card_number, :card_verification

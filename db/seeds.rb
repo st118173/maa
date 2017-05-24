@@ -12,7 +12,7 @@
 User.create(email: "st118173@ait.asia", password: "secret123",
             password_confirmation: "secret123", role_id: @admin.id)
 # Member
-# User.create(email: "jntu784@gmail.com", password: "secret123",
-#             password_confirmation: "secret123", role_id: @member.id)
-# User.create(email: "volunteer@ait.asia", password: "secret123",
-#             password_confirmation: "secret123", role_id: @volunteer.id)
+ User.create(email: "jntu784@gmail.com", password: "secret123",
+             password_confirmation: "secret123", role_id: @member.id)
+ User.create(email: "volunteer@ait.asia", password: "secret123",
+             password_confirmation: "secret123", role_id: @volunteer.id)

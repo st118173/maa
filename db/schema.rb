@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170523161211) do
+ActiveRecord::Schema.define(version: 20170524135408) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -289,12 +289,12 @@ ActiveRecord::Schema.define(version: 20170523161211) do
     t.index ["voter_id", "voter_type", "vote_scope"], name: "index_votes_on_voter_id_and_voter_type_and_vote_scope", using: :btree
   end
 
-  add_foreign_key "card_transactions", "cards"
+  add_foreign_key "card_transactions", "cards", on_delete: :cascade
   add_foreign_key "card_transactions", "users"
   add_foreign_key "cards", "mdos"
-  add_foreign_key "cards", "regs"
+  add_foreign_key "cards", "regs", on_delete: :cascade
   add_foreign_key "posts", "programs"
-  add_foreign_key "regs", "users"
+  add_foreign_key "regs", "users", on_delete: :cascade
   add_foreign_key "userpersnaldets", "users"
   add_foreign_key "users", "cards"
   add_foreign_key "users", "roles"
