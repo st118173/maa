@@ -9,7 +9,7 @@
         <h1 align="center">Click here to Add New Member</h1>
     <% end %>
   </div>
-  <div style="float: left; width: 100px;">  <%= button_to "Export To Excel ?", memberdetails_path(format: "xls"),method: :get, id: 'triangle-right',class:"btn-change7" %>
+  <div style="float: left; width: 10px;">  <%= button_to "Export To Excel ?", memberdetails_path(format: "xls"),method: :get, id: 'triangle-right',class:"btn-change7" %>
   </div>
   <br style="clear: left;" />
 </div>
@@ -91,11 +91,10 @@
 
 
   .btn-change7{
+position: relative;
     height: 50px;
     width: 150px;
     background: lightseagreen;
-    margin: 40px;
-    float: left;
     border:0px;
     color:#fff;
     box-shadow: 0 0 1px #ccc;
@@ -110,7 +109,7 @@
     border: transparent;
   }
   input#triangle-right {
-    margin-left: 1190px;
-    margin-top: -37%;
+    margin-left: 6500%;
+    margin-top: 80%;
   }
 </style>
