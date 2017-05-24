@@ -1,7 +1,8 @@
 
 <div id="stream">
-  <%= form_for :message, url: messages_path do |f| %>
-      <%= f.text_area :body,  id: "url", placeholder: "Message", class: "message_body" %>
+  <%= form_for :message, url: messages_path, :html => { :onsubmit => "return validateForm()",name:"myForm" } do |f| %>
+      <%= f.text_area :body,  id: "url", placeholder: "Message", class: "message_body",  onkeyup: 'document.getElementById("#confirmButton").disabled = false;' %>
+      <p id="errorid" style="color: red;font-weight: bold" align="center"></p>
       <ul>
 
         <label for="cb">
@@ -57,7 +58,7 @@
 
       <div id ="stream-footer">
 
-        <%= f.button 'Send message', class: "btn btn-outline",id: "confirmButton",style: 'font-size: larger;font-weight: 900;' %>
+        <%= f.button 'Send message', class: "btn btn-outline",id: "confirmButton",style: 'font-size: larger;font-weight: 900;', onclick: "checkTextField(this);" %>
       </div>
 
   <% end %>
@@ -65,16 +66,18 @@
 
 </div>
 <script>
+
   var chkbox = $(".myCheckbox");
   button = $("#confirmButton");
   button.attr("disabled","disabled");
   chkbox.change(function(){
-    if(this.checked){
+    if(this.checked == true){
       button.removeAttr("disabled");
      button.style.bgcolor='green';
     }else{
       button.attr("disabled","disabled");
     }
+
   });
 </script>
 <script>
@@ -161,3 +164,44 @@
     margin-left: 25%;
   }
 </style>
+
+
+
+
+
+
+<script>
+  $(document).ready(function() {
+    $('.formfield').on('input', function() {
+      var nFilled = $('.formfield').filter(function() {
+        return $.trim( this.value ) !== '';
+      }).length;
+      $('#confirmButton').prop('disabled', nFilled === 0);
+    })
+        .trigger('input');
+  });
+</script>
+
+<script>
+  function validateForm() {
+    var x = document.forms["myForm"]["message[body]"].value;
+    if (x == "") {
+      error = "Please Enter Message to Send";
+      document.getElementById("errorid").innerHTML= error
+      document.getElementById("url").style.border="10px solid red";
+      return false;
+    }
+  }
+</script>
+
+
+<script>
+  setTimeout(function() {
+    $('#errorid').fadeOut('fast');
+  }, 5500); // <-- time in milliseconds
+</script>
+<script>
+  setTimeout(function () {
+    $('#url').css('border', '');
+  }, 5500);
+</script>

@@ -13,6 +13,7 @@ class ProgramsController < ApplicationController
   # GET /programs.json
   def index
     @programs = Program.all
+    @programs = Program.paginate(:page => params[:page], :per_page => 30)
     #@zap = current_user.id
     #@success = CardTransaction.find(1)
   end

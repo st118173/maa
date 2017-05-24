@@ -5,41 +5,185 @@
     </script>
 
 <% else %>
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <!--<button id="btnSearch" class="btn btn-primary btn-md center-block" Style="width: 100px;" OnClick="btnSearch_Click" >button</button>-->
+        <!--<button id="btnClear" class="btn btn-danger btn-md center-block" Style="width: 100px;" OnClick="btnClear_Click" >button</button>-->
 
+        <% if user_signed_in?  %>
+            <%= link_to( new_program_path, :method => :get ,class:"btn btn-info btn-md center-block",id:"btnSearch1" ) do%>
+                Add New Event<span class="glyphicon glyphicon-chevron-right"></span>
+                <% end %><% end %>
 
-<!--<h3 align="center"><font color="#a52a2a"> <%= link_to 'Click here to latest Database Dump', '/maa/dump_dir1/Arunlog1.text',{:style => 'color:darkgreen;'} %></font>-->
-<!--</h3>-->
+        <% if user_signed_in? && current_user.email == 'st118173@ait.asia' %>
+            <%= link_to(  usersinfo_userlist_path, :method => :get,class:"btn btn-danger btn-md center-block",id:"btnSearch2"  ) do%>
+                Users Profile <span class="glyphicon glyphicon-chevron-right"></span>
+            <%end%> <%end%>
+        <% if user_signed_in? && current_user.email != 'st118173@ait.asia' %>
+            <%= link_to(  usersinfo_userlist_path, :method => :get,class:"btn btn-success btn-md center-block",id:"btnSearch3"  ) do%>
+                Users list<span class="glyphicon glyphicon-chevron-right"></span>
+            <%end%> <%end%>
+        <% if user_signed_in? && current_user.email = 'st118173@ait.asia' %>
+            <%= link_to(  memberdetails_path, :method => :get,class:"btn btn-warning btn-md center-block",id:"btnSearch4") do%>
+                Show ID Card Details<span class="glyphicon glyphicon-chevron-right"></span>
+            <%end%> <%end%>
+      </div>
+    </div>
+    <div class="col-md-5" style="margin-left: 29%" >
 
-<h1>Programs</h1>
-
-<table class = "table table-hover">
-  <thead>
-  <tr>
-    <th>Event name</th>
-    <th colspan="3"></th>
-  </tr>
-  </thead>
-
-  <tbody>
-  <% @programs.each do |program| %>
-      <tr>
-        <% @sho = program.id %>
-        <td><%= program.Event_Name %></td>
-        <td><%= link_to 'Show', program %></td>
-        <td><%= button_to( "Donate", new_mdo_path, :method => :get )%></td>
-
-        <% if user_signed_in? %> <td><%= link_to 'Edit', edit_program_path(program) %></td><% end %>
-        <% if user_signed_in? && current_user.email == 'st118173@ait.asia' %> <td><%= link_to 'Delete Event', program, method: :delete, data: { confirm: 'Are you sure?' } %></td><% end %>
-      </tr>
-  <% end %>
-  </tbody>
-</table>
-
-<br>
-
-
-<% if user_signed_in?  %><%= button_to( "Add New Event", new_program_path, :method => :get )%><% end %>
-
-<% if user_signed_in? && current_user.email == 'st118173@ait.asia' %><%= button_to( "Users Profile", usersinfo_userlist_path, :method => :get )%><%end%>
-<% if user_signed_in? && current_user.email != 'st118173@ait.asia' %><%= button_to( "Users list", usersinfo_userlist_path, :method => :get )%><%end%>
 <% end %>
+</div>
+<br><br>
+<!-- Page Content -->
+<span style="border: darkolivegreen">
+
+<div class="container" style="background-color: darkseagreen">
+
+  <!-- Page Heading -->
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Events Conducted
+        <small>by MAC</small>
+      </h1>
+    </div>
+  </div>
+  <!-- /.row -->
+  <% @programs.each do |program| %>
+  <!-- Project One -->
+  <div class="row">
+    <div class="col-md-7">
+      <a href="#">
+
+        <%= image_tag program.photo.url(:medium),class:"img-responsive" %>
+      </a>
+    </div>
+    <div class="col-md-5" style="" >
+      <h3><%= program.Event_Name %></h3>
+      <h4>Details</h4>
+      <p><%= program.event_details %></p>
+      <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>-->
+      <a class="btn btn-success" href="/mdos/new">Donate <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+      <% if user_signed_in? %> <td><%= link_to  edit_program_path(program),class:"btn btn-primary" do %>
+          Edit<span class="glyphicon glyphicon-chevron-right"></span>
+      <% end %>
+    </td><% end %>
+      <% if user_signed_in? && current_user.email == 'st118173@ait.asia' %>
+          <td><%= link_to  program, method: :delete, data: { confirm: 'Are you sure?' },class:"btn btn-danger" do %>Delete<span class="glyphicon glyphicon-chevron-right"></span>
+                <% end %></td><% end %>
+    </div>
+  </div>
+  <!-- /.row -->
+  <% end %>
+
+  <!-- Pagination -->
+  <div class="row text-center">
+    <div class="col-lg-12">
+      <ul class="pagination">
+        <li>
+          <!--<a href="#">&laquo;</a>-->
+          <%= will_paginate @programs, renderer: BootstrapPagination::Rails,:previous_label => 'Previous', :next_label => 'Next' %>
+
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+  <!-- /.row -->
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>Copyright &copy; Your Website 2014</p>
+      </div>
+    </div>
+    <!-- /.row -->
+  </footer>
+
+</div>
+
+</span>
+<style>
+
+  /*!
+   * Start Bootstrap - 1 Col Portfolio (http://startbootstrap.com/)
+   * Copyright 2013-2016 Start Bootstrap
+   * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+   */
+
+  body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+  }
+
+  footer {
+    margin: 50px 0;
+  }
+
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  td,
+  th {
+    padding: 0;
+  }
+  /*.btn.btn-success.hover{*/
+    /*color: green;*/
+  /*}*/
+  /*!*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css *!*/
+
+  /*.btn-info, .label-info, .alert-info {*/
+    /*background-color: #FFF;*/
+    /*border-color: #FFF;*/
+    /*color: #01B0D1;*/
+    /*float: left;*/
+  /*}*/
+  /*.btn-warning, .label-warning, .alert-warning {*/
+    /*background-color: #e67e22;*/
+    /*border-color: #e67e22;*/
+    /*float: right;*/
+    /*margin: -5.5%;*/
+  /*}*/
+  .btn-success:hover, .btn-success:focus {
+    background-color: green;
+    color: white;
+    border-color: #c0392b;
+  }
+  .btn-danger:hover, .btn-danger:focus {
+      background-color: red;
+      color: white;
+      border-color: #c0392b;
+    }
+  .btn-warning:hover, .btn-warning:focus {
+    background-color: orange;
+    color: white;
+    border-color: #c0392b;
+  }
+  .btn-default:hover, .btn-default:focus {
+    background-color: black;
+    color: white;
+    border-color: #c0392b;
+  }
+  .btn-info:hover, .btn-info:focus {
+    background-color: green;
+    color: white;
+    border-color: #c0392b;
+  }
+  #btnSearch1,
+  #btnSearch2,
+  #btnSearch3,
+  #btnSearch4{
+    display: inline-block;
+    vertical-align: top;
+  }
+  #btnSearch,
+  #btnClear{
+    display: inline-block;
+    vertical-align: top;
+  }
+
+</style>
