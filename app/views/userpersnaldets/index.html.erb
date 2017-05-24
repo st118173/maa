@@ -54,7 +54,7 @@ text-align: left;
         <td id="id"><%= @dets.About_MAC %></td>
       </tr>
   </tbody>
-
+  <!--|| username == ''-->
   <tr>
     <% if user_signed_in? && !username.nil?  %>
   <td ><br><%= button_to 'Edit', edit_userpersnaldet_path(@dets.id),method: :get , :class=>"btn btn-primary btn-sm btn-block"%></td>

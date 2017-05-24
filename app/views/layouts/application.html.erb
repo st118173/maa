@@ -86,7 +86,12 @@
                           <li><%= link_to "Inbox", messages_path %></li>
                         </ul>
                       </li>
-                      <li><%= link_to 'Add ID Card Details',new_memberdetail_path ,style: 'height: 2cm' %></li>
+                      <li class=" dropdown"><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="height: 2cm">ID Card <span> <%= %></span></a>
+                        <ul class="dropdown-menu" style="background-color: #009926">
+                          <li><%= link_to "Add ID Card Details", new_memberdetail_path %></li>
+                          <li><%= link_to "Edit ID Card Details", memberdetails_path %></li>
+                        </ul>
+                      </li>
                       <li class=""><%= link_to "Log out", destroy_user_session_path, method: :delete,style: 'height: 2cm'  %></li>
                   <%else%>
                       <li class=""> <a type="text" data-toggle="modal" data-target="#loginmodal" style="height: 2cm" class="glyphicon glyphicon-log-in">
