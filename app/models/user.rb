@@ -4,8 +4,7 @@ class User < ApplicationRecord
   has_many :messages, foreign_key: :sender_id,  dependent: :destroy
   has_many :programs,  dependent: :destroy
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable, :timeoutable
-           #, :confirmable
+         :recoverable, :rememberable, :trackable, :validatable, :timeoutable, :confirmable
   has_one :reg
   belongs_to :role,  dependent: :destroy
   has_one :userpersnaldet,  dependent: :destroy
