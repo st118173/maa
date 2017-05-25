@@ -47,10 +47,50 @@
           <td><%= memberdetail.phnumber %></td>
           <td colspan="2"><%= memberdetail.email %></td>
           <td><%= memberdetail.bloodgroup %></td>
-          <td><%= link_to (image_tag memberdetail.image.url(:small),
-                                     :border => 0), memberdetail.image.url %></td>
-          <td><%= link_to (image_tag memberdetail.proof.url(:small),
-                                     :border => 0), memberdetail.proof.url %></td>
+          <a href="" data-toggle="modal" data-target="#modal-<%= memberdetail.id %>">
+            <td><%= image_tag memberdetail.image.url(:original),class:"img-responsive",id:memberdetail.id,width:"300" ,height:"200" %>
+            </td>
+            <%#= image_tag memberdetail.proof.url(:original),class:"img-responsive",id:memberdetail.id,width:"300" ,height:"200" %>
+
+          </a>
+
+            <%#= image_tag memberdetail.image.url(:original),class:"img-responsive",id:memberdetail.id,width:"300" ,height:"200" %>
+            <td><%= image_tag memberdetail.proof.url(:original),class:"img-responsive",width:"300" ,height:"200" %>
+            </td>
+
+          <div id="myModal" class="modal">
+            <span type="button" class="btn btn-warning btn-lg" data-dismiss="modal" style="margin-left: 75%;margin-top: -1%;color: white"><span class="glyphicon glyphicon-remove" ></span></span>
+            <img class="modal-content" id="img01" >
+            <div id="caption"> </div>
+          </div>
+
+
+            <script>
+              // Get the modal
+              var modal = document.getElementById('myModal');
+
+              // Get the image and insert it inside the modal - use its "alt" text as a caption
+              var img = document.getElementById('<%= memberdetail.id %>');
+              var modalImg = document.getElementById("img01");
+              var captionText = document.getElementById("caption");
+              img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+              }
+
+              // Get the <span> element that closes the modal
+              var span = document.getElementsByClassName("modal")[0];
+
+              // When the user clicks on <span> (x), close the modal
+              span.onclick = function() {
+                modal.style.display = "none";
+              }
+            </script>
+
+
+
+
           <td><%= link_to 'Edit', edit_memberdetail_path(memberdetail) %></td>
           <!--<td><%#= link_to 'Destroy', memberdetail, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
         </tr>
@@ -116,5 +156,92 @@ position: relative;
   input#triangle-right {
     margin-left: 6500%;
     margin-top: 80%;
+  }
+</style>
+<style>
+  #myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #myImg:hover {opacity: 0.7;}
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 30%;
+    max-width: 700px;
+  }
+
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+
+  /* Add Animation */
+  .modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+  }
+
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 2%;
+    color: greenyellow;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 600px){
+    .modal-content {
+      width: 100%;
+    }
   }
 </style>
