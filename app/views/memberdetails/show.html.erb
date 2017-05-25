@@ -25,6 +25,11 @@
   <%= link_to (image_tag @memberdetail.image.url(:small),
                          :border => 0), @memberdetail.image.url %>
 </p>
+<p>
+  <strong>Recent Image</strong>
+  <%= link_to (image_tag @memberdetail.photo.url(:small),
+                         :border => 0), @memberdetail.photo.url %>
+</p>
 
 <%= link_to 'Edit', edit_memberdetail_path(@memberdetail) %> |
 <%= link_to 'Back', memberdetails_path %>
