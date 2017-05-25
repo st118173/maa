@@ -48,14 +48,15 @@
           <td colspan="2"><%= memberdetail.email %></td>
           <td><%= memberdetail.bloodgroup %></td>
           <a href="" data-toggle="modal" data-target="#modal-<%= memberdetail.id %>">
-            <td><%= image_tag memberdetail.image.url(:original),class:"img-responsive",id:memberdetail.id,width:"300" ,height:"200" %>
+            <td><%= image_tag memberdetail.image.url(:original),class:"img-responsive",id:memberdetail.id %>
             </td>
             <%#= image_tag memberdetail.proof.url(:original),class:"img-responsive",id:memberdetail.id,width:"300" ,height:"200" %>
 
           </a>
 
             <%#= image_tag memberdetail.image.url(:original),class:"img-responsive",id:memberdetail.id,width:"300" ,height:"200" %>
-            <td><%= image_tag memberdetail.proof.url(:original),class:"img-responsive",width:"300" ,height:"200" %>
+            <td>
+              <%=link_to image_tag(memberdetail.proof.url(:medium)), memberdetail.proof.url(:original), :popup=>['original_image', 'height=700,width=900'],style: 'background: transparent'%>
             </td>
 
           <div id="myModal" class="modal">

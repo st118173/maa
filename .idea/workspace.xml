@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd17c730-0a42-45e9-8455-34889a581939" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/memberdetails/index.html.erb" afterPath="$PROJECT_DIR$/app/views/memberdetails/index.html.erb" />
     </list>
     <ignored path="maa.iws" />
@@ -29,8 +30,8 @@
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/programs/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#span#0;n#!!top" expanded="true" />
               </folding>
@@ -41,8 +42,8 @@
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/memberdetails/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="59" column="10" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+            <state relative-caret-position="348">
+              <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
               </folding>
@@ -553,12 +554,12 @@
       <workItem from="1495626161129" duration="34643000" />
       <workItem from="1495695282037" duration="2580000" />
       <workItem from="1495710793751" duration="3348000" />
-      <workItem from="1495738151986" duration="7500000" />
+      <workItem from="1495738151986" duration="8523000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="682160000" />
+    <option name="totallyTimeSpent" value="683183000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -957,8 +958,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/programs/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#span#0;n#!!top" expanded="true" />
           </folding>
@@ -967,8 +968,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/memberdetails/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="59" column="10" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+        <state relative-caret-position="348">
+          <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#span#0;n#div#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
           </folding>
