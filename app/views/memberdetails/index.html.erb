@@ -29,7 +29,7 @@
           <th>Full Name</th>
           <th>Fathername</th>
           <th>Phnumber</th>
-          <th>Email</th>
+          <th colspan="2">Email</th>
           <th>Bloodgroup</th>
           <th>Photo</th>
           <th>ID Proof</th>
@@ -45,7 +45,7 @@
           <td><%= memberdetail.fullname %></td>
           <td><%= memberdetail.fathername %></td>
           <td><%= memberdetail.phnumber %></td>
-          <td><%= memberdetail.email %></td>
+          <td colspan="2"><%= memberdetail.email %></td>
           <td><%= memberdetail.bloodgroup %></td>
           <td><%= link_to (image_tag memberdetail.image.url(:small),
                                      :border => 0), memberdetail.image.url %></td>
