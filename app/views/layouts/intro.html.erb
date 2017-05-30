@@ -45,8 +45,8 @@
 
 <% if !user_signed_in? %>
 
-        <%= button_to( "Donate", new_mdo_path, class:"btn btn-success btn-circle btn-xl",style: 'width: 4cm;font-size: 2;color:#f5f5f5;font-weight: bold;position:fixed;') %>
-        <%= button_to(mdos_path,method: :get, class:"btn btn-success btn-circle btn ",style: 'width: 4cm;font-size: 1.2em;;color:#f5f5f5;font-weight: bold;position:fixed;') do %>
+        <%= button_to( "Donate", new_mdo_path, class:"btn btn-success btn-circle btn-xl",style: 'z-index:1000;width: 4cm;font-size: 2;color:#f5f5f5;font-weight: bold;position:fixed;') %>
+        <%= button_to(mdos_path,method: :get, class:"btn btn-success btn-circle btn ",style: 'z-index:1000;width: 4cm;font-size: 1.2em;;color:#f5f5f5;font-weight: bold;position:fixed;') do %>
             Show <br> Donations
         <% end %>
 
@@ -132,7 +132,7 @@
                               <button class="btn btn-lg btn-red btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: -70%;margin-top: 3%;width: 26%">
                                 Donate
                               </button>
-                              <div class="dropdown-menu dropdown-menu-right " aria-labelledby="dropdownMenuButton" style="background: transparent;height: 1.5cm;margin-top: -10%;margin-right: 20%" >
+                              <div class="dropdown-menu dropdown-menu-right " aria-labelledby="dropdownMenuButton" style="background: transparent;height: 1.5cm;margin-top: -12%;margin-right: 11%" >
                                 <%= button_to( "Donate Money", new_mdo_path,  class: "btn btn-red btn-primary",style: 'width: 7.8cm') %>
                                 <br>
                                 <%= button_to( "Donate Education Material", new_course_path,  class: "btn btn-red btn-primary") %>
@@ -160,7 +160,7 @@
                                 <button class="btn btn-lg btn-red btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: -70%;margin-top: 3%;width: 26%">
                                   Donate
                                 </button>
-                                <div class="dropdown-menu dropdown-menu-right " aria-labelledby="dropdownMenuButton" style="background: transparent;height: 1.5cm;margin-top: -10%;margin-right: 20%" >
+                                <div class="dropdown-menu dropdown-menu-right " aria-labelledby="dropdownMenuButton" style="background: transparent;height: 1.5cm;margin-top: -12%;margin-right: 11%" >
                                   <%= button_to( "Donate Money", new_mdo_path,  class: "btn btn-red btn-primary",style: 'width: 7.8cm') %>
                                   <br>
                                   <%= button_to( "Donate Education Material",new_course_path,  class: "btn btn-red btn-primary") %>
@@ -189,7 +189,7 @@
                                 <button class="btn btn-lg btn-red btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: -70%;margin-top: 3%;width: 26%">
                                   Donate
                                 </button>
-                                <div class="dropdown-menu dropdown-menu-right " aria-labelledby="dropdownMenuButton" style="background: transparent;height: 1.5cm;margin-top: -10%;margin-right: 20%" >
+                                <div class="dropdown-menu dropdown-menu-right " aria-labelledby="dropdownMenuButton" style="background: transparent;height: 1.5cm;margin-top: -12%;margin-right: 11%" >
                                   <%= button_to( "Donate Money", new_mdo_path,  class: "btn btn-red btn-primary",style: 'width: 7.8cm') %>
                                   <br>
                                   <%= button_to( "Donate Education Material", new_course_path,  class: "btn btn-red btn-primary") %>
@@ -334,7 +334,6 @@
             </nav>
           </div>
         </header>
-        <br><br><br>
         <!-- Intro
           ================================================== -->
         <!--<section id="hero" class="section">-->

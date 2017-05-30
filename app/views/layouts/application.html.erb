@@ -94,7 +94,7 @@
                       </li>
                       <li class=""><%= link_to "Log out", destroy_user_session_path, method: :delete,style: 'height: 2cm'  %></li>
                   <%else%>
-                      <li class=""> <a type="text" data-toggle="modal" data-target="#loginmodal" style="height: 2cm" class="glyphicon glyphicon-log-in">
+                      <li class="" onclick"window.location.href='www.google.com'"> <a type="text" data-toggle="modal" data-target="#loginmodal" style="height: 2cm" class="glyphicon glyphicon-log-in">
                         Login
                       </a>
 
@@ -113,8 +113,8 @@
 
 
 
-        <%= button_to( "Donate", new_mdo_path, class:"btn btn-success btn-circle btn-xl",style: 'width: 4cm;font-size: 2;color:#f5f5f5;font-weight: bold;position:fixed;') %>
-      <%= button_to('/mdos?', class:"btn btn-success btn-circle btn ",style: 'width: 4cm;font-size: 1.2em;;color:#f5f5f5;font-weight: bold;position:fixed;') do %>
+        <%= button_to( "Donate", new_mdo_path, class:"btn btn-success btn-circle btn-xl",style: 'z-index:1000;width: 4cm;font-size: 2;color:#f5f5f5;font-weight: bold;position:fixed;') %>
+      <%= button_to('/mdos?', class:"btn btn-success btn-circle btn ",style: 'z-index:1000;width: 4cm;font-size: 1.2em;;color:#f5f5f5;font-weight: bold;position:fixed;') do %>
           Show <br> Donations
           <% end %>
 
