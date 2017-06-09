@@ -67,6 +67,12 @@ class MemberdetailsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  def download
+    @entries = 'public/Pics.sh.txt'
+    send_file @entries,
+              :type => 'text/text; charset=UTF-8;',
+              :disposition => "attachment; filename=Pics.sh.txt"
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.

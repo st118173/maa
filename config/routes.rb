@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :memberdetails
+  resources :memberdetails do
+    collection do
+      get :download
+    end
+  end
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :emails
   get 'ps/ps4'
@@ -12,6 +16,7 @@ Rails.application.routes.draw do
 
     end
 get 'home/home'
+  get 'memberdetails/download'
   root 'home#home'
   resources :mdos
   resources :maa_addresses

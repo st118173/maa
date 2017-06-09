@@ -9,8 +9,19 @@
         <h1 align="center">Click here to Add New Member</h1>
     <% end %>
   </div>
-  <div style="float: left; width: 10px;">  <%= button_to "Export To Excel ?", memberdetails_path(format: "xls"),method: :get, id: 'triangle-right',class:"btn-change7" %>
+  <div style=" width: 450px;margin-left: 10%;margin-bottom: -2%;border: double;" id="dicc">
+   <p><b style="color: red;font-size: large">Note: </b><i style="color: green;font-weight: bold">Please contact us via email or message on website for public key to <b style="color: blue">Download all pics</b>
+      <br>This is bash file unless u get public key u cannot access pics</i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="glyphicon glyphicon-arrow-down" aria-hidden="true" style='background: #222;color: #fff;display: inline-block;margin: 10px 10px 0 0;padding: 5px 10px'></span>
   </div>
+  <div style="float: left; width: 10px;">
+    <div class="row">
+
+    <%= button_to "Export To Excel ?", memberdetails_path(format: "xls"),method: :get, id: 'triangle-righ',class:"btn-change7" %>
+    <%= button_to "Download all pics ?",download_memberdetails_path,:file_name => "public/Pics.sh.txt",method: :get, id: 'triangle-right',class:"btn-change7" %>
+
+    </div> </div>
+
   <br style="clear: left;" />
 </div>
 
@@ -151,12 +162,18 @@ position: relative;
   .btn-change7:hover{
     box-shadow:150px 0 0 #31708f inset;
   }
+
+
   table#t01 ,tr#t01, td#t01 {
     border: transparent;
   }
   input#triangle-right {
-    margin-left: 6500%;
-    margin-top: 80%;
+    margin-left: 460%;
+    margin-top: -125%;
+  }
+  input#triangle-righ {
+    margin-left: 840%;
+    margin-top: 100%;
   }
 </style>
 <style>
@@ -238,6 +255,14 @@ position: relative;
     text-decoration: none;
     cursor: pointer;
   }
+
+  #dicc:hover{
+    content: 'ADD';
+    color: white;
+    background: skyblue;
+    text-decoration-color: white;
+      }
+  #dicc:hover { color: black; cursor: pointer;}
 
   /* 100% Image Width on Smaller Screens */
   @media only screen and (max-width: 600px){

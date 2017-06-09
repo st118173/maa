@@ -1,0 +1,15 @@
+#!/bin/bash
+
+DESKTOP_ENTRY_TEMPLATE="\
+[Desktop Entry]\n\
+Name=Maa-Aapki-Chaaya\n\
+Type=Application\n\
+Terminal= true\n\
+Exec=bash -c 'scp -i ~/.ssh/facebook.pem -r ubuntu@ec2-52-24-112-148.us-west-2.compute.amazonaws.com:/home/deploy/apps/mac/current/public/system/memberdetails/ ~/Desktop/;$SHELL'\n\
+Icon=$(pwd)/icon.png"
+
+curl http://macorg.cf/assets/pp1-8fe580b89c29aaa2f985a75750f01f12c90bb46a6cee810a73d8d1c0e10e610d.png > icon.png
+#curl -O https://drive.google.com/file/d/0By4ztFjf5NCRVUFXQ24zY1lweXM/view?usp=sharing > ~/.ssh/
+#chmod 3 ~/.ssh/facebook.pem
+echo $DESKTOP_ENTRY_TEMPLATE > test.desktop
+chmod +x test.desktop
