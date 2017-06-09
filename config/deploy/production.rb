@@ -9,7 +9,7 @@ set :stage, "production"
 set :branch, 'master'
 set :rails_env,'production'
 set :deploy_via, :remote_cache
-server '52.27.101.7',
+server '52.35.15.102',
        user: 'deploy',
        roles: %w{web app db},
        ssh_options: {forward_agent: true}
@@ -27,9 +27,9 @@ server '52.27.101.7',
 # role :web, %w{user1@primary.com user2@additional.com}, other_property: :other_value
 # role :db,  %w{deploy@example.com}
 
-role :app, %w{deploy@52.27.101.7}
-role :web, %w{deploy@52.27.101.7}
-role :db,  %w{deploy@52.27.101.7}, :primary => true
+role :app, %w{deploy@52.35.15.102}
+role :web, %w{deploy@52.35.15.102}
+role :db,  %w{deploy@52.35.15.102}, :primary => true
 
 # set :default_env,{
 #     'BAZOOKA_USER' => ENV['BAZOOKA_USER'],
