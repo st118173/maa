@@ -328,3 +328,691 @@
   INFO Already Puma is running
  DEBUG [fcf362bd] Finished in 0.464 seconds with exit status 0 (successful).
   INFO Already Puma is running
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-07-29 14:45:10 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [29ac26dc] Running [ -d ~/.rvm ] on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [639c7864] Running [ -d ~/.rvm ] as deploy@52.35.15.102
+ DEBUG [29ac26dc] Command: [ -d ~/.rvm ]
+ DEBUG [639c7864] Command: [ -d ~/.rvm ]
+ DEBUG [639c7864] Finished in 6.088 seconds with exit status 0 (successful).
+ DEBUG [29ac26dc] Finished in 6.499 seconds with exit status 0 (successful).
+ DEBUG [aa4e90b4] Running ~/.rvm/bin/rvm version as deploy@52.35.15.102
+ DEBUG [02cfe37a] Running ~/.rvm/bin/rvm version on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [aa4e90b4] Command: ~/.rvm/bin/rvm version
+ DEBUG [02cfe37a] Command: ~/.rvm/bin/rvm version
+ DEBUG [02cfe37a] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [aa4e90b4] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [02cfe37a] 	
+ DEBUG [aa4e90b4] 	
+ DEBUG [02cfe37a] Finished in 1.121 seconds with exit status 0 (successful).
+ DEBUG [aa4e90b4] Finished in 1.124 seconds with exit status 0 (successful).
+ DEBUG [c7de6aa0] Running ~/.rvm/bin/rvm current on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [4e25f1ec] Running ~/.rvm/bin/rvm current as deploy@52.35.15.102
+ DEBUG [c7de6aa0] Command: ~/.rvm/bin/rvm current
+ DEBUG [4e25f1ec] Command: ~/.rvm/bin/rvm current
+ DEBUG [4e25f1ec] 	ruby-2.2.4
+ DEBUG [4e25f1ec] 	
+ DEBUG [4e25f1ec] Finished in 1.149 seconds with exit status 0 (successful).
+ DEBUG [3ef93409] Running ~/.rvm/bin/rvm default do ruby --version as deploy@52.35.15.102
+ DEBUG [3ef93409] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [c7de6aa0] 	ruby-2.2.4
+ DEBUG [c7de6aa0] 	
+ DEBUG [c7de6aa0] Finished in 1.214 seconds with exit status 0 (successful).
+ DEBUG [695ce7be] Running ~/.rvm/bin/rvm default do ruby --version on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [695ce7be] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [695ce7be] 	ruby 2.2.4p230 (2015-12-16 revision 53155) [x86_64-linux]
+ DEBUG [3ef93409] 	ruby 2.2.4p230 (2015-12-16 revision 53155) [x86_64-linux]
+ DEBUG [695ce7be] 	
+ DEBUG [3ef93409] 	
+ DEBUG [695ce7be] Finished in 1.240 seconds with exit status 0 (successful).
+ DEBUG [3ef93409] Finished in 1.305 seconds with exit status 0 (successful).
+  INFO [c7e04dc7] Running /usr/bin/env mkdir -p /tmp on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+  INFO [11320765] Running /usr/bin/env mkdir -p /tmp as deploy@52.35.15.102
+ DEBUG [c7e04dc7] Command: /usr/bin/env mkdir -p /tmp
+ DEBUG [11320765] Command: /usr/bin/env mkdir -p /tmp
+  INFO [c7e04dc7] Finished in 0.815 seconds with exit status 0 (successful).
+  INFO [11320765] Finished in 0.819 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO [7ba7e9ef] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [7ba7e9ef] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh
+  INFO [f12b63b9] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh as deploy@52.35.15.102
+ DEBUG [f12b63b9] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh
+  INFO [f12b63b9] Finished in 1.014 seconds with exit status 0 (successful).
+  INFO [7ba7e9ef] Finished in 1.019 seconds with exit status 0 (successful).
+  INFO [21db4c90] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD as deploy@52.35.15.102
+  INFO [66811f93] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [21db4c90] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+ DEBUG [66811f93] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+ DEBUG [66811f93] 	304de7ebc150968a2e53b653a896b9db757212f0
+ DEBUG [66811f93] 		
+ DEBUG [66811f93] 	HEAD
+  INFO [66811f93] Finished in 2.202 seconds with exit status 0 (successful).
+ DEBUG [21db4c90] 	304de7ebc150968a2e53b653a896b9db757212f0
+ DEBUG [21db4c90] 		
+ DEBUG [21db4c90] 	HEAD
+  INFO [21db4c90] Finished in 2.353 seconds with exit status 0 (successful).
+  INFO [67215de3] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases as deploy@52.35.15.102
+ DEBUG [67215de3] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases
+  INFO [85496f3b] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [85496f3b] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases
+  INFO [85496f3b] Finished in 1.230 seconds with exit status 0 (successful).
+  INFO [67215de3] Finished in 1.233 seconds with exit status 0 (successful).
+  INFO [753996de] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets as deploy@52.35.15.102
+ DEBUG [753996de] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets
+  INFO [a32d2dcf] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [a32d2dcf] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets
+  INFO [a32d2dcf] Finished in 0.816 seconds with exit status 0 (successful).
+  INFO [753996de] Finished in 0.818 seconds with exit status 0 (successful).
+ DEBUG [176536a7] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] as deploy@52.35.15.102
+ DEBUG [47388c02] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [176536a7] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [47388c02] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [47388c02] Finished in 0.815 seconds with exit status 0 (successful).
+ DEBUG [176536a7] Finished in 0.818 seconds with exit status 0 (successful).
+ DEBUG [88f6ba97] Running [ -f /home/deploy/apps/mac/current/REVISION ] on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [66222829] Running [ -f /home/deploy/apps/mac/current/REVISION ] as deploy@52.35.15.102
+ DEBUG [88f6ba97] Command: [ -f /home/deploy/apps/mac/current/REVISION ]
+ DEBUG [66222829] Command: [ -f /home/deploy/apps/mac/current/REVISION ]
+ DEBUG [66222829] Finished in 0.816 seconds with exit status 0 (successful).
+ DEBUG [88f6ba97] Finished in 0.819 seconds with exit status 0 (successful).
+ DEBUG [989c13ea] Running /usr/bin/env cat /home/deploy/apps/mac/current/REVISION 2>/dev/null as deploy@52.35.15.102
+ DEBUG [5c86e7a5] Running /usr/bin/env cat /home/deploy/apps/mac/current/REVISION 2>/dev/null on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [989c13ea] Command: /usr/bin/env cat /home/deploy/apps/mac/current/REVISION 2>/dev/null
+ DEBUG [5c86e7a5] Command: /usr/bin/env cat /home/deploy/apps/mac/current/REVISION 2>/dev/null
+ DEBUG [5c86e7a5] 	b6db07bc89a73caed0bb771be71c7e62178700e3
+ DEBUG [5c86e7a5] 	
+ DEBUG [5c86e7a5] Finished in 0.833 seconds with exit status 0 (successful).
+ DEBUG [989c13ea] 	b6db07bc89a73caed0bb771be71c7e62178700e3
+ DEBUG [989c13ea] 	
+ DEBUG [989c13ea] Finished in 0.932 seconds with exit status 0 (successful).
+ DEBUG [2e2878bc] Running [ -f /home/deploy/apps/mac/repo/HEAD ] as deploy@52.35.15.102
+ DEBUG [dddef15c] Running [ -f /home/deploy/apps/mac/repo/HEAD ] on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [2e2878bc] Command: [ -f /home/deploy/apps/mac/repo/HEAD ]
+ DEBUG [dddef15c] Command: [ -f /home/deploy/apps/mac/repo/HEAD ]
+ DEBUG [2e2878bc] Finished in 0.743 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/apps/mac/repo
+ DEBUG [dddef15c] Finished in 0.747 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/apps/mac/repo
+ DEBUG [1c425761] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [dc5e8f2a] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi as deploy@52.35.15.102
+ DEBUG [1c425761] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [dc5e8f2a] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [dc5e8f2a] Finished in 0.772 seconds with exit status 0 (successful).
+  INFO [64ad7524] Running /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git as deploy@52.35.15.102
+ DEBUG [64ad7524] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git )
+ DEBUG [1c425761] Finished in 0.808 seconds with exit status 0 (successful).
+  INFO [35528acf] Running /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [35528acf] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git )
+  INFO [35528acf] Finished in 0.784 seconds with exit status 0 (successful).
+  INFO [64ad7524] Finished in 0.819 seconds with exit status 0 (successful).
+  INFO [d4ac7c9d] Running /usr/bin/env git remote update --prune on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+  INFO [1412f76c] Running /usr/bin/env git remote update --prune as deploy@52.35.15.102
+ DEBUG [d4ac7c9d] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [1412f76c] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [1412f76c] 	Fetching origin
+ DEBUG [d4ac7c9d] 	Fetching origin
+ DEBUG [1412f76c] 	
+ DEBUG [d4ac7c9d] 	
+ DEBUG [1412f76c] 	remote: Counting objects: 6503, done.[K
+ DEBUG [1412f76c] 	
+ DEBUG [1412f76c] 	remote: Compressing objects:   0% (1/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:   1% (51/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:   2% (101/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:   3% (151/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:   4% (201/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:   5% (251/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:   6% (302/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:   7% (352/5018)   [K
+ DEBUG [d4ac7c9d] 	remote: Counting objects: 6503, done.[K
+ DEBUG [d4ac7c9d] 	
+remote: Compressing objects:   0% (1/5018)   [K
+ DEBUG [d4ac7c9d] 	remote: Compressing objects:   1% (51/5018)   [Kremote: Compressing objects:   2% (101/5018)   [Kremote: Compressing objects:   3% (151/5018)   [K
+ DEBUG [d4ac7c9d] 	remote: Compressing objects:   4% (201/5018)   [Kremote: Compressing objects:   5% (251/5018)   [Kremote: Compressing objects:   6% (302/5018)   [Kremote: Compressing objects:   7% (352/5018)   [K
+ DEBUG [d4ac7c9d] 	remote: Compressing objects:   8% (402/5018)   [K
+ DEBUG [d4ac7c9d] 	remote: Compressing objects:   9% (452/5018)   [K
+ DEBUG [d4ac7c9d] 	remote: Compressing objects:  10% (502/5018)   [Kremote: Compressing objects:  11% (552/5018)   [Kremote: Compressing objects:  12% (603/5018)   [Kremote: Compressing objects:  13% (653/5018)   [Kremote: Compressing objects:  14% (703/5018)   [K
+ DEBUG [d4ac7c9d] 	remote: Compressing objects:  15% (753/5018)   [Kremote: Compressing objects:  16% (803/5018)   [K
+ DEBUG [d4ac7c9d] 	remote: Compressing objects:  17% (854/5018)   [K
+ DEBUG [d4ac7c9d] 	remote: Compressing objects:  18% (904/5018)   [K
+ DEBUG [d4ac7c9d] 	remote: Compressing objects:  19% (954/5018)   [Kremote: Compressing objects:  20% (1004/5018)   [Kremote: Compressing objects:  21% (1054/5018)   [Kremote: Compressing objects:  22% (1104/5018)   [K
+ DEBUG [d4ac7c9d] 	remote: Compressing objects:  23% (1155/5018)   [Kremote: Compressing objects:  24% (1205/5018)   [K
+ DEBUG [d4ac7c9d] 	remote: Compressing objects:  25% (1255/5018)   [K
+ DEBUG [d4ac7c9d] 	remote: Compressing objects:  26% (1305/5018)   [Kremote: Compressing objects:  27% (1355/5018)   [Kremote: Compressing objects:  28% (1406/5018)   [Kremote: Compressing objects:  29% (1456/5018)   [Kremote: Compressing objects:  30% (1506/5018)   [Kremote: Compressing objects:  31% (1556/5018)   [Kremote: Compressing objects:  32% (1606/5018)   [Kremote: Compressing objects:  33% (1656/5018)   [Kremote: Compressing objects:  34% (1707/5018)   [K
+ DEBUG [d4ac7c9d] 	remote: Compressing objects:  35% (1757/5018)   [Kremote: Compressing objects:  36% (1807/5018)   [Kremote: Compressing objects:  37% (1857/5018)   [Kremote: Compressing objects:  38% (1907/5018)   [Kremote: Compressing objects:  39% (1958/5018)   [Kremote: Compressing objects:  40% (2008/5018)   [K
+ DEBUG [d4ac7c9d] 	remote: Compressing objects:  41% (2058/5018)   [Kremote: Compressing objects:  42% (2108/5018)   [Kremote: Compressing objects:  43% (2158/5018)   [Kremote: Compressing objects:  44% (2208/5018)   [Kremote: Compressing objects:  45% (2259/5018)   [K
+ DEBUG [d4ac7c9d] 	remote: Compressing objects:  46% (2309/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:   8% (402/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:   9% (452/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  10% (502/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  11% (552/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  12% (603/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  13% (653/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  14% (703/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  15% (753/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  16% (803/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  17% (854/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  18% (904/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  19% (954/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  20% (1004/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  21% (1054/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  22% (1104/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  23% (1155/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  24% (1205/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  25% (1255/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  26% (1305/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  27% (1355/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  28% (1406/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  29% (1456/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  30% (1506/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  31% (1556/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  32% (1606/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  33% (1656/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  34% (1707/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  35% (1757/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  36% (1807/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  37% (1857/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  38% (1907/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  39% (1958/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  40% (2008/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  41% (2058/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  42% (2108/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  43% (2158/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  44% (2208/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  45% (2259/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  46% (2309/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  47% (2359/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  48% (2409/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  49% (2459/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  50% (2509/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  51% (2560/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  52% (2610/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  53% (2660/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  54% (2710/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  55% (2760/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  56% (2811/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  57% (2861/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  58% (2911/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  59% (2961/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  60% (3011/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  61% (3061/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  62% (3112/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  63% (3162/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  64% (3212/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  65% (3262/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  66% (3312/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  67% (3363/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  68% (3413/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  69% (3463/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  70% (3513/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  71% (3563/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  72% (3613/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  73% (3664/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  74% (3714/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  75% (3764/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  76% (3814/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  77% (3864/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  78% (3915/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  79% (3965/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  80% (4015/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  81% (4065/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  82% (4115/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  83% (4165/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  84% (4216/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  85% (4266/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  86% (4316/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  87% (4366/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  88% (4416/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  89% (4467/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  90% (4517/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  91% (4567/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  92% (4617/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  93% (4667/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  94% (4717/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  95% (4768/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  96% (4818/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  97% (4868/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  98% (4918/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects:  99% (4968/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects: 100% (5018/5018)   [K
+ DEBUG [1412f76c] 	remote: Compressing objects: 100% (5018/5018), done.[K
+ DEBUG [1412f76c] 	
+ DEBUG [1412f76c] 	Receiving objects:   0% (1/6503)   
+ DEBUG [1412f76c] 	Receiving objects:   1% (66/6503)   
+ DEBUG [1412f76c] 	Receiving objects:   2% (131/6503)   
+ DEBUG [1412f76c] 	Receiving objects:   3% (196/6503)   
+ DEBUG [1412f76c] 	Receiving objects:   4% (261/6503)   
+ DEBUG [1412f76c] 	Receiving objects:   5% (326/6503)   
+ DEBUG [1412f76c] 	Receiving objects:   6% (391/6503)   
+ DEBUG [1412f76c] 	Receiving objects:   7% (456/6503)   
+ DEBUG [1412f76c] 	Receiving objects:   8% (521/6503)   
+ DEBUG [1412f76c] 	Receiving objects:   9% (586/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  10% (651/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  11% (716/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  12% (781/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  13% (846/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  14% (911/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  15% (976/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  16% (1041/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  17% (1106/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  18% (1171/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  19% (1236/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  20% (1301/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  21% (1366/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  22% (1431/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  23% (1496/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  24% (1561/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  25% (1626/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  26% (1691/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  27% (1756/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  28% (1821/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  29% (1886/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  30% (1951/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  31% (2016/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  32% (2081/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  33% (2146/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  34% (2212/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  35% (2277/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  36% (2342/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  37% (2407/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  38% (2472/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  39% (2537/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  40% (2602/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  41% (2667/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  42% (2732/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  43% (2797/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  44% (2862/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  45% (2927/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  46% (2992/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  47% (3057/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  48% (3122/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  49% (3187/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  50% (3252/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  51% (3317/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  52% (3382/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  53% (3447/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  54% (3512/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  55% (3577/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  56% (3642/6503)   
+ DEBUG [d4ac7c9d] 	remote: Compressing objects:  47% (2359/5018)   [Kremote: Compressing objects:  48% (2409/5018)   [Kremote: Compressing objects:  49% (2459/5018)   [Kremote: Compressing objects:  50% (2509/5018)   [Kremote: Compressing objects:  51% (2560/5018)   [Kremote: Compressing objects:  52% (2610/5018)   [K
+ DEBUG [d4ac7c9d] 	remote: Compressing objects:  53% (2660/5018)   [Kremote: Compressing objects:  54% (2710/5018)   [Kremote: Compressing objects:  55% (2760/5018)   [Kremote: Compressing objects:  56% (2811/5018)   [Kremote: Compressing objects:  57% (2861/5018)   [Kremote: Compressing objects:  58% (2911/5018)   [Kremote: Compressing objects:  59% (2961/5018)   [Kremote: Compressing objects:  60% (3011/5018)   [K
+ DEBUG [d4ac7c9d] 	remote: Compressing objects:  61% (3061/5018)   [Kremote: Compressing objects:  62% (3112/5018)   [Kremote: Compressing objects:  63% (3162/5018)   [Kremote: Compressing objects:  64% (3212/5018)   [Kremote: Compressing objects:  65% (3262/5018)   [Kremote: Compressing objects:  66% (3312/5018)   [K
+ DEBUG [d4ac7c9d] 	remote: Compressing objects:  67% (3363/5018)   [Kremote: Compressing objects:  68% (3413/5018)   [Kremote: Compressing objects:  69% (3463/5018)   [Kremote: Compressing objects:  70% (3513/5018)   [K
+ DEBUG [d4ac7c9d] 	remote: Compressing objects:  71% (3563/5018)   [Kremote: Compressing objects:  72% (3613/5018)   [Kremote: Compressing objects:  73% (3664/5018)   [Kremote: Compressing objects:  74% (3714/5018)   [Kremote: Compressing objects:  75% (3764/5018)   [Kremote: Compressing objects:  76% (3814/5018)   [K
+ DEBUG [d4ac7c9d] 	remote: Compressing objects:  77% (3864/5018)   [K
+ DEBUG [d4ac7c9d] 	remote: Compressing objects:  78% (3915/5018)   [Kremote: Compressing objects:  79% (3965/5018)   [Kremote: Compressing objects:  80% (4015/5018)   [Kremote: Compressing objects:  81% (4065/5018)   [Kremote: Compressing objects:  82% (4115/5018)   [K
+ DEBUG [d4ac7c9d] 	remote: Compressing objects:  83% (4165/5018)   [Kremote: Compressing objects:  84% (4216/5018)   [Kremote: Compressing objects:  85% (4266/5018)   [Kremote: Compressing objects:  86% (4316/5018)   [Kremote: Compressing objects:  87% (4366/5018)   [Kremote: Compressing objects:  88% (4416/5018)   [Kremote: Compressing objects:  89% (4467/5018)   [Kremote: Compressing objects:  90% (4517/5018)   [K
+ DEBUG [d4ac7c9d] 	remote: Compressing objects:  91% (4567/5018)   [Kremote: Compressing objects:  92% (4617/5018)   [Kremote: Compressing objects:  93% (4667/5018)   [Kremote: Compressing objects:  94% (4717/5018)   [Kremote: Compressing objects:  95% (4768/5018)   [Kremote: Compressing objects:  96% (4818/5018)   [Kremote: Compressing objects:  97% (4868/5018)   [Kremote: Compressing objects:  98% (4918/5018)   [Kremote: Compressing objects:  99% (4968/5018)   [Kremote: Compressing objects: 100% (5018/5018)   [Kremote: Compressing objects: 100% (5018/5018), done.[K
+ DEBUG [d4ac7c9d] 	Receiving objects:   0% (1/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:   1% (66/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:   2% (131/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:   3% (196/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:   4% (261/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:   5% (326/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:   6% (391/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:   7% (456/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:   8% (521/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:   9% (586/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  10% (651/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  11% (716/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  12% (781/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  13% (846/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  14% (911/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  15% (976/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  16% (1041/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  17% (1106/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  18% (1171/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  19% (1236/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  20% (1301/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  21% (1366/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  22% (1431/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  23% (1496/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  24% (1561/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  25% (1626/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  26% (1691/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  27% (1756/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  28% (1821/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  29% (1886/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  30% (1951/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  31% (2016/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  32% (2081/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  33% (2146/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  34% (2212/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  35% (2277/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  36% (2342/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  37% (2407/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  38% (2472/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  39% (2537/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  40% (2602/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  41% (2667/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  42% (2732/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  43% (2797/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  44% (2862/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  45% (2927/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  46% (2992/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  47% (3057/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  48% (3122/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  49% (3187/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  50% (3252/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  51% (3317/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  52% (3382/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  53% (3447/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  54% (3512/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  55% (3577/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  56% (3642/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  57% (3707/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  58% (3772/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  59% (3837/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  60% (3902/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  57% (3707/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  58% (3772/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  59% (3837/6503)   
+ DEBUG [1412f76c] 	Receiving objects:  60% (3902/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  61% (3967/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  62% (4032/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  63% (4097/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  64% (4162/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  65% (4227/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  66% (4292/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  67% (4358/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  68% (4423/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  69% (4488/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  70% (4553/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  71% (4618/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  72% (4683/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  73% (4748/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  74% (4813/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  75% (4878/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  76% (4943/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  77% (5008/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  78% (5073/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  79% (5138/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  80% (5203/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  81% (5268/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  82% (5333/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  83% (5398/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  84% (5463/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  85% (5528/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  86% (5593/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  87% (5658/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  88% (5723/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  89% (5788/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  90% (5853/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  91% (5918/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  92% (5983/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  93% (6048/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  94% (6113/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  95% (6178/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  96% (6243/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  97% (6308/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	remote: Total 6503 (delta 956), reused 6476 (delta 929), pack-reused 0[K
+ DEBUG [1412f76c] 	
+ DEBUG [1412f76c] 	Receiving objects:  98% (6373/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects:  99% (6438/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [1412f76c] 	Receiving objects: 100% (6503/6503), 7.15 MiB | 14.30 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  61% (3967/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  62% (4032/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  63% (4097/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  64% (4162/6503)   
+ DEBUG [d4ac7c9d] 	Receiving objects:  65% (4227/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  66% (4292/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  67% (4358/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  68% (4423/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  69% (4488/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  70% (4553/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  71% (4618/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  72% (4683/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  73% (4748/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  74% (4813/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  75% (4878/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  76% (4943/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  77% (5008/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  78% (5073/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  79% (5138/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  80% (5203/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  81% (5268/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  82% (5333/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  83% (5398/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  84% (5463/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  85% (5528/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  86% (5593/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  87% (5658/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  88% (5723/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  89% (5788/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  90% (5853/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  91% (5918/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  92% (5983/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  93% (6048/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  94% (6113/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  95% (6178/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  96% (6243/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  97% (6308/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	remote: Total 6503 (delta 956), reused 6476 (delta 929), pack-reused 0[K
+ DEBUG [d4ac7c9d] 	
+ DEBUG [d4ac7c9d] 	Receiving objects:  98% (6373/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects:  99% (6438/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects: 100% (6503/6503), 7.52 MiB | 15.02 MiB/s   
+ DEBUG [d4ac7c9d] 	Receiving objects: 100% (6503/6503), 12.10 MiB | 15.02 MiB/s, done.
+ DEBUG [d4ac7c9d] 	
+ DEBUG [d4ac7c9d] 	Resolving deltas:   0% (0/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:   1% (14/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:   2% (20/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:   3% (30/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:   4% (40/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:   5% (49/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:   7% (72/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:   8% (77/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  10% (101/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  11% (107/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  12% (120/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  13% (132/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  14% (139/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  15% (150/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  16% (157/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  17% (164/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  18% (179/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  20% (197/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  22% (213/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  23% (223/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  24% (234/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  25% (245/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  26% (251/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  27% (264/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  28% (270/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  29% (279/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  30% (287/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  31% (299/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  32% (307/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  33% (316/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  34% (326/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  35% (338/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  36% (350/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  37% (355/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  38% (366/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  39% (375/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  40% (389/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  41% (392/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  43% (412/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  44% (422/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  45% (433/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  46% (440/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  47% (455/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  48% (464/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  49% (469/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  50% (478/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  51% (497/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  52% (498/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  53% (508/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  54% (519/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  55% (531/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  56% (537/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  57% (554/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  58% (561/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  59% (565/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  60% (577/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  61% (584/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  62% (594/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  63% (603/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  64% (612/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  65% (622/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  66% (639/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  67% (642/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  68% (651/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  69% (664/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  70% (670/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  71% (679/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  72% (695/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  73% (698/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  74% (708/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  75% (718/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  76% (730/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  77% (737/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  78% (746/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  79% (757/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  80% (766/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  81% (780/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  82% (786/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  83% (794/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  84% (804/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  85% (813/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  86% (823/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  87% (832/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  88% (850/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  89% (853/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  90% (865/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  94% (900/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  95% (909/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  96% (918/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  97% (928/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  98% (939/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas:  99% (947/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas: 100% (956/956)   
+ DEBUG [d4ac7c9d] 	Resolving deltas: 100% (956/956), completed with 29 local objects.
+ DEBUG [d4ac7c9d] 	
+ DEBUG [d4ac7c9d] 	e
+ DEBUG [1412f76c] 	Receiving objects: 100% (6503/6503), 12.10 MiB | 14.30 MiB/s, done.
+ DEBUG [d4ac7c9d] 	rror: 
+ DEBUG [1412f76c] 	
+ DEBUG [d4ac7c9d] 	c
+ DEBUG [1412f76c] 	Resolving deltas:   0% (0/956)   
+ DEBUG [d4ac7c9d] 	annot lock ref 'refs/heads/master': ref refs/heads/master is at 304de7ebc150968a2e53b653a896b9db757212f0 but expected b6db07bc89a73caed0bb771be71c7e62178700e3
+ DEBUG [1412f76c] 	Resolving deltas:   1% (14/956)   
+ DEBUG [d4ac7c9d] 	
+ DEBUG [1412f76c] 	Resolving deltas:   2% (20/956)   
+ DEBUG [d4ac7c9d] 	F
+ DEBUG [1412f76c] 	Resolving deltas:   3% (30/956)   
+ DEBUG [d4ac7c9d] 	rom 
+ DEBUG [1412f76c] 	Resolving deltas:   4% (40/956)   
+ DEBUG [d4ac7c9d] 	g
+ DEBUG [1412f76c] 	Resolving deltas:   5% (49/956)   
+ DEBUG [d4ac7c9d] 	ithub.com:st118173/maa
+ DEBUG [1412f76c] 	Resolving deltas:   7% (72/956)   
+ DEBUG [d4ac7c9d] 	
+ DEBUG [1412f76c] 	Resolving deltas:   8% (77/956)   
+ DEBUG [d4ac7c9d] 	 
+ DEBUG [1412f76c] 	Resolving deltas:  10% (101/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  11% (107/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  12% (120/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  13% (132/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  14% (139/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  15% (150/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  16% (157/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  17% (164/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  18% (179/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  20% (197/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  22% (213/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  23% (223/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  24% (234/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  25% (245/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  26% (251/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  27% (264/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  28% (270/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  29% (279/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  30% (287/956)   
+ DEBUG [d4ac7c9d] 	! b6db07b..304de7e  master     -> master  (unable to update local ref)
+ DEBUG [1412f76c] 	Resolving deltas:  31% (299/956)   
+ DEBUG [d4ac7c9d] 	
+ DEBUG [1412f76c] 	Resolving deltas:  32% (307/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  33% (316/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  34% (326/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  35% (338/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  36% (350/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  37% (355/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  38% (366/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  39% (375/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  40% (389/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  41% (392/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  43% (412/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  44% (422/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  45% (433/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  46% (440/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  47% (455/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  48% (464/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  49% (469/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  50% (478/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  51% (497/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  52% (498/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  53% (508/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  54% (519/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  55% (531/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  56% (537/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  57% (554/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  58% (561/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  59% (565/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  60% (577/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  61% (584/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  62% (594/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  63% (603/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  64% (612/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  65% (622/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  66% (639/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  67% (642/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  68% (651/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  69% (664/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  70% (670/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  71% (679/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  72% (695/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  73% (698/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  74% (708/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  75% (718/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  76% (730/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  77% (737/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  78% (746/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  79% (757/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  80% (766/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  81% (780/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  82% (786/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  83% (794/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  84% (804/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  85% (813/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  86% (823/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  87% (832/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  88% (850/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  89% (853/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  90% (865/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  94% (900/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  95% (909/956)   
+ DEBUG [d4ac7c9d] 	error: Could not fetch origin
+ DEBUG [1412f76c] 	Resolving deltas:  96% (918/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  97% (928/956)   
+ DEBUG [d4ac7c9d] 	
+ DEBUG [1412f76c] 	Resolving deltas:  98% (939/956)   
+ DEBUG [1412f76c] 	Resolving deltas:  99% (947/956)   
+ DEBUG [1412f76c] 	Resolving deltas: 100% (956/956)   
+ DEBUG [1412f76c] 	Resolving deltas: 100% (956/956), completed with 29 local objects.
+ DEBUG [1412f76c] 	
+ DEBUG [1412f76c] 	From github.com:st118173/maa
+ DEBUG [1412f76c] 	
+ DEBUG [1412f76c] 	   b6db07b..304de7e  master     -> master
+ DEBUG [1412f76c] 	
+  INFO [1412f76c] Finished in 3.512 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-07-29 15:05:48 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [42c3fedf] Running [ -d ~/.rvm ] on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [253bb802] Running [ -d ~/.rvm ] as deploy@52.35.15.102
+ DEBUG [42c3fedf] Command: [ -d ~/.rvm ]
+ DEBUG [253bb802] Command: [ -d ~/.rvm ]
