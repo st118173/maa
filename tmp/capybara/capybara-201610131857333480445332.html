@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="th" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <title>MAA</title>
+  
+
+  <link rel="stylesheet" media="all" href="/assets/application-d12397cbc3a266ce5a99f7b588223090c55ca04a439953bb5f9304395de93fc3.css" data-turbolinks-track="reload" />
+  <script src="/assets/application-bebd7a5a95420497ae645ce56a96cd79e003c39ff3b781798750d9ddf28f8c0d.js" data-turbolinks-track="reload"></script>
+</head>
+
+<body style="background-image:url(http://bipnational.net/portals/_default/Skinsold/BIPSkin/backgrounds/SkyBlue/09_image.jpg);background-size: 90% 180%;">
+
+
+<ul>
+
+  <br>
+
+  <p class="notice">User Account is Banned please click Release to Unban</p>
+  <p class="alert"></p>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top " >
+    <div class="container-fluid" style="background-color : black">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#" style="color: aliceblue">WEBSITE-14</a>
+      </div>
+      <ul class="nav navbar-nav" style="color: #B00100">
+        <li class="active"><a href="http://web14.cs.ait.ac.th/pages/home">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Assignment <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://web14.cs.ait.ac.th/pages/ps1">PS1</a></li>
+            <li><a href="http://web14.cs.ait.ac.th/pages/ps2">PS2</a></li>
+            <li><a href="http://web14.cs.ait.ac.th/ps3/ps3">PS3</a></li>
+            <li><a href="https://web14.cs.ait.ac.th/maa">PS4</a></li>
+          </ul>
+
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+  <h1 align="center" style="color: #B00100">Maa aapki chaaya</h1>
+  <div id="container">
+    <div id="user_status">
+          <h3 align="center" style="color: seagreen">Welcome admin@ait.asia </h3>
+          <form class="button_to" method="post" action="/users/sign_out"><input type="hidden" name="_method" value="delete" /><input type="submit" value="Sign out" /></form>
+    </div>
+    <h3 style="color: saddlebrown"> User's List and Statistics</h3>
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+    <th >S:No</th>
+    <th >Email</th>
+    <th >Created_at</th>
+    <th >updated_at</th>
+    <th >Role id</th>
+    <th >Status</th>
+    <th >Suspend</th>
+    <th >Release</th>
+    <th >Deactivate</th>
+
+    </thead>
+
+
+        </tbody> <tr>
+    <td >1</td>
+    <td >admin1@ait.asia</td>
+    <td >2016-10-13 11:57:33 UTC</td>
+    <td >2016-10-13 11:57:33 UTC</td>
+    <td >Member</td>
+
+    <td >Not banned </td>
+    <td > <form class="button_to" method="post" action="/usersinfo/ban?u_id=78"><input id="78" type="submit" value="Suspend" /></form></td>
+   
+     <td ><form class="button_to" method="post" action="/usersinfo/unban?u_id=78"><input type="submit" value="Release" /></form></td>
+        <td > <form class="button_to" method="post" action="/usersinfo/destroy?u_id=78"><input type="submit" value="Deactivate" /></form></td>
+  </tr>
+
+            </tbody> <tr>
+    <td >2</td>
+    <td >admin@ait.asia</td>
+    <td >2016-10-13 08:51:24 UTC</td>
+    <td >2016-10-13 11:57:33 UTC</td>
+    <td >Admin</td>
+
+    <td >Not banned </td>
+</td>
+  </tr>
+
+            </tbody> <tr>
+    <td >3</td>
+    <td >member@ait.asia</td>
+    <td >2016-10-13 08:51:24 UTC</td>
+    <td >2016-10-13 11:57:33 UTC</td>
+    <td >Member</td>
+
+    <td > banned </td>
+    <td > <form class="button_to" method="post" action="/usersinfo/ban?u_id=2"><input id="2" type="submit" value="Suspend" /></form></td>
+   
+     <td ><form class="button_to" method="post" action="/usersinfo/unban?u_id=2"><input type="submit" value="Release" /></form></td>
+        <td > <form class="button_to" method="post" action="/usersinfo/destroy?u_id=2"><input type="submit" value="Deactivate" /></form></td>
+  </tr>
+
+      <h4><font color="#a52a2a"> Number of organization members=3</font></h4>   </tr>
+    </tbody>
+  </table>
+</div>
+<h5>Number of Admins are :: 1</h5>
+<h5>Number of Users are :: 2</h5>
+
+<!--User Creation-->
+
+<h2>Add members</h2>
+    <h4 style="color: saddlebrown">****Under Construction****</h4>
+
+
+
+
+
+  </div>
+
+  <div style="position: relative; text-align: center">
+    <p style="position: fixed; bottom: 0; width:100%;"><br><br><br>
+      <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fweb14.cs.ait.ac.th%2F"><img width="88" height="31" alt="Valid XHTML 1.0!" src="http://www.w3.org/Icons/valid-xhtml10"/></a>
+
+    </p>
+
+  </div>
+
+
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br></ul> <br><br><br>
+
+</body>
+</html>

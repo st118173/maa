@@ -1,0 +1,330 @@
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 23:10:04 +0700 cap production puma:restart
+  INFO ---------------------------------------------------------------------------
+ DEBUG [1fc11473] Running [ -d ~/.rvm ] as deploy@52.24.112.148
+ DEBUG [1fc11473] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 23:10:51 +0700 cap production puma:restart
+  INFO ---------------------------------------------------------------------------
+ DEBUG [b65de564] Running [ -d ~/.rvm ] as deploy@52.24.112.148
+ DEBUG [b65de564] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 23:12:07 +0700 cap production puma:stop
+  INFO ---------------------------------------------------------------------------
+ DEBUG [70f958cd] Running [ -d ~/.rvm ] as deploy@52.24.112.148
+ DEBUG [70f958cd] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 23:18:12 +0700 cap production puma:restart
+  INFO ---------------------------------------------------------------------------
+ DEBUG [b252bfa7] Running [ -d ~/.rvm ] on 52.27.101.7
+ DEBUG [62b4716a] Running [ -d ~/.rvm ] as deploy@52.24.112.148
+ DEBUG [b252bfa7] Command: [ -d ~/.rvm ]
+ DEBUG [62b4716a] Command: [ -d ~/.rvm ]
+ DEBUG [b252bfa7] Finished in 3.096 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 23:20:22 +0700 cap production puma:restart
+  INFO ---------------------------------------------------------------------------
+ DEBUG [125ff869] Running [ -d ~/.rvm ] on ec2-52-27-101-7.us-west-2.compute.amazonaws.com
+ DEBUG [845ed959] Running [ -d ~/.rvm ] as deploy@52.24.112.148
+ DEBUG [125ff869] Command: [ -d ~/.rvm ]
+ DEBUG [845ed959] Command: [ -d ~/.rvm ]
+ DEBUG [125ff869] Finished in 3.103 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 23:21:12 +0700 cap production puma:restart
+  INFO ---------------------------------------------------------------------------
+ DEBUG [f07523fd] Running [ -d ~/.rvm ] as deploy@52.24.112.148
+ DEBUG [da73c6f7] Running [ -d ~/.rvm ] on ec2-52-27-101-7.us-west-2.compute.amazonaws.com
+ DEBUG [f07523fd] Command: [ -d ~/.rvm ]
+ DEBUG [da73c6f7] Command: [ -d ~/.rvm ]
+ DEBUG [da73c6f7] Finished in 3.084 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-09 23:22:59 +0700 cap production puma:restart
+  INFO ---------------------------------------------------------------------------
+ DEBUG [38deda7f] Running [ -d ~/.rvm ] on ec2-52-27-101-7.us-west-2.compute.amazonaws.com
+ DEBUG [38deda7f] Command: [ -d ~/.rvm ]
+ DEBUG [fb5ab48b] Running [ -d ~/.rvm ] as deploy@52.27.101.7
+ DEBUG [fb5ab48b] Command: [ -d ~/.rvm ]
+ DEBUG [fb5ab48b] Finished in 2.974 seconds with exit status 0 (successful).
+ DEBUG [38deda7f] Finished in 3.306 seconds with exit status 0 (successful).
+ DEBUG [d25891be] Running ~/.rvm/bin/rvm version on ec2-52-27-101-7.us-west-2.compute.amazonaws.com
+ DEBUG [adaaa36d] Running ~/.rvm/bin/rvm version as deploy@52.27.101.7
+ DEBUG [d25891be] Command: ~/.rvm/bin/rvm version
+ DEBUG [adaaa36d] Command: ~/.rvm/bin/rvm version
+ DEBUG [adaaa36d] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [adaaa36d] 	
+ DEBUG [adaaa36d] Finished in 0.718 seconds with exit status 0 (successful).
+ DEBUG [16aefc81] Running ~/.rvm/bin/rvm current as deploy@52.27.101.7
+ DEBUG [16aefc81] Command: ~/.rvm/bin/rvm current
+ DEBUG [d25891be] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [d25891be] 	
+ DEBUG [d25891be] Finished in 0.744 seconds with exit status 0 (successful).
+ DEBUG [68727b7d] Running ~/.rvm/bin/rvm current on ec2-52-27-101-7.us-west-2.compute.amazonaws.com
+ DEBUG [68727b7d] Command: ~/.rvm/bin/rvm current
+ DEBUG [16aefc81] 	ruby-2.2.4
+ DEBUG [16aefc81] 	
+ DEBUG [16aefc81] Finished in 0.684 seconds with exit status 0 (successful).
+ DEBUG [0581e22e] Running ~/.rvm/bin/rvm default do ruby --version as deploy@52.27.101.7
+ DEBUG [0581e22e] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [68727b7d] 	ruby-2.2.4
+ DEBUG [68727b7d] 	
+ DEBUG [68727b7d] Finished in 0.717 seconds with exit status 0 (successful).
+ DEBUG [84f568e5] Running ~/.rvm/bin/rvm default do ruby --version on ec2-52-27-101-7.us-west-2.compute.amazonaws.com
+ DEBUG [84f568e5] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [0581e22e] 	ruby 2.2.4p230 (2015-12-16 revision 53155) [x86_64-linux]
+ DEBUG [0581e22e] 	
+ DEBUG [0581e22e] Finished in 0.885 seconds with exit status 0 (successful).
+ DEBUG [84f568e5] 	ruby 2.2.4p230 (2015-12-16 revision 53155) [x86_64-linux]
+ DEBUG [84f568e5] 	
+ DEBUG [84f568e5] Finished in 0.874 seconds with exit status 0 (successful).
+ DEBUG [b2f7c98a] Running if test ! -d /home/deploy/apps/mac/current; then echo "Directory does not exist '/home/deploy/apps/mac/current'" 1>&2; false; fi on ec2-52-27-101-7.us-west-2.compute.amazonaws.com
+ DEBUG [49cbceed] Running if test ! -d /home/deploy/apps/mac/current; then echo "Directory does not exist '/home/deploy/apps/mac/current'" 1>&2; false; fi as deploy@52.27.101.7
+ DEBUG [b2f7c98a] Command: if test ! -d /home/deploy/apps/mac/current; then echo "Directory does not exist '/home/deploy/apps/mac/current'" 1>&2; false; fi
+ DEBUG [49cbceed] Command: if test ! -d /home/deploy/apps/mac/current; then echo "Directory does not exist '/home/deploy/apps/mac/current'" 1>&2; false; fi
+ DEBUG [49cbceed] Finished in 0.478 seconds with exit status 0 (successful).
+ DEBUG [f1f40def] Running [ -f /home/deploy/apps/mac/shared/tmp/pids/puma.pid ] as deploy@52.27.101.7
+ DEBUG [f1f40def] Command: [ -f /home/deploy/apps/mac/shared/tmp/pids/puma.pid ]
+ DEBUG [b2f7c98a] Finished in 0.496 seconds with exit status 0 (successful).
+ DEBUG [f6d6158e] Running [ -f /home/deploy/apps/mac/shared/tmp/pids/puma.pid ] on ec2-52-27-101-7.us-west-2.compute.amazonaws.com
+ DEBUG [f6d6158e] Command: [ -f /home/deploy/apps/mac/shared/tmp/pids/puma.pid ]
+ DEBUG [f1f40def] Finished in 0.479 seconds with exit status 1 (failed).
+  INFO [822bd739] Running mkdir /home/deploy/apps/mac/shared/tmp/sockets -p on ec2-52-27-101-7.us-west-2.compute.amazonaws.com
+  INFO [bcf456a2] Running mkdir /home/deploy/apps/mac/shared/tmp/sockets -p as deploy@52.27.101.7
+ DEBUG [822bd739] Command: mkdir /home/deploy/apps/mac/shared/tmp/sockets -p
+ DEBUG [bcf456a2] Command: mkdir /home/deploy/apps/mac/shared/tmp/sockets -p
+ DEBUG [f6d6158e] Finished in 0.497 seconds with exit status 1 (failed).
+  INFO [bcf456a2] Finished in 0.478 seconds with exit status 0 (successful).
+  INFO [9f5d3751] Running mkdir /home/deploy/apps/mac/shared/tmp/pids -p as deploy@52.27.101.7
+ DEBUG [9f5d3751] Command: mkdir /home/deploy/apps/mac/shared/tmp/pids -p
+  INFO [9f5d3751] Finished in 0.481 seconds with exit status 0 (successful).
+  INFO [822bd739] Finished in 3.002 seconds with exit status 0 (successful).
+  INFO [817d6639] Running mkdir /home/deploy/apps/mac/shared/tmp/pids -p on ec2-52-27-101-7.us-west-2.compute.amazonaws.com
+ DEBUG [817d6639] Command: mkdir /home/deploy/apps/mac/shared/tmp/pids -p
+  INFO [817d6639] Finished in 0.483 seconds with exit status 0 (successful).
+ DEBUG [205386ea] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] on ec2-52-27-101-7.us-west-2.compute.amazonaws.com
+ DEBUG [48df4258] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] as deploy@52.27.101.7
+ DEBUG [205386ea] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [48df4258] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [48df4258] Finished in 0.478 seconds with exit status 0 (successful).
+  INFO using conf file /home/deploy/apps/mac/shared/puma.rb
+ DEBUG [01ffcaa6] Running [ -f /home/deploy/apps/mac/shared/tmp/pids/puma.pid ] as deploy@52.27.101.7
+ DEBUG [01ffcaa6] Command: [ -f /home/deploy/apps/mac/shared/tmp/pids/puma.pid ]
+ DEBUG [205386ea] Finished in 0.483 seconds with exit status 0 (successful).
+  INFO using conf file /home/deploy/apps/mac/shared/puma.rb
+ DEBUG [f559e6df] Running [ -f /home/deploy/apps/mac/shared/tmp/pids/puma.pid ] on ec2-52-27-101-7.us-west-2.compute.amazonaws.com
+ DEBUG [f559e6df] Command: [ -f /home/deploy/apps/mac/shared/tmp/pids/puma.pid ]
+ DEBUG [01ffcaa6] Finished in 0.477 seconds with exit status 1 (failed).
+ DEBUG [bc8c6a0a] Running if test ! -d /home/deploy/apps/mac/current; then echo "Directory does not exist '/home/deploy/apps/mac/current'" 1>&2; false; fi as deploy@52.27.101.7
+ DEBUG [bc8c6a0a] Command: if test ! -d /home/deploy/apps/mac/current; then echo "Directory does not exist '/home/deploy/apps/mac/current'" 1>&2; false; fi
+ DEBUG [f559e6df] Finished in 0.479 seconds with exit status 1 (failed).
+ DEBUG [6f9fec8a] Running if test ! -d /home/deploy/apps/mac/current; then echo "Directory does not exist '/home/deploy/apps/mac/current'" 1>&2; false; fi on ec2-52-27-101-7.us-west-2.compute.amazonaws.com
+ DEBUG [6f9fec8a] Command: if test ! -d /home/deploy/apps/mac/current; then echo "Directory does not exist '/home/deploy/apps/mac/current'" 1>&2; false; fi
+ DEBUG [bc8c6a0a] Finished in 0.478 seconds with exit status 0 (successful).
+  INFO [87e574f0] Running ~/.rvm/bin/rvm default do bundle exec puma -C /home/deploy/apps/mac/shared/puma.rb --daemon as deploy@52.27.101.7
+ DEBUG [87e574f0] Command: cd /home/deploy/apps/mac/current && ( export RACK_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec puma -C /home/deploy/apps/mac/shared/puma.rb --daemon )
+ DEBUG [6f9fec8a] Finished in 0.481 seconds with exit status 0 (successful).
+  INFO [494cf1b9] Running ~/.rvm/bin/rvm default do bundle exec puma -C /home/deploy/apps/mac/shared/puma.rb --daemon on ec2-52-27-101-7.us-west-2.compute.amazonaws.com
+ DEBUG [494cf1b9] Command: cd /home/deploy/apps/mac/current && ( export RACK_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec puma -C /home/deploy/apps/mac/shared/puma.rb --daemon )
+ DEBUG [87e574f0] 	Puma starting in single mode...
+ DEBUG [494cf1b9] 	Puma starting in single mode...
+ DEBUG [494cf1b9] 	
+ DEBUG [87e574f0] 	
+ DEBUG [494cf1b9] 	* Version 3.8.2 (ruby 2.2.4-p230), codename: Sassy Salamander
+ DEBUG [87e574f0] 	* Version 3.8.2 (ruby 2.2.4-p230), codename: Sassy Salamander
+ DEBUG [494cf1b9] 	
+ DEBUG [87e574f0] 	
+ DEBUG [494cf1b9] 	* Min threads: 4, max threads: 16
+ DEBUG [87e574f0] 	* Min threads: 4, max threads: 16
+ DEBUG [494cf1b9] 	
+ DEBUG [87e574f0] 	
+ DEBUG [494cf1b9] 	* Environment: production
+ DEBUG [87e574f0] 	* Environment: production
+ DEBUG [494cf1b9] 	
+ DEBUG [87e574f0] 	
+ DEBUG [494cf1b9] 	* Daemonizing...
+ DEBUG [87e574f0] 	* Daemonizing...
+ DEBUG [494cf1b9] 	
+ DEBUG [87e574f0] 	
+  INFO [87e574f0] Finished in 2.369 seconds with exit status 0 (successful).
+  INFO [494cf1b9] Finished in 2.363 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-10 00:42:21 +0700 cap production puma:restart
+  INFO ---------------------------------------------------------------------------
+ DEBUG [052f6a4e] Running [ -d ~/.rvm ] on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [407ba7be] Running [ -d ~/.rvm ] as deploy@52.35.15.102
+ DEBUG [052f6a4e] Command: [ -d ~/.rvm ]
+ DEBUG [407ba7be] Command: [ -d ~/.rvm ]
+ DEBUG [407ba7be] Finished in 2.976 seconds with exit status 0 (successful).
+ DEBUG [052f6a4e] Finished in 3.198 seconds with exit status 0 (successful).
+ DEBUG [3d0a0307] Running ~/.rvm/bin/rvm version on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [54e86996] Running ~/.rvm/bin/rvm version as deploy@52.35.15.102
+ DEBUG [3d0a0307] Command: ~/.rvm/bin/rvm version
+ DEBUG [54e86996] Command: ~/.rvm/bin/rvm version
+ DEBUG [3d0a0307] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [54e86996] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [54e86996] 	
+ DEBUG [3d0a0307] 	
+ DEBUG [54e86996] Finished in 0.762 seconds with exit status 0 (successful).
+ DEBUG [3d0a0307] Finished in 0.764 seconds with exit status 0 (successful).
+ DEBUG [5b63d3d0] Running ~/.rvm/bin/rvm current as deploy@52.35.15.102
+ DEBUG [3875546d] Running ~/.rvm/bin/rvm current on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [5b63d3d0] Command: ~/.rvm/bin/rvm current
+ DEBUG [3875546d] Command: ~/.rvm/bin/rvm current
+ DEBUG [5b63d3d0] 	ruby-2.2.4
+ DEBUG [3875546d] 	ruby-2.2.4
+ DEBUG [3875546d] 	
+ DEBUG [5b63d3d0] 	
+ DEBUG [5b63d3d0] Finished in 0.763 seconds with exit status 0 (successful).
+ DEBUG [3875546d] Finished in 0.764 seconds with exit status 0 (successful).
+ DEBUG [a311da17] Running ~/.rvm/bin/rvm default do ruby --version as deploy@52.35.15.102
+ DEBUG [155fdde2] Running ~/.rvm/bin/rvm default do ruby --version on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [a311da17] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [155fdde2] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [a311da17] 	ruby 2.2.4p230 (2015-12-16 revision 53155) [x86_64-linux]
+ DEBUG [155fdde2] 	ruby 2.2.4p230 (2015-12-16 revision 53155) [x86_64-linux]
+ DEBUG [a311da17] 	
+ DEBUG [155fdde2] 	
+ DEBUG [155fdde2] Finished in 0.985 seconds with exit status 0 (successful).
+ DEBUG [a311da17] Finished in 0.987 seconds with exit status 0 (successful).
+ DEBUG [36489e10] Running if test ! -d /home/deploy/apps/mac/current; then echo "Directory does not exist '/home/deploy/apps/mac/current'" 1>&2; false; fi on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [941c03cf] Running if test ! -d /home/deploy/apps/mac/current; then echo "Directory does not exist '/home/deploy/apps/mac/current'" 1>&2; false; fi as deploy@52.35.15.102
+ DEBUG [36489e10] Command: if test ! -d /home/deploy/apps/mac/current; then echo "Directory does not exist '/home/deploy/apps/mac/current'" 1>&2; false; fi
+ DEBUG [941c03cf] Command: if test ! -d /home/deploy/apps/mac/current; then echo "Directory does not exist '/home/deploy/apps/mac/current'" 1>&2; false; fi
+ DEBUG [36489e10] Finished in 0.480 seconds with exit status 0 (successful).
+ DEBUG [941c03cf] Finished in 0.479 seconds with exit status 0 (successful).
+ DEBUG [57047146] Running [ -f /home/deploy/apps/mac/shared/tmp/pids/puma.pid ] on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [3fd4ac2f] Running [ -f /home/deploy/apps/mac/shared/tmp/pids/puma.pid ] as deploy@52.35.15.102
+ DEBUG [57047146] Command: [ -f /home/deploy/apps/mac/shared/tmp/pids/puma.pid ]
+ DEBUG [3fd4ac2f] Command: [ -f /home/deploy/apps/mac/shared/tmp/pids/puma.pid ]
+ DEBUG [3fd4ac2f] Finished in 0.477 seconds with exit status 1 (failed).
+ DEBUG [57047146] Finished in 0.479 seconds with exit status 1 (failed).
+  INFO [3ac8dd9b] Running mkdir /home/deploy/apps/mac/shared/tmp/sockets -p on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+  INFO [50e8d22f] Running mkdir /home/deploy/apps/mac/shared/tmp/sockets -p as deploy@52.35.15.102
+ DEBUG [3ac8dd9b] Command: mkdir /home/deploy/apps/mac/shared/tmp/sockets -p
+ DEBUG [50e8d22f] Command: mkdir /home/deploy/apps/mac/shared/tmp/sockets -p
+  INFO [50e8d22f] Finished in 0.478 seconds with exit status 0 (successful).
+  INFO [3ac8dd9b] Finished in 0.480 seconds with exit status 0 (successful).
+  INFO [78c3644a] Running mkdir /home/deploy/apps/mac/shared/tmp/pids -p as deploy@52.35.15.102
+  INFO [8bd9698e] Running mkdir /home/deploy/apps/mac/shared/tmp/pids -p on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [78c3644a] Command: mkdir /home/deploy/apps/mac/shared/tmp/pids -p
+ DEBUG [8bd9698e] Command: mkdir /home/deploy/apps/mac/shared/tmp/pids -p
+  INFO [78c3644a] Finished in 0.479 seconds with exit status 0 (successful).
+  INFO [8bd9698e] Finished in 0.480 seconds with exit status 0 (successful).
+ DEBUG [0bf3dae2] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] as deploy@52.35.15.102
+ DEBUG [346d636b] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [0bf3dae2] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [346d636b] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [0bf3dae2] Finished in 0.477 seconds with exit status 0 (successful).
+  INFO using conf file /home/deploy/apps/mac/shared/puma.rb
+ DEBUG [346d636b] Finished in 0.477 seconds with exit status 0 (successful).
+  INFO using conf file /home/deploy/apps/mac/shared/puma.rb
+ DEBUG [0ca44282] Running [ -f /home/deploy/apps/mac/shared/tmp/pids/puma.pid ] as deploy@52.35.15.102
+ DEBUG [0ca44282] Command: [ -f /home/deploy/apps/mac/shared/tmp/pids/puma.pid ]
+ DEBUG [da7796d0] Running [ -f /home/deploy/apps/mac/shared/tmp/pids/puma.pid ] on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [da7796d0] Command: [ -f /home/deploy/apps/mac/shared/tmp/pids/puma.pid ]
+ DEBUG [0ca44282] Finished in 0.479 seconds with exit status 1 (failed).
+ DEBUG [93ae5e1c] Running if test ! -d /home/deploy/apps/mac/current; then echo "Directory does not exist '/home/deploy/apps/mac/current'" 1>&2; false; fi as deploy@52.35.15.102
+ DEBUG [da7796d0] Finished in 0.480 seconds with exit status 1 (failed).
+ DEBUG [93ae5e1c] Command: if test ! -d /home/deploy/apps/mac/current; then echo "Directory does not exist '/home/deploy/apps/mac/current'" 1>&2; false; fi
+ DEBUG [adc28170] Running if test ! -d /home/deploy/apps/mac/current; then echo "Directory does not exist '/home/deploy/apps/mac/current'" 1>&2; false; fi on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [adc28170] Command: if test ! -d /home/deploy/apps/mac/current; then echo "Directory does not exist '/home/deploy/apps/mac/current'" 1>&2; false; fi
+ DEBUG [93ae5e1c] Finished in 0.477 seconds with exit status 0 (successful).
+  INFO [9a5da110] Running ~/.rvm/bin/rvm default do bundle exec puma -C /home/deploy/apps/mac/shared/puma.rb --daemon as deploy@52.35.15.102
+ DEBUG [adc28170] Finished in 0.477 seconds with exit status 0 (successful).
+ DEBUG [9a5da110] Command: cd /home/deploy/apps/mac/current && ( export RACK_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec puma -C /home/deploy/apps/mac/shared/puma.rb --daemon )
+  INFO [72a59a5f] Running ~/.rvm/bin/rvm default do bundle exec puma -C /home/deploy/apps/mac/shared/puma.rb --daemon on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [72a59a5f] Command: cd /home/deploy/apps/mac/current && ( export RACK_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec puma -C /home/deploy/apps/mac/shared/puma.rb --daemon )
+ DEBUG [9a5da110] 	Puma starting in single mode...
+ DEBUG [9a5da110] 	
+ DEBUG [9a5da110] 	* Version 3.8.2 (ruby 2.2.4-p230), codename: Sassy Salamander
+ DEBUG [72a59a5f] 	Puma starting in single mode...
+ DEBUG [9a5da110] 	
+ DEBUG [72a59a5f] 	
+ DEBUG [9a5da110] 	* Min threads: 4, max threads: 16
+ DEBUG [72a59a5f] 	* Version 3.8.2 (ruby 2.2.4-p230), codename: Sassy Salamander
+ DEBUG [9a5da110] 	
+ DEBUG [9a5da110] 	* Environment: production
+ DEBUG [72a59a5f] 	
+ DEBUG [9a5da110] 	
+ DEBUG [72a59a5f] 	* Min threads: 4, max threads: 16
+ DEBUG [9a5da110] 	* Daemonizing...
+ DEBUG [72a59a5f] 	
+ DEBUG [9a5da110] 	
+ DEBUG [72a59a5f] 	* Environment: production
+ DEBUG [72a59a5f] 	
+ DEBUG [72a59a5f] 	* Daemonizing...
+ DEBUG [72a59a5f] 	
+  INFO [9a5da110] Finished in 2.600 seconds with exit status 0 (successful).
+  INFO [72a59a5f] Finished in 2.602 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-10 00:43:01 +0700 cap production puma:start
+  INFO ---------------------------------------------------------------------------
+ DEBUG [cb6c4084] Running [ -d ~/.rvm ] on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [016ea047] Running [ -d ~/.rvm ] as deploy@52.35.15.102
+ DEBUG [cb6c4084] Command: [ -d ~/.rvm ]
+ DEBUG [016ea047] Command: [ -d ~/.rvm ]
+ DEBUG [cb6c4084] Finished in 2.868 seconds with exit status 0 (successful).
+ DEBUG [016ea047] Finished in 3.092 seconds with exit status 0 (successful).
+ DEBUG [ff71f53f] Running ~/.rvm/bin/rvm version on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [e3c846b3] Running ~/.rvm/bin/rvm version as deploy@52.35.15.102
+ DEBUG [ff71f53f] Command: ~/.rvm/bin/rvm version
+ DEBUG [e3c846b3] Command: ~/.rvm/bin/rvm version
+ DEBUG [ff71f53f] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [ff71f53f] 	
+ DEBUG [e3c846b3] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [ff71f53f] Finished in 0.743 seconds with exit status 0 (successful).
+ DEBUG [e3c846b3] 	
+ DEBUG [b510e3a2] Running ~/.rvm/bin/rvm current on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [b510e3a2] Command: ~/.rvm/bin/rvm current
+ DEBUG [e3c846b3] Finished in 0.745 seconds with exit status 0 (successful).
+ DEBUG [0f9faa99] Running ~/.rvm/bin/rvm current as deploy@52.35.15.102
+ DEBUG [0f9faa99] Command: ~/.rvm/bin/rvm current
+ DEBUG [b510e3a2] 	ruby-2.2.4
+ DEBUG [0f9faa99] 	ruby-2.2.4
+ DEBUG [0f9faa99] 	
+ DEBUG [b510e3a2] 	
+ DEBUG [0f9faa99] Finished in 0.741 seconds with exit status 0 (successful).
+ DEBUG [b510e3a2] Finished in 0.745 seconds with exit status 0 (successful).
+ DEBUG [a53a1d48] Running ~/.rvm/bin/rvm default do ruby --version as deploy@52.35.15.102
+ DEBUG [a53a1d48] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [e46ebda2] Running ~/.rvm/bin/rvm default do ruby --version on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [e46ebda2] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [e46ebda2] 	ruby 2.2.4p230 (2015-12-16 revision 53155) [x86_64-linux]
+ DEBUG [a53a1d48] 	ruby 2.2.4p230 (2015-12-16 revision 53155) [x86_64-linux]
+ DEBUG [e46ebda2] 	
+ DEBUG [a53a1d48] 	
+ DEBUG [e46ebda2] Finished in 0.949 seconds with exit status 0 (successful).
+ DEBUG [a53a1d48] Finished in 0.952 seconds with exit status 0 (successful).
+  INFO [e9ca0dac] Running mkdir /home/deploy/apps/mac/shared/tmp/sockets -p as deploy@52.35.15.102
+  INFO [e441e655] Running mkdir /home/deploy/apps/mac/shared/tmp/sockets -p on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [e9ca0dac] Command: mkdir /home/deploy/apps/mac/shared/tmp/sockets -p
+ DEBUG [e441e655] Command: mkdir /home/deploy/apps/mac/shared/tmp/sockets -p
+  INFO [e441e655] Finished in 0.462 seconds with exit status 0 (successful).
+  INFO [e9ca0dac] Finished in 0.463 seconds with exit status 0 (successful).
+  INFO [d21251b4] Running mkdir /home/deploy/apps/mac/shared/tmp/pids -p on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [d21251b4] Command: mkdir /home/deploy/apps/mac/shared/tmp/pids -p
+  INFO [9d6cf2e5] Running mkdir /home/deploy/apps/mac/shared/tmp/pids -p as deploy@52.35.15.102
+ DEBUG [9d6cf2e5] Command: mkdir /home/deploy/apps/mac/shared/tmp/pids -p
+  INFO [d21251b4] Finished in 0.462 seconds with exit status 0 (successful).
+  INFO [9d6cf2e5] Finished in 0.462 seconds with exit status 0 (successful).
+ DEBUG [b34b52d4] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [86d897e6] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] as deploy@52.35.15.102
+ DEBUG [b34b52d4] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [86d897e6] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [b34b52d4] Finished in 0.460 seconds with exit status 0 (successful).
+  INFO using conf file /home/deploy/apps/mac/shared/puma.rb
+ DEBUG [86d897e6] Finished in 0.461 seconds with exit status 0 (successful).
+  INFO using conf file /home/deploy/apps/mac/shared/puma.rb
+ DEBUG [5faf7206] Running [ -f /home/deploy/apps/mac/shared/tmp/pids/puma.pid ] on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [5faf7206] Command: [ -f /home/deploy/apps/mac/shared/tmp/pids/puma.pid ]
+ DEBUG [447eed4e] Running [ -f /home/deploy/apps/mac/shared/tmp/pids/puma.pid ] as deploy@52.35.15.102
+ DEBUG [447eed4e] Command: [ -f /home/deploy/apps/mac/shared/tmp/pids/puma.pid ]
+ DEBUG [447eed4e] Finished in 0.461 seconds with exit status 0 (successful).
+ DEBUG [5723344b] Running /usr/bin/env kill -0 $( cat /home/deploy/apps/mac/shared/tmp/pids/puma.pid ) as deploy@52.35.15.102
+ DEBUG [5faf7206] Finished in 0.464 seconds with exit status 0 (successful).
+ DEBUG [5723344b] Command: /usr/bin/env kill -0 $( cat /home/deploy/apps/mac/shared/tmp/pids/puma.pid )
+ DEBUG [fcf362bd] Running /usr/bin/env kill -0 $( cat /home/deploy/apps/mac/shared/tmp/pids/puma.pid ) on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [fcf362bd] Command: /usr/bin/env kill -0 $( cat /home/deploy/apps/mac/shared/tmp/pids/puma.pid )
+ DEBUG [5723344b] Finished in 0.464 seconds with exit status 0 (successful).
+  INFO Already Puma is running
+ DEBUG [fcf362bd] Finished in 0.464 seconds with exit status 0 (successful).
+  INFO Already Puma is running

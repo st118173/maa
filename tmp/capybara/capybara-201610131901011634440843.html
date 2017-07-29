@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="th" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <title>MAA</title>
+  
+
+  <link rel="stylesheet" media="all" href="/assets/application-d12397cbc3a266ce5a99f7b588223090c55ca04a439953bb5f9304395de93fc3.css" data-turbolinks-track="reload" />
+  <script src="/assets/application-bebd7a5a95420497ae645ce56a96cd79e003c39ff3b781798750d9ddf28f8c0d.js" data-turbolinks-track="reload"></script>
+</head>
+
+<body style="background-image:url(http://bipnational.net/portals/_default/Skinsold/BIPSkin/backgrounds/SkyBlue/09_image.jpg);background-size: 90% 180%;">
+
+
+<ul>
+
+  <br>
+
+  <p class="notice">Signed in successfully.</p>
+  <p class="alert"></p>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top " >
+    <div class="container-fluid" style="background-color : black">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#" style="color: aliceblue">WEBSITE-14</a>
+      </div>
+      <ul class="nav navbar-nav" style="color: #B00100">
+        <li class="active"><a href="http://web14.cs.ait.ac.th/pages/home">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Assignment <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://web14.cs.ait.ac.th/pages/ps1">PS1</a></li>
+            <li><a href="http://web14.cs.ait.ac.th/pages/ps2">PS2</a></li>
+            <li><a href="http://web14.cs.ait.ac.th/ps3/ps3">PS3</a></li>
+            <li><a href="https://web14.cs.ait.ac.th/maa">PS4</a></li>
+          </ul>
+
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+  <h1 align="center" style="color: #B00100">Maa aapki chaaya</h1>
+  <div id="container">
+    <div id="user_status">
+          <h3 align="center" style="color: seagreen">Welcome admin@ait.asia </h3>
+          <form class="button_to" method="post" action="/users/sign_out"><input type="hidden" name="_method" value="delete" /><input type="submit" value="Sign out" /></form>
+    </div>
+    <p id="notice">Signed in successfully.</p>
+<h3 align="center"><font color="#a52a2a"> <a style="color:darkgreen;" href="/maa/dump_dir1/Arunlog1.text">Click here to Watch SQL code</a></font>
+</h3>
+
+<h1>Programs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Event name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td>MyString</td>
+        <td><a href="/programs/1">Show</a></td>
+         <td><a href="/programs/1/edit">Edit</a></td>
+         <td><a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/programs/1">Delete Event</a></td>
+      </tr>
+      <tr>
+        <td>MyString</td>
+        <td><a href="/programs/2">Show</a></td>
+         <td><a href="/programs/2/edit">Edit</a></td>
+         <td><a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/programs/2">Delete Event</a></td>
+      </tr>
+  </tbody>
+</table>
+
+<br>
+
+
+<form class="button_to" method="get" action="/programs/new"><input type="submit" value="Add New Event" /></form>
+
+<form class="button_to" method="get" action="/usersinfo/userlist"><input type="submit" value="Users Profile" /></form>
+
+<p><h4 style="color: darkgreen"><b>Q1) Content</b></h4>
+
+<ul>
+  <li> Organization descriptions and reviews, comments on ideas or organization, questions, and answers to questions.</li>
+  <li> Information repositories such as links to datasheets or pdfs used for organization.</li>
+  <li> In addition, accessibility and expenditure info to the charitable events.</li>
+  <li> Some kind of quotations to inspire the user to help the people.</li>
+  <li> Some educational assets for the students which can spur to study.</li>
+  <li> Some research data.( eg: Charitable Statistics ).</li>
+  <li> Help users identify and visualize the people they’ll be helping.</li>
+  <li> Donations statistics to date</li>
+  <h5 style="color: blueviolet">Note: As we told in the planning we hope to provide multilingual translation.</h5>
+
+  <h4 style="color: darkgreen"><b>Technology</b></h4>
+  The site will use the Apache web server with Ruby on Rails as the scripting language and PostgreSQL as the backend.<br>
+  The basic information processing requirements:<br>
+  <li>User database, storing names, email addresses, and URLs for donation, volunteer interest,
+    with their inclinations (privacy options and so forth).</li>
+  <li>Content database, storing the reports , sort of archive data,
+    links, access controls, admission control status, timing, indexing, and so on.</li>
+  <li>The user/content map contains information about organization individuals, who ought to be informed when
+    remarks or reactions are posted and for posting thoughts or recommendations on events and so on.</li>
+  <li> This map records both Organization membership information and readership statistics,
+    so we can use social filtering to make recommendations.</li>
+  <li>The user/content map contains information about connections between organization individuals including administrator, as a president.
+    e.g., Regular Donors/Sponsers, Organization members,bozo filters,  and so on.</li>
+</ul>
+<p><h4 style="color: darkgreen"><b>Q2)  a)SQL Injection</b></h4>
+<ul>
+  <li> This is hardly a problem in most Rails applications. However, this is a very devastating and common attack in web applications</li>
+  <li> In our Project we won't use these type of code-->"Project.where("name = '#{params[:name]}'")"
+    in order to avoid search action like If a malicious user enters ' OR 1 --, the resulting SQL query will be:
+    SELECT * FROM projects WHERE name = '' OR 1 --'.
+    So the query returns all records from the projects table including those blind to the user. This is because the condition is true for all records.</li>
+  <li>As we are using devise, mostly sql injection is not possible but may be possible.So in order to avoid Bypass Authorization
+    we don't use this code--> "User.first("login = '#{params[:name]}' AND password = '#{params[:password]}'")"
+    such that if an attacker enters ' OR '1'='1 as the name, and ' OR '2'>'1 as the password, the resulting SQL query will be:
+    SELECT * FROM users WHERE login = '' OR '1'='1' AND password = '' OR '2'>'1' LIMIT 1 and this will simply find the first record in the database, and grants access to this user
+    Even we are not giving Username field instead we use email field, such that email filed won't accept other than ( ' @ ' , ' . ' , ' _ ' , [ a-z ] , [ A-Z ] ).
+  </li>
+  <li>
+    we don't use these kind of code--->Project.where("name = '#{params[:name]}'")
+    in order to  Unauthorized Reading by entering "') UNION SELECT id,login AS name,password AS description,1,1,1 FROM users --"
+  </li>
+<li>
+  Also we are not having code like "Model.where("login = ? AND password = ?", entered_user_name, entered_password).first"
+to avoid Bypass authorization such that we'll use "Model.where(login: entered_user_name, password: entered_password).first"
+or we can pass a hash for the same result
+</li>
+  <p><h4 style="color: darkgreen"><b>b) Cross-Site Scripting (XSS) </b></h4>
+  <li>
+    This malicious attack injects client-side executable code. Rails provides helper methods to fend these attacks off.
+  </li>
+  <li>
+    Mostly we avoid methods that displays images and script path instead we'll write method that it will convert path into URL such that
+    maliciour can't access cookies or images/ files etc.
+    To avoid XSS attack mostly we use the methods that which validates before execute.
+  </li>
+
+
+</ul></p>
+<p><h4 style="color: darkgreen"><b>Q3) Audit and plan to secure database password </b></h4>
+<ul><li>
+  Till now we are not encrypting database passwords from server instead we do it and our local sytem.
+  so the capistrano, will automatically decrypt when sending.
+</li>
+In our project, we only give read permision to database YAML file by using bcdatabase.
+<li>
+
+</li>
+Bcdatabase is a library and utility which provides database configuration
+parameter management for Ruby on Rails applications. It provides a simple mechanism
+for separating database configuration attributes from application source code so that
+there's no temptation to check passwords into the version control system.
+And it centralizes the parameters for a single server so that they can be easily
+shared among multiple applications and easily updated by a single administrator.
+<li>
+  Rails allows this file to contain ERB. bcdatabase uses ERB to replace an entire configuration block.
+</li>
+<li>
+  More rarely, you might need to access the actual configuration hash, instead of the
+  YAMLized version. You can access it by invoking Bcdatabase.load as shown earlier,
+  then using the bracket operator to specify the configuration you want:
+  Like in example ====>>  bcdb[:local, :cfg_animal]
+  The resulting hash is suitable for passing to ActiveRecord::Base.establish_connection, for instance.
+
+</li>
+<li>
+  Bcdatabase supports storing encrypted passwords instead of the plaintext ones
+  shown in the previous example. Encrypted passwords are defined with the key epassword
+  instead of password. The library will decrypt the epassword value and expose
+  it to the calling code (usually Rails) unencrypted under the password key.
+  The bcdatabase command line utility handles encrypting passwords
+</li>
+<li>
+  While the passwords are technically encrypted, the master key must be stored on the same
+  machine so that they can be decrypted on demand. That means this feature only
+  obscures passwords — it will not deter a determined attacker
+</li></ul></p>
+<h4 style="color: darkgreen"><b>Q4) Sketch user data model</b></h4><br>
+
+<img style="z-index:19; position: relative; " src="/assets/UserRolePage-19dd987fa55109772d784c083e267351c4d292b2072f6167e867c9af79104623.png" alt="Userrolepage" width="750" height="350" />
+
+<h4 style="color: darkgreen"><b>Q5) Sketch a Page flow</b></h4>
+<img style="z-index:19; position: relative; float: left;" src="/assets/UserRegpage-f3b3c7ce59ac257ef46b1fd9b5a4b9f33ede0645e5fdac3495d156f2573fd7a4.png" alt="Userregpage" width="1050" height="550" />
+
+<h4 style="color: darkgreen"><b> Continuous Integration Server</b></h4><a href="https://ci.vgl-ait.org/jenkins/job/WAE-2016/job/web14/16/console">Click Here</a>
+<h4 style="color: darkgreen"><b> Issue Tracker </b></h4><a href="http://vgl-ait.org/redmine/projects/web16-14/issues">Click Here</a>
+  </div>
+
+  <div style="position: relative; text-align: center">
+    <p style="position: fixed; bottom: 0; width:100%;"><br><br><br>
+      <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fweb14.cs.ait.ac.th%2F"><img width="88" height="31" alt="Valid XHTML 1.0!" src="http://www.w3.org/Icons/valid-xhtml10"/></a>
+
+    </p>
+
+  </div>
+
+
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br></ul> <br><br><br>
+
+</body>
+</html>
