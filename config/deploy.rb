@@ -65,7 +65,8 @@
 
 
 # Change these
-server 'ec2-52-35-15-102.us-west-2.compute.amazonaws.com', roles: [:web, :app, :db], primary: true
+#server 'ec2-52-35-15-102.us-west-2.compute.amazonaws.com', roles: [:web, :app, :db], primary: true
+server 'ec2-54-202-109-74.us-west-2.compute.amazonaws.com', roles: [:web, :app, :db], primary: true
 
 set :repo_url,        "git@github.com:st118173/maa.git"
 set :application,     'mac'

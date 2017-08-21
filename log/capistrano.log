@@ -1051,3 +1051,31 @@ remote: Compressing objects:   0% (1/5018)   [K
  DEBUG [d881b8ff] Running [ -d ~/.rvm ] as deploy@52.35.15.102
  DEBUG [4b616e2f] Command: [ -d ~/.rvm ]
  DEBUG [d881b8ff] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-07-29 15:23:51 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [4b014704] Running [ -d ~/.rvm ] on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [20ae238c] Running [ -d ~/.rvm ] as deploy@52.35.15.102
+ DEBUG [4b014704] Command: [ -d ~/.rvm ]
+ DEBUG [20ae238c] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-07-29 16:22:29 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [cd4be78e] Running [ -d ~/.rvm ] on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [928ca179] Running [ -d ~/.rvm ] as deploy@52.35.15.102
+ DEBUG [cd4be78e] Command: [ -d ~/.rvm ]
+ DEBUG [928ca179] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-07-29 16:24:19 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [3cda06ce] Running [ -d ~/.rvm ] as deploy@52.35.15.102
+ DEBUG [d97e6314] Running [ -d ~/.rvm ] on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [3cda06ce] Command: [ -d ~/.rvm ]
+ DEBUG [d97e6314] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-07-29 16:24:36 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [bc0910a8] Running [ -d ~/.rvm ] as deploy@52.35.15.102
+ DEBUG [d3712c31] Running [ -d ~/.rvm ] on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
+ DEBUG [bc0910a8] Command: [ -d ~/.rvm ]
+ DEBUG [d3712c31] Command: [ -d ~/.rvm ]
