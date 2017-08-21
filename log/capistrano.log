@@ -1079,3 +1079,2034 @@ remote: Compressing objects:   0% (1/5018)   [K
  DEBUG [d3712c31] Running [ -d ~/.rvm ] on ec2-52-35-15-102.us-west-2.compute.amazonaws.com
  DEBUG [bc0910a8] Command: [ -d ~/.rvm ]
  DEBUG [d3712c31] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-08-21 17:07:55 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [c6119044] Running [ -d ~/.rvm ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [c6119044] Command: [ -d ~/.rvm ]
+ DEBUG [8a416cc0] Running [ -d ~/.rvm ] as deploy@54.202.109.74
+ DEBUG [8a416cc0] Command: [ -d ~/.rvm ]
+ DEBUG [8a416cc0] Finished in 4.020 seconds with exit status 1 (failed).
+ DEBUG [c6119044] Finished in 4.026 seconds with exit status 1 (failed).
+ DEBUG [8c0a60cb] Running [ -d /usr/local/rvm ] as deploy@54.202.109.74
+ DEBUG [18168ca6] Running [ -d /usr/local/rvm ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [8c0a60cb] Command: [ -d /usr/local/rvm ]
+ DEBUG [18168ca6] Command: [ -d /usr/local/rvm ]
+ DEBUG [18168ca6] Finished in 0.609 seconds with exit status 1 (failed).
+ DEBUG [8c0a60cb] Finished in 0.613 seconds with exit status 1 (failed).
+ DEBUG [bb0970cc] Running ~/.rvm/bin/rvm version as deploy@54.202.109.74
+ DEBUG [4a437a3e] Running ~/.rvm/bin/rvm version on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [bb0970cc] Command: ~/.rvm/bin/rvm version
+ DEBUG [4a437a3e] Command: ~/.rvm/bin/rvm version
+ DEBUG [4a437a3e] 	sh: 1: 
+ DEBUG [4a437a3e] 	/home/deploy/.rvm/bin/rvm: not found
+ DEBUG [4a437a3e] 	
+ DEBUG [bb0970cc] 	sh: 1: 
+ DEBUG [bb0970cc] 	/home/deploy/.rvm/bin/rvm: not found
+ DEBUG [bb0970cc] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-08-21 17:14:03 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [0ad18e68] Running [ -d ~/.rvm ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [577ce9ad] Running [ -d ~/.rvm ] as deploy@54.202.109.74
+ DEBUG [0ad18e68] Command: [ -d ~/.rvm ]
+ DEBUG [577ce9ad] Command: [ -d ~/.rvm ]
+ DEBUG [0ad18e68] Finished in 4.024 seconds with exit status 0 (successful).
+ DEBUG [577ce9ad] Finished in 4.024 seconds with exit status 0 (successful).
+ DEBUG [a95a00c4] Running ~/.rvm/bin/rvm version on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [1ea8d556] Running ~/.rvm/bin/rvm version as deploy@54.202.109.74
+ DEBUG [a95a00c4] Command: ~/.rvm/bin/rvm version
+ DEBUG [1ea8d556] Command: ~/.rvm/bin/rvm version
+ DEBUG [1ea8d556] 	rvm 1.29.2 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [1ea8d556] 	
+ DEBUG [1ea8d556] Finished in 0.915 seconds with exit status 0 (successful).
+ DEBUG [5303ef26] Running ~/.rvm/bin/rvm current as deploy@54.202.109.74
+ DEBUG [5303ef26] Command: ~/.rvm/bin/rvm current
+ DEBUG [a95a00c4] 	rvm 1.29.2 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [a95a00c4] 	
+ DEBUG [a95a00c4] Finished in 0.920 seconds with exit status 0 (successful).
+ DEBUG [15668903] Running ~/.rvm/bin/rvm current on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [15668903] Command: ~/.rvm/bin/rvm current
+ DEBUG [15668903] 	system
+ DEBUG [5303ef26] 	system
+ DEBUG [15668903] 	
+ DEBUG [5303ef26] 	
+ DEBUG [15668903] Finished in 0.919 seconds with exit status 0 (successful).
+ DEBUG [5303ef26] Finished in 0.924 seconds with exit status 0 (successful).
+ DEBUG [b0dc5fac] Running ~/.rvm/bin/rvm default do ruby --version on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [1c639f03] Running ~/.rvm/bin/rvm default do ruby --version as deploy@54.202.109.74
+ DEBUG [b0dc5fac] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [1c639f03] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [b0dc5fac] 	/home/deploy/.rvm/scripts/set: line 19: exec: ruby: not found
+ DEBUG [b0dc5fac] 	
+ DEBUG [1c639f03] 	/home/deploy/.rvm/scripts/set: line 19: exec: ruby: not found
+ DEBUG [1c639f03] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-08-21 17:14:57 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [162e8d1c] Running /usr/bin/env mkdir -p /tmp on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [4ac95df7] Running /usr/bin/env mkdir -p /tmp as deploy@54.202.109.74
+ DEBUG [162e8d1c] Command: /usr/bin/env mkdir -p /tmp
+ DEBUG [4ac95df7] Command: /usr/bin/env mkdir -p /tmp
+  INFO [4ac95df7] Finished in 3.956 seconds with exit status 0 (successful).
+  INFO [162e8d1c] Finished in 3.957 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO [f45ffa07] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [f45ffa07] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh
+  INFO [5421b048] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh as deploy@54.202.109.74
+ DEBUG [5421b048] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh
+  INFO [5421b048] Finished in 0.612 seconds with exit status 0 (successful).
+  INFO [f45ffa07] Finished in 0.614 seconds with exit status 0 (successful).
+  INFO [398442c8] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [398442c8] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+  INFO [3ac9ac43] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD as deploy@54.202.109.74
+ DEBUG [3ac9ac43] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+ DEBUG [398442c8] 	Warning: Permanently added 'github.com,192.30.255.113' (RSA) to the list of known hosts.
+ DEBUG [398442c8] 	
+ DEBUG [3ac9ac43] 	fb659ed7014348740fad6d0e9017e4a896216757
+ DEBUG [3ac9ac43] 		
+ DEBUG [3ac9ac43] 	HEAD
+  INFO [3ac9ac43] Finished in 1.577 seconds with exit status 0 (successful).
+ DEBUG [398442c8] 	fb659ed7014348740fad6d0e9017e4a896216757
+ DEBUG [398442c8] 		
+ DEBUG [398442c8] 	HEAD
+  INFO [398442c8] Finished in 1.678 seconds with exit status 0 (successful).
+  INFO [d36aa37f] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases as deploy@54.202.109.74
+ DEBUG [d36aa37f] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases
+  INFO [deeb4e8e] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [deeb4e8e] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases
+  INFO [d36aa37f] Finished in 0.973 seconds with exit status 0 (successful).
+  INFO [deeb4e8e] Finished in 0.972 seconds with exit status 0 (successful).
+  INFO [927c2bfc] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [45dd78cf] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets as deploy@54.202.109.74
+ DEBUG [927c2bfc] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets
+ DEBUG [45dd78cf] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets
+  INFO [927c2bfc] Finished in 0.610 seconds with exit status 0 (successful).
+  INFO [45dd78cf] Finished in 0.613 seconds with exit status 0 (successful).
+ DEBUG [12e411d3] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] as deploy@54.202.109.74
+ DEBUG [12e411d3] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [f7fcd63f] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [f7fcd63f] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [12e411d3] Finished in 0.611 seconds with exit status 1 (failed).
+  WARN puma.rb NOT FOUND!
+ DEBUG [f7fcd63f] Finished in 0.610 seconds with exit status 1 (failed).
+  WARN puma.rb NOT FOUND!
+ DEBUG Uploading /home/deploy/apps/mac/shared/puma.rb 0.0%
+ DEBUG Uploading /home/deploy/apps/mac/shared/puma.rb 0.0%
+  INFO Uploading /home/deploy/apps/mac/shared/puma.rb 100.0%
+  INFO Uploading /home/deploy/apps/mac/shared/puma.rb 100.0%
+  INFO puma.rb generated
+  INFO puma.rb generated
+ DEBUG [0c59be57] Running [ -f /home/deploy/apps/mac/current/REVISION ] as deploy@54.202.109.74
+ DEBUG [0c59be57] Command: [ -f /home/deploy/apps/mac/current/REVISION ]
+ DEBUG [58584c29] Running [ -f /home/deploy/apps/mac/current/REVISION ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [58584c29] Command: [ -f /home/deploy/apps/mac/current/REVISION ]
+ DEBUG [0c59be57] Finished in 0.610 seconds with exit status 1 (failed).
+ DEBUG [58584c29] Finished in 0.612 seconds with exit status 1 (failed).
+ DEBUG [705b1d2c] Running [ -f /home/deploy/apps/mac/repo/HEAD ] as deploy@54.202.109.74
+ DEBUG [705b1d2c] Command: [ -f /home/deploy/apps/mac/repo/HEAD ]
+ DEBUG [293b61ff] Running [ -f /home/deploy/apps/mac/repo/HEAD ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [293b61ff] Command: [ -f /home/deploy/apps/mac/repo/HEAD ]
+ DEBUG [705b1d2c] Finished in 0.610 seconds with exit status 1 (failed).
+ DEBUG [293b61ff] Finished in 0.610 seconds with exit status 1 (failed).
+ DEBUG [abf18842] Running if test ! -d /home/deploy/apps/mac; then echo "Directory does not exist '/home/deploy/apps/mac'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [a6a86918] Running if test ! -d /home/deploy/apps/mac; then echo "Directory does not exist '/home/deploy/apps/mac'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [abf18842] Command: if test ! -d /home/deploy/apps/mac; then echo "Directory does not exist '/home/deploy/apps/mac'" 1>&2; false; fi
+ DEBUG [a6a86918] Command: if test ! -d /home/deploy/apps/mac; then echo "Directory does not exist '/home/deploy/apps/mac'" 1>&2; false; fi
+ DEBUG [abf18842] Finished in 0.613 seconds with exit status 0 (successful).
+ DEBUG [a6a86918] Finished in 0.613 seconds with exit status 0 (successful).
+  INFO [30a1895f] Running /usr/bin/env git clone --mirror git@github.com:st118173/maa.git /home/deploy/apps/mac/repo as deploy@54.202.109.74
+  INFO [f6a9729d] Running /usr/bin/env git clone --mirror git@github.com:st118173/maa.git /home/deploy/apps/mac/repo on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [30a1895f] Command: cd /home/deploy/apps/mac && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git clone --mirror git@github.com:st118173/maa.git /home/deploy/apps/mac/repo )
+ DEBUG [f6a9729d] Command: cd /home/deploy/apps/mac && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git clone --mirror git@github.com:st118173/maa.git /home/deploy/apps/mac/repo )
+ DEBUG [30a1895f] 	fatal: destination path '/home/deploy/apps/mac/repo' already exists and is not an empty directory.
+ DEBUG [f6a9729d] 	Cloning into bare repository '/home/deploy/apps/mac/repo'...
+ DEBUG [30a1895f] 	
+ DEBUG [f6a9729d] 	
+ DEBUG [f6a9729d] 	Warning: Permanently added the RSA host key for IP address '192.30.255.112' to the list of known hosts.
+ DEBUG [f6a9729d] 	
+ DEBUG [f6a9729d] 	remote: Counting objects: 8808, done.[K
+ DEBUG [f6a9729d] 	
+ DEBUG [f6a9729d] 	remote: Compressing objects:   2% (1/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:   5% (2/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:   8% (3/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  11% (4/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  14% (5/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  17% (6/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:
+ DEBUG [f6a9729d] 	  20% (7/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  22% (8/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  25% (9/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  28% (10/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  31% (11/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  34% (12/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  37% (13/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  40% (14/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  42% (15/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  45% (16/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  48% (17/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  51% (18/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  54% (19/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  57% (20/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  60% (21/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  62% (22/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  65% (23/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  68% (24/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  71% (25/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  74% (26/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  77% (27/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  80% (28/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  82% (29/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  85% (30/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objec
+ DEBUG [f6a9729d] 	ts:  88% (31/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  91% (32/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  94% (33/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects:  97% (34/35) 
+ DEBUG [f6a9729d] 	  [K
+ DEBUG [f6a9729d] 	remote: Compressing objects: 100% (35/35)   [K
+ DEBUG [f6a9729d] 	remote: Compressing objects: 100% (35/35), done.[K
+ DEBUG [f6a9729d] 	
+ DEBUG [f6a9729d] 	Receiving objects:   0% (1/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:   1% (89/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:   2% (177/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:   3% (265/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:   4% (353/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:   5% (441/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:   6% (529/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:   7% (617/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:   8% (705/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:   9% (793/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  10% (881/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  11% (969/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  12% (1057/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  13% (1146/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  14% (1234/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  15% (1322/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  16% (1410/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  17% (1498/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  18% (1586/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  19% (1674/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  20% (1762/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  21% (1850/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  22% (1938/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  23% (2026/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  24% (2114/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  25% (2202/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  26% (2291/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  27% (2379/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  28% (2467/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  29% (2555/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  30% (2643/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  31% (2731/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  32% (2819/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  33% (2907/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  34% (2995/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  35% (3083/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  36% (3171/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  37% (3259/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  38% (3348/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  39% (3436/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  40% (3524/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  41% (3612/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  42% (3700/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  43% (3788/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  44% (3876/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  45% (3964/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  46% (4052/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  47% (4140/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  48% (4228/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  49% (4316/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  50% (4404/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  51% (4493/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  52% (4581/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  53% (4669/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  54% (4757/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  55% (4845/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  56% (4933/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  57% (5021/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  58% (5109/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  59% (5197/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  60% (5285/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  61% (5373/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  62% (5461/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  63% (5550/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  64% (5638/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  65% (5726/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  66% (5814/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  67% (5902/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  68% (5990/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  69% (6078/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  70% (6166/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  71% (6254/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  72% (6342/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  73% (6430/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  74% (6518/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  75% (6606/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  76% (6695/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  77% (6783/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  78% (6871/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  79% (6959/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  80% (7047/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  81% (7135/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  82% (7223/8808)   
+ DEBUG [f6a9729d] 	Receiving objects:  83% (7311/8808), 14.62 MiB | 29.23 MiB/s   
+ DEBUG [f6a9729d] 	Receiving objects:  84% (7399/8808), 14.62 MiB | 29.23 MiB/s   
+ DEBUG [f6a9729d] 	Receiving objects:  85% (7487/8808), 14.62 MiB | 29.23 MiB/s   
+ DEBUG [f6a9729d] 	Receiving objects:  86% (7575/8808), 14.62 MiB | 29.23 MiB/s   
+ DEBUG [f6a9729d] 	Receiving objects:  87% (7663/8808), 14.62 MiB | 29.23 MiB/s   
+ DEBUG [f6a9729d] 	Receiving objects:  88% (7752/8808), 14.62 MiB | 29.23 MiB/s   
+ DEBUG [f6a9729d] 	Receiving objects:  89% (7840/8808), 14.62 MiB | 29.23 MiB/s   
+ DEBUG [f6a9729d] 	Receiving objects:  90% (7928/8808), 14.62 MiB | 29.23 MiB/s   
+ DEBUG [f6a9729d] 	Receiving objects:  91% (8016/8808), 14.62 MiB | 29.23 MiB/s   
+ DEBUG [f6a9729d] 	Receiving objects:  92% (8104/8808), 14.62 MiB | 29.23 MiB/s   
+ DEBUG [f6a9729d] 	Receiving objects:  93% (8192/8808), 14.62 MiB | 29.23 MiB/s   
+ DEBUG [f6a9729d] 	Receiving objects:  94% (8280/8808), 14.62 MiB | 29.23 MiB/s   
+ DEBUG [f6a9729d] 	Receiving objects:  95% (8368/8808), 14.62 MiB | 29.23 MiB/s   
+ DEBUG [f6a9729d] 	Receiving objects:  96% (8456/8808), 14.62 MiB | 29.23 MiB/s   
+ DEBUG [f6a9729d] 	Receiving objects:  97% (8544/8808), 14.62 MiB | 29.23 MiB/s   
+ DEBUG [f6a9729d] 	Receiving objects:  98% (8632/8808), 14.62 MiB | 29.23 MiB/s   
+ DEBUG [f6a9729d] 	Receiving objects:  99% (8720/8808), 14.62 MiB | 29.23 MiB/s   
+ DEBUG [f6a9729d] 	remote: Total 8808 (delta 6), reused 29 (delta 6), pack-reused 8764[K
+ DEBUG [f6a9729d] 	
+ DEBUG [f6a9729d] 	Receiving objects: 100% (8808/8808), 14.62 MiB | 29.23 MiB/s   
+ DEBUG [f6a9729d] 	Receiving objects: 100% (8808/8808), 23.47 MiB | 29.23 MiB/s, done.
+ DEBUG [f6a9729d] 	
+ DEBUG [f6a9729d] 	Resolving deltas:   0% (0/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:   3% (61/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:   4% (68/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:   7% (131/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:   8% (136/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:   9% (150/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  10% (166/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  11% (192/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  12% (201/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  13% (218/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  15% (257/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  16% (266/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  17% (295/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  18% (303/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  19% (315/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  20% (334/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  21% (350/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  22% (365/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  24% (404/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  25% (417/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  26% (432/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  27% (449/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  28% (466/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  29% (481/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  30% (501/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  31% (514/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  32% (530/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  33% (547/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  34% (572/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  35% (585/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  36% (601/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  37% (620/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  38% (632/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  39% (650/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  40% (664/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  41% (679/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  42% (697/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  43% (713/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  44% (734/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  45% (751/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  46% (764/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  47% (779/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  48% (799/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  49% (812/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  50% (828/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  51% (850/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  52% (866/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  53% (881/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  54% (900/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  55% (912/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  56% (930/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  57% (944/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  58% (964/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  59% (978/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  60% (997/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  61% (1019/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  62% (1031/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  63% (1044/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  64% (1061/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  65% (1077/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  66% (1094/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  67% (1110/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  68% (1127/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  69% (1143/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  70% (1164/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  71% (1177/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  72% (1195/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  73% (1212/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  74% (1230/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  75% (1242/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  76% (1260/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  77% (1280/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  78% (1292/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  79% (1311/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  80% (1326/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  81% (1350/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  82% (1365/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  84% (1400/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  87% (1452/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  88% (1473/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  89% (1474/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  90% (1495/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  91% (1507/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  92% (1524/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  93% (1543/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  94% (1558/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  95% (1575/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  96% (1590/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  97% (1607/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  98% (1629/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas:  99% (1646/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas: 100% (1656/1656)   
+ DEBUG [f6a9729d] 	Resolving deltas: 100% (1656/1656), done.
+ DEBUG [f6a9729d] 	
+ DEBUG [f6a9729d] 	Checking connectivity... 
+ DEBUG [f6a9729d] 	done.
+ DEBUG [f6a9729d] 	
+  INFO [f6a9729d] Finished in 2.866 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-08-21 17:17:31 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [0ebd632c] Running /usr/bin/env mkdir -p /tmp on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [0ebd632c] Command: /usr/bin/env mkdir -p /tmp
+  INFO [39cca96b] Running /usr/bin/env mkdir -p /tmp as deploy@54.202.109.74
+ DEBUG [39cca96b] Command: /usr/bin/env mkdir -p /tmp
+  INFO [0ebd632c] Finished in 3.791 seconds with exit status 0 (successful).
+  INFO [39cca96b] Finished in 3.793 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO [abc4a7b8] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh as deploy@54.202.109.74
+  INFO [1faae77d] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [abc4a7b8] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh
+ DEBUG [1faae77d] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh
+  INFO [1faae77d] Finished in 0.799 seconds with exit status 0 (successful).
+  INFO [abc4a7b8] Finished in 0.802 seconds with exit status 0 (successful).
+  INFO [a8faf62c] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [a8faf62c] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+  INFO [c3b5e2e9] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD as deploy@54.202.109.74
+ DEBUG [c3b5e2e9] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+ DEBUG [a8faf62c] 	fb659ed7014348740fad6d0e9017e4a896216757	
+ DEBUG [c3b5e2e9] 	fb659ed7014348740fad6d0e9017e4a896216757
+ DEBUG [a8faf62c] 	HEAD
+ DEBUG [c3b5e2e9] 		
+  INFO [a8faf62c] Finished in 2.585 seconds with exit status 0 (successful).
+ DEBUG [c3b5e2e9] 	HEAD
+  INFO [c3b5e2e9] Finished in 2.585 seconds with exit status 0 (successful).
+  INFO [cb9cf59b] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [0fd7120a] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases as deploy@54.202.109.74
+ DEBUG [cb9cf59b] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases
+ DEBUG [0fd7120a] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases
+  INFO [0fd7120a] Finished in 1.316 seconds with exit status 0 (successful).
+  INFO [cb9cf59b] Finished in 1.316 seconds with exit status 0 (successful).
+  INFO [b4148203] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets as deploy@54.202.109.74
+  INFO [bc24780b] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [b4148203] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets
+ DEBUG [bc24780b] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets
+  INFO [b4148203] Finished in 0.610 seconds with exit status 0 (successful).
+  INFO [bc24780b] Finished in 0.612 seconds with exit status 0 (successful).
+ DEBUG [06c104c7] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] as deploy@54.202.109.74
+ DEBUG [bd68c08e] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [06c104c7] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [bd68c08e] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [bd68c08e] Finished in 0.610 seconds with exit status 1 (failed).
+ DEBUG [06c104c7] Finished in 0.613 seconds with exit status 1 (failed).
+  WARN puma.rb NOT FOUND!
+  WARN puma.rb NOT FOUND!
+ DEBUG Uploading /home/deploy/apps/mac/shared/puma.rb 0.0%
+ DEBUG Uploading /home/deploy/apps/mac/shared/puma.rb 0.0%
+  INFO Uploading /home/deploy/apps/mac/shared/puma.rb 100.0%
+  INFO Uploading /home/deploy/apps/mac/shared/puma.rb 100.0%
+  INFO puma.rb generated
+  INFO puma.rb generated
+ DEBUG [1d783f68] Running [ -f /home/deploy/apps/mac/current/REVISION ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [5251efa1] Running [ -f /home/deploy/apps/mac/current/REVISION ] as deploy@54.202.109.74
+ DEBUG [1d783f68] Command: [ -f /home/deploy/apps/mac/current/REVISION ]
+ DEBUG [5251efa1] Command: [ -f /home/deploy/apps/mac/current/REVISION ]
+ DEBUG [1d783f68] Finished in 0.612 seconds with exit status 1 (failed).
+ DEBUG [5251efa1] Finished in 0.612 seconds with exit status 1 (failed).
+ DEBUG [cfbf7d84] Running [ -f /home/deploy/apps/mac/repo/HEAD ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [cfbf7d84] Command: [ -f /home/deploy/apps/mac/repo/HEAD ]
+ DEBUG [7889ea47] Running [ -f /home/deploy/apps/mac/repo/HEAD ] as deploy@54.202.109.74
+ DEBUG [7889ea47] Command: [ -f /home/deploy/apps/mac/repo/HEAD ]
+ DEBUG [7889ea47] Finished in 0.611 seconds with exit status 1 (failed).
+ DEBUG [cfbf7d84] Finished in 0.615 seconds with exit status 1 (failed).
+ DEBUG [bdd9517f] Running if test ! -d /home/deploy/apps/mac; then echo "Directory does not exist '/home/deploy/apps/mac'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [91a6a45c] Running if test ! -d /home/deploy/apps/mac; then echo "Directory does not exist '/home/deploy/apps/mac'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [bdd9517f] Command: if test ! -d /home/deploy/apps/mac; then echo "Directory does not exist '/home/deploy/apps/mac'" 1>&2; false; fi
+ DEBUG [91a6a45c] Command: if test ! -d /home/deploy/apps/mac; then echo "Directory does not exist '/home/deploy/apps/mac'" 1>&2; false; fi
+ DEBUG [bdd9517f] Finished in 0.610 seconds with exit status 0 (successful).
+  INFO [617a4a0f] Running /usr/bin/env git clone --mirror git@github.com:st118173/maa.git /home/deploy/apps/mac/repo as deploy@54.202.109.74
+ DEBUG [617a4a0f] Command: cd /home/deploy/apps/mac && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git clone --mirror git@github.com:st118173/maa.git /home/deploy/apps/mac/repo )
+ DEBUG [91a6a45c] Finished in 0.613 seconds with exit status 0 (successful).
+  INFO [4eacb128] Running /usr/bin/env git clone --mirror git@github.com:st118173/maa.git /home/deploy/apps/mac/repo on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [4eacb128] Command: cd /home/deploy/apps/mac && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git clone --mirror git@github.com:st118173/maa.git /home/deploy/apps/mac/repo )
+ DEBUG [4eacb128] 	Cloning into bare repository '/home/deploy/apps/mac/repo'...
+ DEBUG [617a4a0f] 	fatal: destination path '/home/deploy/apps/mac/repo' already exists and is not an empty directory.
+ DEBUG [4eacb128] 	
+ DEBUG [617a4a0f] 	
+ DEBUG [4eacb128] 	remote: Counting objects: 8808, done.[K
+ DEBUG [4eacb128] 	
+ DEBUG [4eacb128] 	remote: Compressing objects:   2% (1/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:   5% (2/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:   8% (3/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  11% (4/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  14% (5/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  17% (6/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  20% (7/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  22% (8/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:
+ DEBUG [4eacb128] 	  25% (9/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  28% (10/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  31% (11/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  34% (12/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  37% (13/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  40% (14/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  42% (15/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  45% (16/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  48% (17/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  51% (18/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  54% (19/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  57% (20/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  60% (21/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  62% (22/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  65% (23/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  68% (24/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  71% (25/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  74% (26/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  77% (27/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  80% (28/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objec
+ DEBUG [4eacb128] 	ts:  82% (29/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  85% (30/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  88% (31/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  91% (32/35) 
+ DEBUG [4eacb128] 	  [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  94% (33/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects:  97% (34/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects: 100% (35/35)   [K
+ DEBUG [4eacb128] 	remote: Compressing objects: 100% (35/35), done.[K
+ DEBUG [4eacb128] 	
+ DEBUG [4eacb128] 	Receiving objects:   0% (1/8808)   
+ DEBUG [4eacb128] 	Receiving objects:   1% (89/8808)   
+ DEBUG [4eacb128] 	Receiving objects:   2% (177/8808)   
+ DEBUG [4eacb128] 	Receiving objects:   3% (265/8808)   
+ DEBUG [4eacb128] 	Receiving objects:   4% (353/8808)   
+ DEBUG [4eacb128] 	Receiving objects:   5% (441/8808)   
+ DEBUG [4eacb128] 	Receiving objects:   6% (529/8808)   
+ DEBUG [4eacb128] 	Receiving objects:   7% (617/8808)   
+ DEBUG [4eacb128] 	Receiving objects:   8% (705/8808)   
+ DEBUG [4eacb128] 	Receiving objects:   9% (793/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  10% (881/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  11% (969/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  12% (1057/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  13% (1146/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  14% (1234/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  15% (1322/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  16% (1410/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  17% (1498/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  18% (1586/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  19% (1674/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  20% (1762/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  21% (1850/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  22% (1938/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  23% (2026/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  24% (2114/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  25% (2202/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  26% (2291/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  27% (2379/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  28% (2467/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  29% (2555/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  30% (2643/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  31% (2731/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  32% (2819/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  33% (2907/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  34% (2995/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  35% (3083/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  36% (3171/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  37% (3259/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  38% (3348/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  39% (3436/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  40% (3524/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  41% (3612/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  42% (3700/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  43% (3788/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  44% (3876/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  45% (3964/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  46% (4052/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  47% (4140/8808)   
+ DEBUG [4eacb128] 	Receiving objects:  48% (4228/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  49% (4316/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  50% (4404/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  51% (4493/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  52% (4581/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  53% (4669/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  54% (4757/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  55% (4845/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  56% (4933/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  57% (5021/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  58% (5109/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  59% (5197/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  60% (5285/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  61% (5373/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  62% (5461/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  63% (5550/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  64% (5638/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  65% (5726/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  66% (5814/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  67% (5902/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  68% (5990/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  69% (6078/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  70% (6166/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  71% (6254/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  72% (6342/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  73% (6430/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  74% (6518/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  75% (6606/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  76% (6695/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  77% (6783/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  78% (6871/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  79% (6959/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  80% (7047/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  81% (7135/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  82% (7223/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  83% (7311/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  84% (7399/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  84% (7423/8808), 7.94 MiB | 15.65 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  85% (7487/8808), 16.35 MiB | 16.17 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  86% (7575/8808), 16.35 MiB | 16.17 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  87% (7663/8808), 16.35 MiB | 16.17 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  88% (7752/8808), 16.35 MiB | 16.17 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  89% (7840/8808), 16.35 MiB | 16.17 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  90% (7928/8808), 16.35 MiB | 16.17 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  91% (8016/8808), 16.35 MiB | 16.17 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  92% (8104/8808), 16.35 MiB | 16.17 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  93% (8192/8808), 16.35 MiB | 16.17 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  94% (8280/8808), 16.35 MiB | 16.17 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  95% (8368/8808), 16.35 MiB | 16.17 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  96% (8456/8808), 16.35 MiB | 16.17 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  97% (8544/8808), 16.35 MiB | 16.17 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  98% (8632/8808), 16.35 MiB | 16.17 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects:  99% (8720/8808), 16.35 MiB | 16.17 MiB/s   
+ DEBUG [4eacb128] 	remote: Total 8808 (delta 6), reused 29 (delta 6), pack-reused 8764[K
+ DEBUG [4eacb128] 	
+ DEBUG [4eacb128] 	Receiving objects: 100% (8808/8808), 16.35 MiB | 16.17 MiB/s   
+ DEBUG [4eacb128] 	Receiving objects: 100% (8808/8808), 23.47 MiB | 16.17 MiB/s, done.
+ DEBUG [4eacb128] 	
+ DEBUG [4eacb128] 	Resolving deltas:   0% (0/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:   3% (61/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:   4% (68/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:   7% (131/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:   8% (136/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:   9% (150/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  10% (166/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  11% (192/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  12% (201/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  13% (218/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  15% (257/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  16% (266/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  17% (295/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  18% (303/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  19% (315/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  20% (334/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  21% (350/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  22% (365/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  24% (404/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  25% (417/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  26% (432/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  27% (449/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  28% (466/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  29% (481/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  30% (501/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  31% (514/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  32% (530/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  33% (547/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  34% (572/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  35% (585/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  36% (601/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  37% (620/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  38% (632/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  39% (650/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  40% (664/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  41% (679/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  42% (697/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  43% (713/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  44% (734/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  45% (751/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  46% (764/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  47% (779/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  48% (799/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  49% (812/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  50% (828/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  51% (850/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  52% (866/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  53% (881/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  54% (900/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  55% (912/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  56% (930/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  57% (944/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  58% (964/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  59% (978/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  60% (997/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  61% (1019/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  62% (1031/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  63% (1044/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  64% (1061/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  65% (1077/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  66% (1094/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  67% (1110/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  68% (1127/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  69% (1143/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  70% (1164/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  71% (1177/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  72% (1195/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  73% (1212/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  74% (1230/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  75% (1242/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  76% (1260/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  77% (1280/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  78% (1292/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  79% (1311/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  80% (1326/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  81% (1350/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  82% (1365/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  84% (1400/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  87% (1452/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  88% (1473/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  89% (1474/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  90% (1495/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  91% (1507/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  92% (1524/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  93% (1543/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  94% (1558/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  95% (1575/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  96% (1590/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  97% (1607/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  98% (1629/1656)   
+ DEBUG [4eacb128] 	Resolving deltas:  99% (1646/1656)   
+ DEBUG [4eacb128] 	Resolving deltas: 100% (1656/1656)   
+ DEBUG [4eacb128] 	Resolving deltas: 100% (1656/1656), done.
+ DEBUG [4eacb128] 	
+ DEBUG [4eacb128] 	Checking connectivity... 
+ DEBUG [4eacb128] 	done.
+ DEBUG [4eacb128] 	
+  INFO [4eacb128] Finished in 3.273 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-08-21 17:18:27 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [4d7e3fe1] Running /usr/bin/env mkdir -p /tmp on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [9c31af30] Running /usr/bin/env mkdir -p /tmp as deploy@54.202.109.74
+ DEBUG [4d7e3fe1] Command: /usr/bin/env mkdir -p /tmp
+ DEBUG [9c31af30] Command: /usr/bin/env mkdir -p /tmp
+  INFO [9c31af30] Finished in 3.963 seconds with exit status 0 (successful).
+  INFO [4d7e3fe1] Finished in 3.964 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO [f319e819] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [8b1ebcd4] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh as deploy@54.202.109.74
+ DEBUG [f319e819] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh
+ DEBUG [8b1ebcd4] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh
+  INFO [f319e819] Finished in 0.613 seconds with exit status 0 (successful).
+  INFO [8b1ebcd4] Finished in 0.613 seconds with exit status 0 (successful).
+  INFO [1e1f04ec] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [1e1f04ec] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+  INFO [0092f92d] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD as deploy@54.202.109.74
+ DEBUG [0092f92d] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+ DEBUG [1e1f04ec] 	fb659ed7014348740fad6d0e9017e4a896216757
+ DEBUG [1e1f04ec] 		HEAD
+  INFO [1e1f04ec] Finished in 1.544 seconds with exit status 0 (successful).
+ DEBUG [0092f92d] 	fb659ed7014348740fad6d0e9017e4a896216757
+ DEBUG [0092f92d] 		HEAD
+  INFO [0092f92d] Finished in 1.558 seconds with exit status 0 (successful).
+  INFO [752f0655] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases as deploy@54.202.109.74
+ DEBUG [752f0655] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases
+  INFO [7bdc1a73] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [7bdc1a73] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases
+  INFO [752f0655] Finished in 0.828 seconds with exit status 0 (successful).
+  INFO [7bdc1a73] Finished in 0.827 seconds with exit status 0 (successful).
+  INFO [8f2e049c] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [8f2e049c] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets
+  INFO [fc9d3a49] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets as deploy@54.202.109.74
+ DEBUG [fc9d3a49] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets
+  INFO [8f2e049c] Finished in 0.497 seconds with exit status 0 (successful).
+  INFO [fc9d3a49] Finished in 0.504 seconds with exit status 0 (successful).
+ DEBUG [8af77ee5] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] as deploy@54.202.109.74
+ DEBUG [8af77ee5] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [fb258bab] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [fb258bab] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [8af77ee5] Finished in 0.570 seconds with exit status 0 (successful).
+ DEBUG [fb258bab] Finished in 0.571 seconds with exit status 0 (successful).
+ DEBUG [3bda54f6] Running [ -f /home/deploy/apps/mac/current/REVISION ] as deploy@54.202.109.74
+ DEBUG [3bda54f6] Command: [ -f /home/deploy/apps/mac/current/REVISION ]
+ DEBUG [ff621886] Running [ -f /home/deploy/apps/mac/current/REVISION ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [ff621886] Command: [ -f /home/deploy/apps/mac/current/REVISION ]
+ DEBUG [ff621886] Finished in 0.609 seconds with exit status 1 (failed).
+ DEBUG [3bda54f6] Finished in 0.614 seconds with exit status 1 (failed).
+ DEBUG [b1c32c45] Running [ -f /home/deploy/apps/mac/repo/HEAD ] as deploy@54.202.109.74
+ DEBUG [0729e6e3] Running [ -f /home/deploy/apps/mac/repo/HEAD ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [b1c32c45] Command: [ -f /home/deploy/apps/mac/repo/HEAD ]
+ DEBUG [0729e6e3] Command: [ -f /home/deploy/apps/mac/repo/HEAD ]
+ DEBUG [b1c32c45] Finished in 0.608 seconds with exit status 0 (successful).
+ DEBUG [0729e6e3] Finished in 0.607 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/apps/mac/repo
+  INFO The repository mirror is at /home/deploy/apps/mac/repo
+ DEBUG [b37e7280] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [b37e7280] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [dacbe155] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [dacbe155] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [dacbe155] Finished in 0.608 seconds with exit status 0 (successful).
+  INFO [b626c007] Running /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [b37e7280] Finished in 0.613 seconds with exit status 0 (successful).
+ DEBUG [b626c007] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git )
+  INFO [604523e6] Running /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git as deploy@54.202.109.74
+ DEBUG [604523e6] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git )
+  INFO [604523e6] Finished in 0.509 seconds with exit status 0 (successful).
+  INFO [b626c007] Finished in 0.512 seconds with exit status 0 (successful).
+  INFO [403457d3] Running /usr/bin/env git remote update --prune as deploy@54.202.109.74
+ DEBUG [403457d3] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote update --prune )
+  INFO [0603e9db] Running /usr/bin/env git remote update --prune on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [0603e9db] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [0603e9db] 	Fetching origin
+ DEBUG [0603e9db] 	
+ DEBUG [403457d3] 	Fetching origin
+ DEBUG [403457d3] 	
+  INFO [0603e9db] Finished in 1.583 seconds with exit status 0 (successful).
+  INFO [403457d3] Finished in 1.597 seconds with exit status 0 (successful).
+ DEBUG [3a58b0d2] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [8b9214d1] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [3a58b0d2] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [8b9214d1] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [8b9214d1] Finished in 0.848 seconds with exit status 0 (successful).
+  INFO [9acb34ed] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821101837 as deploy@54.202.109.74
+ DEBUG [3a58b0d2] Finished in 0.851 seconds with exit status 0 (successful).
+ DEBUG [9acb34ed] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821101837 )
+  INFO [760ff808] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821101837 on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [760ff808] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821101837 )
+  INFO [760ff808] Finished in 0.610 seconds with exit status 0 (successful).
+  INFO [9acb34ed] Finished in 0.613 seconds with exit status 0 (successful).
+  INFO [2070a7c2] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/apps/mac/releases/20170821101837 on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [2070a7c2] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/apps/mac/releases/20170821101837 )
+  INFO [e73af6d7] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/apps/mac/releases/20170821101837 as deploy@54.202.109.74
+ DEBUG [e73af6d7] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/apps/mac/releases/20170821101837 )
+  INFO [2070a7c2] Finished in 1.198 seconds with exit status 0 (successful).
+  INFO [e73af6d7] Finished in 1.209 seconds with exit status 0 (successful).
+ DEBUG [2a8862ee] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [854ab795] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [2a8862ee] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [854ab795] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [854ab795] Finished in 0.627 seconds with exit status 0 (successful).
+ DEBUG [2a8862ee] Finished in 0.632 seconds with exit status 0 (successful).
+ DEBUG [ecbfc63a] Running /usr/bin/env git rev-list --max-count=1 master on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [697c5b33] Running /usr/bin/env git rev-list --max-count=1 master as deploy@54.202.109.74
+ DEBUG [ecbfc63a] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [697c5b33] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [697c5b33] 	fb659ed7014348740fad6d0e9017e4a896216757
+ DEBUG [697c5b33] 	
+ DEBUG [697c5b33] Finished in 0.508 seconds with exit status 0 (successful).
+ DEBUG [ecbfc63a] 	fb659ed7014348740fad6d0e9017e4a896216757
+ DEBUG [ecbfc63a] 	
+ DEBUG [ecbfc63a] Finished in 0.512 seconds with exit status 0 (successful).
+ DEBUG [d03921b1] Running if test ! -d /home/deploy/apps/mac/releases/20170821101837; then echo "Directory does not exist '/home/deploy/apps/mac/releases/20170821101837'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [90a407ef] Running if test ! -d /home/deploy/apps/mac/releases/20170821101837; then echo "Directory does not exist '/home/deploy/apps/mac/releases/20170821101837'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [d03921b1] Command: if test ! -d /home/deploy/apps/mac/releases/20170821101837; then echo "Directory does not exist '/home/deploy/apps/mac/releases/20170821101837'" 1>&2; false; fi
+ DEBUG [90a407ef] Command: if test ! -d /home/deploy/apps/mac/releases/20170821101837; then echo "Directory does not exist '/home/deploy/apps/mac/releases/20170821101837'" 1>&2; false; fi
+ DEBUG [d03921b1] Finished in 0.611 seconds with exit status 0 (successful).
+ DEBUG [90a407ef] Finished in 0.612 seconds with exit status 0 (successful).
+  INFO [e3751572] Running /usr/bin/env echo "fb659ed7014348740fad6d0e9017e4a896216757" >> REVISION on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [d9209aa6] Running /usr/bin/env echo "fb659ed7014348740fad6d0e9017e4a896216757" >> REVISION as deploy@54.202.109.74
+ DEBUG [e3751572] Command: cd /home/deploy/apps/mac/releases/20170821101837 && /usr/bin/env echo "fb659ed7014348740fad6d0e9017e4a896216757" >> REVISION
+ DEBUG [d9209aa6] Command: cd /home/deploy/apps/mac/releases/20170821101837 && /usr/bin/env echo "fb659ed7014348740fad6d0e9017e4a896216757" >> REVISION
+  INFO [e3751572] Finished in 0.610 seconds with exit status 0 (successful).
+  INFO [d9209aa6] Finished in 0.612 seconds with exit status 0 (successful).
+  INFO [526d9fc2] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821101837/public as deploy@54.202.109.74
+ DEBUG [526d9fc2] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821101837/public
+  INFO [baa4a5c8] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821101837/public on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [baa4a5c8] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821101837/public
+  INFO [baa4a5c8] Finished in 0.609 seconds with exit status 0 (successful).
+  INFO [526d9fc2] Finished in 0.613 seconds with exit status 0 (successful).
+ DEBUG [0da5215a] Running [ -L /home/deploy/apps/mac/releases/20170821101837/public/assets ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [0da5215a] Command: [ -L /home/deploy/apps/mac/releases/20170821101837/public/assets ]
+ DEBUG [e6797f9e] Running [ -L /home/deploy/apps/mac/releases/20170821101837/public/assets ] as deploy@54.202.109.74
+ DEBUG [e6797f9e] Command: [ -L /home/deploy/apps/mac/releases/20170821101837/public/assets ]
+ DEBUG [0da5215a] Finished in 0.613 seconds with exit status 1 (failed).
+ DEBUG [a99134d7] Running [ -d /home/deploy/apps/mac/releases/20170821101837/public/assets ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [e6797f9e] Finished in 0.612 seconds with exit status 1 (failed).
+ DEBUG [a99134d7] Command: [ -d /home/deploy/apps/mac/releases/20170821101837/public/assets ]
+ DEBUG [fbb8f41b] Running [ -d /home/deploy/apps/mac/releases/20170821101837/public/assets ] as deploy@54.202.109.74
+ DEBUG [fbb8f41b] Command: [ -d /home/deploy/apps/mac/releases/20170821101837/public/assets ]
+ DEBUG [a99134d7] Finished in 0.612 seconds with exit status 1 (failed).
+ DEBUG [fbb8f41b] Finished in 0.613 seconds with exit status 1 (failed).
+  INFO [1f84881a] Running /usr/bin/env ln -s /home/deploy/apps/mac/shared/public/assets /home/deploy/apps/mac/releases/20170821101837/public/assets on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [d2d3d2de] Running /usr/bin/env ln -s /home/deploy/apps/mac/shared/public/assets /home/deploy/apps/mac/releases/20170821101837/public/assets as deploy@54.202.109.74
+ DEBUG [1f84881a] Command: /usr/bin/env ln -s /home/deploy/apps/mac/shared/public/assets /home/deploy/apps/mac/releases/20170821101837/public/assets
+ DEBUG [d2d3d2de] Command: /usr/bin/env ln -s /home/deploy/apps/mac/shared/public/assets /home/deploy/apps/mac/releases/20170821101837/public/assets
+  INFO [1f84881a] Finished in 0.612 seconds with exit status 0 (successful).
+  INFO [d2d3d2de] Finished in 0.613 seconds with exit status 0 (successful).
+ DEBUG [b0869a29] Running if test ! -d /home/deploy/apps/mac/releases/20170821101837; then echo "Directory does not exist '/home/deploy/apps/mac/releases/20170821101837'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [e0f6ec59] Running if test ! -d /home/deploy/apps/mac/releases/20170821101837; then echo "Directory does not exist '/home/deploy/apps/mac/releases/20170821101837'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [e0f6ec59] Command: if test ! -d /home/deploy/apps/mac/releases/20170821101837; then echo "Directory does not exist '/home/deploy/apps/mac/releases/20170821101837'" 1>&2; false; fi
+ DEBUG [b0869a29] Command: if test ! -d /home/deploy/apps/mac/releases/20170821101837; then echo "Directory does not exist '/home/deploy/apps/mac/releases/20170821101837'" 1>&2; false; fi
+ DEBUG [e0f6ec59] Finished in 0.612 seconds with exit status 0 (successful).
+ DEBUG [19a07cc6] Running /usr/bin/env bundle check --path /home/deploy/apps/mac/shared/bundle on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [b0869a29] Finished in 0.613 seconds with exit status 0 (successful).
+ DEBUG [19a07cc6] Command: cd /home/deploy/apps/mac/releases/20170821101837 && /usr/bin/env bundle check --path /home/deploy/apps/mac/shared/bundle
+ DEBUG [2e46995b] Running /usr/bin/env bundle check --path /home/deploy/apps/mac/shared/bundle as deploy@54.202.109.74
+ DEBUG [2e46995b] Command: cd /home/deploy/apps/mac/releases/20170821101837 && /usr/bin/env bundle check --path /home/deploy/apps/mac/shared/bundle
+ DEBUG [2e46995b] 	/usr/bin/env: 
+ DEBUG [19a07cc6] 	/usr/bin/env: 
+ DEBUG [2e46995b] 	'bundle'
+ DEBUG [19a07cc6] 	'bundle'
+ DEBUG [2e46995b] 	: No such file or directory
+ DEBUG [19a07cc6] 	: No such file or directory
+ DEBUG [2e46995b] 	
+ DEBUG [19a07cc6] 	
+ DEBUG [2e46995b] Finished in 0.613 seconds with exit status 127 (failed).
+ DEBUG [19a07cc6] Finished in 0.616 seconds with exit status 127 (failed).
+  INFO [cc4ca007] Running /usr/bin/env bundle install --path /home/deploy/apps/mac/shared/bundle --without development test --deployment --quiet as deploy@54.202.109.74
+  INFO [78f0db44] Running /usr/bin/env bundle install --path /home/deploy/apps/mac/shared/bundle --without development test --deployment --quiet on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [cc4ca007] Command: cd /home/deploy/apps/mac/releases/20170821101837 && /usr/bin/env bundle install --path /home/deploy/apps/mac/shared/bundle --without development test --deployment --quiet
+ DEBUG [78f0db44] Command: cd /home/deploy/apps/mac/releases/20170821101837 && /usr/bin/env bundle install --path /home/deploy/apps/mac/shared/bundle --without development test --deployment --quiet
+ DEBUG [78f0db44] 	/usr/bin/env: 
+ DEBUG [cc4ca007] 	/usr/bin/env: 
+ DEBUG [78f0db44] 	'bundle'
+ DEBUG [cc4ca007] 	'bundle'
+ DEBUG [78f0db44] 	: No such file or directory
+ DEBUG [cc4ca007] 	: No such file or directory
+ DEBUG [78f0db44] 	
+ DEBUG [cc4ca007] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-08-21 17:19:41 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [94fdbadc] Running /usr/bin/env mkdir -p /tmp on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [0f068bf9] Running /usr/bin/env mkdir -p /tmp as deploy@54.202.109.74
+ DEBUG [94fdbadc] Command: /usr/bin/env mkdir -p /tmp
+ DEBUG [0f068bf9] Command: /usr/bin/env mkdir -p /tmp
+  INFO [0f068bf9] Finished in 4.027 seconds with exit status 0 (successful).
+  INFO [94fdbadc] Finished in 4.029 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO [b46bf864] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh as deploy@54.202.109.74
+  INFO [395e657e] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [b46bf864] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh
+ DEBUG [395e657e] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh
+  INFO [b46bf864] Finished in 0.509 seconds with exit status 0 (successful).
+  INFO [395e657e] Finished in 0.512 seconds with exit status 0 (successful).
+  INFO [0626394e] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD as deploy@54.202.109.74
+  INFO [c9676223] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [0626394e] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+ DEBUG [c9676223] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+ DEBUG [c9676223] 	fb659ed7014348740fad6d0e9017e4a896216757
+ DEBUG [c9676223] 		
+ DEBUG [c9676223] 	HEAD
+ DEBUG [c9676223] 	
+  INFO [c9676223] Finished in 1.580 seconds with exit status 0 (successful).
+ DEBUG [0626394e] 	fb659ed7014348740fad6d0e9017e4a896216757
+ DEBUG [0626394e] 		HEAD
+  INFO [0626394e] Finished in 1.598 seconds with exit status 0 (successful).
+  INFO [114cdcd1] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases as deploy@54.202.109.74
+  INFO [06964cac] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [114cdcd1] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases
+ DEBUG [06964cac] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases
+  INFO [114cdcd1] Finished in 0.543 seconds with exit status 0 (successful).
+  INFO [06964cac] Finished in 0.849 seconds with exit status 0 (successful).
+  INFO [d9c1052a] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets as deploy@54.202.109.74
+  INFO [ed676d49] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [d9c1052a] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets
+ DEBUG [ed676d49] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets
+  INFO [d9c1052a] Finished in 0.611 seconds with exit status 0 (successful).
+  INFO [ed676d49] Finished in 0.614 seconds with exit status 0 (successful).
+ DEBUG [cb5a2d1d] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [b8fb3f32] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] as deploy@54.202.109.74
+ DEBUG [cb5a2d1d] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [b8fb3f32] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [cb5a2d1d] Finished in 0.613 seconds with exit status 0 (successful).
+ DEBUG [b8fb3f32] Finished in 0.613 seconds with exit status 0 (successful).
+ DEBUG [3b608d3d] Running [ -f /home/deploy/apps/mac/current/REVISION ] as deploy@54.202.109.74
+ DEBUG [8a148dfe] Running [ -f /home/deploy/apps/mac/current/REVISION ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [3b608d3d] Command: [ -f /home/deploy/apps/mac/current/REVISION ]
+ DEBUG [8a148dfe] Command: [ -f /home/deploy/apps/mac/current/REVISION ]
+ DEBUG [8a148dfe] Finished in 0.605 seconds with exit status 1 (failed).
+ DEBUG [3b608d3d] Finished in 0.613 seconds with exit status 1 (failed).
+ DEBUG [5aa6c903] Running [ -f /home/deploy/apps/mac/repo/HEAD ] as deploy@54.202.109.74
+ DEBUG [b2616e86] Running [ -f /home/deploy/apps/mac/repo/HEAD ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [5aa6c903] Command: [ -f /home/deploy/apps/mac/repo/HEAD ]
+ DEBUG [b2616e86] Command: [ -f /home/deploy/apps/mac/repo/HEAD ]
+ DEBUG [b2616e86] Finished in 0.609 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/apps/mac/repo
+ DEBUG [5aa6c903] Finished in 0.613 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/apps/mac/repo
+ DEBUG [a9a69a8e] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [5e575069] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [a9a69a8e] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [5e575069] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [a9a69a8e] Finished in 0.611 seconds with exit status 0 (successful).
+ DEBUG [5e575069] Finished in 0.611 seconds with exit status 0 (successful).
+  INFO [b2672e52] Running /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [d400cbdb] Running /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git as deploy@54.202.109.74
+ DEBUG [b2672e52] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git )
+ DEBUG [d400cbdb] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git )
+  INFO [b2672e52] Finished in 0.608 seconds with exit status 0 (successful).
+  INFO [d400cbdb] Finished in 0.614 seconds with exit status 0 (successful).
+  INFO [0ff0e8c0] Running /usr/bin/env git remote update --prune on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [19e6c114] Running /usr/bin/env git remote update --prune as deploy@54.202.109.74
+ DEBUG [0ff0e8c0] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [19e6c114] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [0ff0e8c0] 	Fetching origin
+ DEBUG [19e6c114] 	Fetching origin
+ DEBUG [0ff0e8c0] 	
+ DEBUG [19e6c114] 	
+  INFO [0ff0e8c0] Finished in 1.587 seconds with exit status 0 (successful).
+  INFO [19e6c114] Finished in 1.606 seconds with exit status 0 (successful).
+ DEBUG [7a4119a8] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [09694ebc] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [7a4119a8] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [09694ebc] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [09694ebc] Finished in 0.845 seconds with exit status 0 (successful).
+ DEBUG [7a4119a8] Finished in 0.848 seconds with exit status 0 (successful).
+  INFO [9ef994e3] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821101952 on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [ecae64be] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821101952 as deploy@54.202.109.74
+ DEBUG [9ef994e3] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821101952 )
+ DEBUG [ecae64be] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821101952 )
+  INFO [9ef994e3] Finished in 0.606 seconds with exit status 0 (successful).
+  INFO [ecae64be] Finished in 0.613 seconds with exit status 0 (successful).
+  INFO [ba9d4a40] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/apps/mac/releases/20170821101952 on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [ba9d4a40] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/apps/mac/releases/20170821101952 )
+  INFO [26dbfc69] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/apps/mac/releases/20170821101952 as deploy@54.202.109.74
+ DEBUG [26dbfc69] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/apps/mac/releases/20170821101952 )
+  INFO [26dbfc69] Finished in 1.225 seconds with exit status 0 (successful).
+  INFO [ba9d4a40] Finished in 1.228 seconds with exit status 0 (successful).
+ DEBUG [9c40c365] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [e8ab5b11] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [9c40c365] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [e8ab5b11] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [e8ab5b11] Finished in 0.552 seconds with exit status 0 (successful).
+ DEBUG [b72573aa] Running /usr/bin/env git rev-list --max-count=1 master on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [b72573aa] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [9c40c365] Finished in 0.558 seconds with exit status 0 (successful).
+ DEBUG [bdf10205] Running /usr/bin/env git rev-list --max-count=1 master as deploy@54.202.109.74
+ DEBUG [bdf10205] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [b72573aa] 	fb659ed7014348740fad6d0e9017e4a896216757
+ DEBUG [bdf10205] 	fb659ed7014348740fad6d0e9017e4a896216757
+ DEBUG [b72573aa] 	
+ DEBUG [bdf10205] 	
+ DEBUG [b72573aa] Finished in 0.571 seconds with exit status 0 (successful).
+ DEBUG [bdf10205] Finished in 0.568 seconds with exit status 0 (successful).
+ DEBUG [9cebbd0f] Running if test ! -d /home/deploy/apps/mac/releases/20170821101952; then echo "Directory does not exist '/home/deploy/apps/mac/releases/20170821101952'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [bd4bef1f] Running if test ! -d /home/deploy/apps/mac/releases/20170821101952; then echo "Directory does not exist '/home/deploy/apps/mac/releases/20170821101952'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [9cebbd0f] Command: if test ! -d /home/deploy/apps/mac/releases/20170821101952; then echo "Directory does not exist '/home/deploy/apps/mac/releases/20170821101952'" 1>&2; false; fi
+ DEBUG [bd4bef1f] Command: if test ! -d /home/deploy/apps/mac/releases/20170821101952; then echo "Directory does not exist '/home/deploy/apps/mac/releases/20170821101952'" 1>&2; false; fi
+ DEBUG [bd4bef1f] Finished in 0.609 seconds with exit status 0 (successful).
+ DEBUG [9cebbd0f] Finished in 0.614 seconds with exit status 0 (successful).
+  INFO [1fd332fa] Running /usr/bin/env echo "fb659ed7014348740fad6d0e9017e4a896216757" >> REVISION on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [b3ab3e6e] Running /usr/bin/env echo "fb659ed7014348740fad6d0e9017e4a896216757" >> REVISION as deploy@54.202.109.74
+ DEBUG [1fd332fa] Command: cd /home/deploy/apps/mac/releases/20170821101952 && /usr/bin/env echo "fb659ed7014348740fad6d0e9017e4a896216757" >> REVISION
+ DEBUG [b3ab3e6e] Command: cd /home/deploy/apps/mac/releases/20170821101952 && /usr/bin/env echo "fb659ed7014348740fad6d0e9017e4a896216757" >> REVISION
+  INFO [b3ab3e6e] Finished in 0.611 seconds with exit status 0 (successful).
+  INFO [1fd332fa] Finished in 0.611 seconds with exit status 0 (successful).
+  INFO [066c96be] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821101952/public as deploy@54.202.109.74
+ DEBUG [066c96be] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821101952/public
+  INFO [b19d9277] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821101952/public on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [b19d9277] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821101952/public
+  INFO [066c96be] Finished in 0.612 seconds with exit status 0 (successful).
+  INFO [b19d9277] Finished in 0.611 seconds with exit status 0 (successful).
+ DEBUG [6b2a5a64] Running [ -L /home/deploy/apps/mac/releases/20170821101952/public/assets ] as deploy@54.202.109.74
+ DEBUG [f7b7f6d7] Running [ -L /home/deploy/apps/mac/releases/20170821101952/public/assets ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [6b2a5a64] Command: [ -L /home/deploy/apps/mac/releases/20170821101952/public/assets ]
+ DEBUG [f7b7f6d7] Command: [ -L /home/deploy/apps/mac/releases/20170821101952/public/assets ]
+ DEBUG [6b2a5a64] Finished in 0.613 seconds with exit status 1 (failed).
+ DEBUG [f7b7f6d7] Finished in 0.613 seconds with exit status 1 (failed).
+ DEBUG [b25821c2] Running [ -d /home/deploy/apps/mac/releases/20170821101952/public/assets ] as deploy@54.202.109.74
+ DEBUG [d9f569c2] Running [ -d /home/deploy/apps/mac/releases/20170821101952/public/assets ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [b25821c2] Command: [ -d /home/deploy/apps/mac/releases/20170821101952/public/assets ]
+ DEBUG [d9f569c2] Command: [ -d /home/deploy/apps/mac/releases/20170821101952/public/assets ]
+ DEBUG [d9f569c2] Finished in 0.612 seconds with exit status 1 (failed).
+  INFO [f8a940fe] Running /usr/bin/env ln -s /home/deploy/apps/mac/shared/public/assets /home/deploy/apps/mac/releases/20170821101952/public/assets on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [f8a940fe] Command: /usr/bin/env ln -s /home/deploy/apps/mac/shared/public/assets /home/deploy/apps/mac/releases/20170821101952/public/assets
+ DEBUG [b25821c2] Finished in 0.617 seconds with exit status 1 (failed).
+  INFO [d4587f1a] Running /usr/bin/env ln -s /home/deploy/apps/mac/shared/public/assets /home/deploy/apps/mac/releases/20170821101952/public/assets as deploy@54.202.109.74
+ DEBUG [d4587f1a] Command: /usr/bin/env ln -s /home/deploy/apps/mac/shared/public/assets /home/deploy/apps/mac/releases/20170821101952/public/assets
+ DEBUG [f8a940fe] 	ln: 
+  INFO [d4587f1a] Finished in 0.610 seconds with exit status 0 (successful).
+ DEBUG [f8a940fe] 	failed to create symbolic link '/home/deploy/apps/mac/releases/20170821101952/public/assets/assets'
+ DEBUG [f8a940fe] 	: File exists
+ DEBUG [f8a940fe] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-08-21 17:20:58 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [ff5d14a4] Running /usr/bin/env mkdir -p /tmp on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [4e31b8c5] Running /usr/bin/env mkdir -p /tmp as deploy@54.202.109.74
+ DEBUG [ff5d14a4] Command: /usr/bin/env mkdir -p /tmp
+ DEBUG [4e31b8c5] Command: /usr/bin/env mkdir -p /tmp
+  INFO [ff5d14a4] Finished in 4.047 seconds with exit status 0 (successful).
+  INFO [4e31b8c5] Finished in 4.051 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO [6c1c035e] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh as deploy@54.202.109.74
+ DEBUG [6c1c035e] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh
+  INFO [22668bcf] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [22668bcf] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh
+  INFO [22668bcf] Finished in 0.610 seconds with exit status 0 (successful).
+  INFO [6c1c035e] Finished in 0.613 seconds with exit status 0 (successful).
+  INFO [10ec9bed] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [10ec9bed] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+  INFO [2175369c] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD as deploy@54.202.109.74
+ DEBUG [2175369c] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+ DEBUG [10ec9bed] 	fb659ed7014348740fad6d0e9017e4a896216757
+ DEBUG [10ec9bed] 		HEAD
+  INFO [10ec9bed] Finished in 1.682 seconds with exit status 0 (successful).
+ DEBUG [2175369c] 	fb659ed7014348740fad6d0e9017e4a896216757
+ DEBUG [2175369c] 		HEAD
+  INFO [2175369c] Finished in 1.688 seconds with exit status 0 (successful).
+  INFO [a2ac0d5f] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases as deploy@54.202.109.74
+  INFO [d2b8aa6e] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [a2ac0d5f] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases
+ DEBUG [d2b8aa6e] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases
+  INFO [d2b8aa6e] Finished in 0.655 seconds with exit status 0 (successful).
+  INFO [a2ac0d5f] Finished in 0.961 seconds with exit status 0 (successful).
+  INFO [1f50e019] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [1f50e019] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets
+  INFO [7622c361] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets as deploy@54.202.109.74
+ DEBUG [7622c361] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets
+  INFO [7622c361] Finished in 0.611 seconds with exit status 0 (successful).
+  INFO [1f50e019] Finished in 0.614 seconds with exit status 0 (successful).
+ DEBUG [b37461af] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [58104a26] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] as deploy@54.202.109.74
+ DEBUG [b37461af] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [58104a26] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [b37461af] Finished in 0.611 seconds with exit status 1 (failed).
+  WARN puma.rb NOT FOUND!
+ DEBUG [58104a26] Finished in 0.614 seconds with exit status 1 (failed).
+  WARN puma.rb NOT FOUND!
+ DEBUG Uploading /home/deploy/apps/mac/shared/puma.rb 0.0%
+ DEBUG Uploading /home/deploy/apps/mac/shared/puma.rb 0.0%
+  INFO Uploading /home/deploy/apps/mac/shared/puma.rb 100.0%
+  INFO Uploading /home/deploy/apps/mac/shared/puma.rb 100.0%
+  INFO puma.rb generated
+  INFO puma.rb generated
+ DEBUG [e3c692f9] Running [ -f /home/deploy/apps/mac/current/REVISION ] as deploy@54.202.109.74
+ DEBUG [e3c692f9] Command: [ -f /home/deploy/apps/mac/current/REVISION ]
+ DEBUG [e35e2fef] Running [ -f /home/deploy/apps/mac/current/REVISION ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [e35e2fef] Command: [ -f /home/deploy/apps/mac/current/REVISION ]
+ DEBUG [e35e2fef] Finished in 0.609 seconds with exit status 1 (failed).
+ DEBUG [e3c692f9] Finished in 0.613 seconds with exit status 1 (failed).
+ DEBUG [11788931] Running [ -f /home/deploy/apps/mac/repo/HEAD ] as deploy@54.202.109.74
+ DEBUG [60cb2f2b] Running [ -f /home/deploy/apps/mac/repo/HEAD ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [11788931] Command: [ -f /home/deploy/apps/mac/repo/HEAD ]
+ DEBUG [60cb2f2b] Command: [ -f /home/deploy/apps/mac/repo/HEAD ]
+ DEBUG [11788931] Finished in 0.610 seconds with exit status 1 (failed).
+ DEBUG [60cb2f2b] Finished in 0.609 seconds with exit status 1 (failed).
+ DEBUG [3ae84ea3] Running if test ! -d /home/deploy/apps/mac; then echo "Directory does not exist '/home/deploy/apps/mac'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [0437320b] Running if test ! -d /home/deploy/apps/mac; then echo "Directory does not exist '/home/deploy/apps/mac'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [3ae84ea3] Command: if test ! -d /home/deploy/apps/mac; then echo "Directory does not exist '/home/deploy/apps/mac'" 1>&2; false; fi
+ DEBUG [0437320b] Command: if test ! -d /home/deploy/apps/mac; then echo "Directory does not exist '/home/deploy/apps/mac'" 1>&2; false; fi
+ DEBUG [3ae84ea3] Finished in 0.613 seconds with exit status 0 (successful).
+  INFO [3e52f9c6] Running /usr/bin/env git clone --mirror git@github.com:st118173/maa.git /home/deploy/apps/mac/repo as deploy@54.202.109.74
+ DEBUG [0437320b] Finished in 0.613 seconds with exit status 0 (successful).
+ DEBUG [3e52f9c6] Command: cd /home/deploy/apps/mac && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git clone --mirror git@github.com:st118173/maa.git /home/deploy/apps/mac/repo )
+  INFO [89812a71] Running /usr/bin/env git clone --mirror git@github.com:st118173/maa.git /home/deploy/apps/mac/repo on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [89812a71] Command: cd /home/deploy/apps/mac && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git clone --mirror git@github.com:st118173/maa.git /home/deploy/apps/mac/repo )
+ DEBUG [3e52f9c6] 	Cloning into bare repository '/home/deploy/apps/mac/repo'...
+ DEBUG [89812a71] 	Cloning into bare repository '/home/deploy/apps/mac/repo'...
+ DEBUG [3e52f9c6] 	
+ DEBUG [89812a71] 	
+ DEBUG [3e52f9c6] 	remote: Counting objects: 8808, done.[K
+ DEBUG [3e52f9c6] 	
+ DEBUG [3e52f9c6] 	remote: Compressing objects:   2% (1/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:   5% (2/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:   8% (3/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  11% (4/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  14% (5/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  17% (6/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  20% (7/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  22% (8/35)   [K
+ DEBUG [89812a71] 	remote: Counting objects: 8808, done.[K
+ DEBUG [89812a71] 	
+ DEBUG [89812a71] 	remote: Compressing objects:   2% (1/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:   5% (2/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:   8% (3/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  11% (4/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  14% (5/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  17% (6/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  20% (7/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  22% (8/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:
+ DEBUG [89812a71] 	remote: Compressing objects:
+ DEBUG [3e52f9c6] 	  25% (9/35)   [K
+ DEBUG [89812a71] 	  25% (9/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  28% (10/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  28% (10/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  31% (11/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  31% (11/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  34% (12/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  34% (12/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  37% (13/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  37% (13/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  40% (14/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  40% (14/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  42% (15/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  42% (15/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  45% (16/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  45% (16/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  48% (17/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  48% (17/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  51% (18/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  51% (18/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  54% (19/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  54% (19/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  57% (20/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  60% (21/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  62% (22/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  65% (23/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  57% (20/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  68% (24/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  60% (21/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  71% (25/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  62% (22/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  74% (26/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  65% (23/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  77% (27/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  68% (24/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  80% (28/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  71% (25/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  82% (29/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  74% (26/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  85% (30/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  77% (27/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  88% (31/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  80% (28/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  91% (32/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  82% (29/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  94% (33/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  85% (30/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects:  97% (34/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  88% (31/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  91% (32/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects: 100% (35/35)   [K
+ DEBUG [89812a71] 	remote: Compressing objects:  94% (33/35)   [K
+ DEBUG [3e52f9c6] 	remote: Compressing objects: 100% (35/35), done.[K
+ DEBUG [89812a71] 	remote: Compressing objects:  97% (34/35)   [K
+ DEBUG [3e52f9c6] 	
+ DEBUG [89812a71] 	remote: Compressing objects: 100% (35/35)   [K
+ DEBUG [3e52f9c6] 	Receiving objects:   0% (1/8808)   
+ DEBUG [89812a71] 	remote: Compressing objects: 100% (35/35), done.[K
+ DEBUG [3e52f9c6] 	Receiving objects:   1% (89/8808)   
+ DEBUG [89812a71] 	
+ DEBUG [3e52f9c6] 	Receiving objects:   2% (177/8808)   
+ DEBUG [89812a71] 	Receiving objects:   0% (1/8808)   
+ DEBUG [3e52f9c6] 	Receiving objects:   3% (265/8808)   
+ DEBUG [89812a71] 	Receiving objects:   1% (89/8808)   
+ DEBUG [3e52f9c6] 	Receiving objects:   4% (353/8808)   
+ DEBUG [89812a71] 	Receiving objects:   2% (177/8808)   
+ DEBUG [3e52f9c6] 	Receiving objects:   5% (441/8808)   
+ DEBUG [89812a71] 	Receiving objects:   3% (265/8808)   
+ DEBUG [3e52f9c6] 	Receiving objects:   6% (529/8808)   
+ DEBUG [89812a71] 	Receiving objects:   4% (353/8808)   
+ DEBUG [3e52f9c6] 	Receiving objects:   7% (617/8808)   
+ DEBUG [89812a71] 	Receiving objects:   5% (441/8808)   
+ DEBUG [3e52f9c6] 	Receiving objects:   8% (705/8808)   
+ DEBUG [89812a71] 	Receiving objects:   6% (529/8808)   
+ DEBUG [3e52f9c6] 	Receiving objects:   9% (793/8808)   
+ DEBUG [89812a71] 	Receiving objects:   7% (617/8808)   
+ DEBUG [3e52f9c6] 	Receiving objects:  10% (881/8808)   
+ DEBUG [89812a71] 	Receiving objects:   8% (705/8808)   
+ DEBUG [89812a71] 	Receiving objects:   9% (793/8808)   
+ DEBUG [89812a71] 	Receiving objects:  10% (881/8808)   
+ DEBUG [89812a71] 	Receiving objects:  11% (969/8808)   
+ DEBUG [89812a71] 	Receiving objects:  12% (1057/8808)   
+ DEBUG [89812a71] 	Receiving objects:  13% (1146/8808)   
+ DEBUG [89812a71] 	Receiving objects:  14% (1234/8808)   
+ DEBUG [89812a71] 	Receiving objects:  15% (1322/8808)   
+ DEBUG [89812a71] 	Receiving objects:  16% (1410/8808)   
+ DEBUG [89812a71] 	Receiving objects:  17% (1498/8808)   
+ DEBUG [89812a71] 	Receiving objects:  18% (1586/8808)   
+ DEBUG [89812a71] 	Receiving objects:  19% (1674/8808)   
+ DEBUG [89812a71] 	Receiving objects:  20% (1762/8808)   
+ DEBUG [89812a71] 	Receiving objects:  21% (1850/8808)   
+ DEBUG [3e52f9c6] 	Receiving objects:  11% (969/8808)   
+ DEBUG [3e52f9c6] 	Receiving objects:  12% (1057/8808)   
+ DEBUG [3e52f9c6] 	Receiving objects:  13% (1146/8808)   
+ DEBUG [3e52f9c6] 	Receiving objects:  14% (1234/8808)   
+ DEBUG [3e52f9c6] 	Receiving objects:  15% (1322/8808)   
+ DEBUG [3e52f9c6] 	Receiving objects:  16% (1410/8808)   
+ DEBUG [3e52f9c6] 	Receiving objects:  17% (1498/8808)   
+ DEBUG [89812a71] 	Receiving objects:  22% (1938/8808)   
+ DEBUG [89812a71] 	Receiving objects:  23% (2026/8808)   
+ DEBUG [89812a71] 	Receiving objects:  24% (2114/8808)   
+ DEBUG [89812a71] 	Receiving objects:  25% (2202/8808)   
+ DEBUG [89812a71] 	Receiving objects:  26% (2291/8808)   
+ DEBUG [89812a71] 	Receiving objects:  27% (2379/8808)   
+ DEBUG [89812a71] 	Receiving objects:  28% (2467/8808)   
+ DEBUG [89812a71] 	Receiving objects:  29% (2555/8808)   
+ DEBUG [89812a71] 	Receiving objects:  30% (2643/8808)   
+ DEBUG [89812a71] 	Receiving objects:  31% (2731/8808)   
+ DEBUG [89812a71] 	Receiving objects:  32% (2819/8808)   
+ DEBUG [89812a71] 	Receiving objects:  33% (2907/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  34% (2995/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  35% (3083/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  36% (3171/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  37% (3259/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  38% (3348/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  39% (3436/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  40% (3524/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  41% (3612/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  42% (3700/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  43% (3788/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  18% (1586/8808), 3.24 MiB | 6.46 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  19% (1674/8808), 3.24 MiB | 6.46 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  20% (1762/8808), 3.24 MiB | 6.46 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  21% (1850/8808), 3.24 MiB | 6.46 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  22% (1938/8808), 3.24 MiB | 6.46 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  23% (2026/8808), 3.24 MiB | 6.46 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  24% (2114/8808), 3.24 MiB | 6.46 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  44% (3876/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  45% (3964/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  25% (2202/8808), 3.24 MiB | 6.46 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  46% (4052/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  26% (2291/8808), 3.24 MiB | 6.46 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  27% (2379/8808), 3.24 MiB | 6.46 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  47% (4140/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  28% (2467/8808), 3.24 MiB | 6.46 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  29% (2555/8808), 3.24 MiB | 6.46 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  30% (2643/8808), 3.24 MiB | 6.46 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  31% (2731/8808), 3.24 MiB | 6.46 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  48% (4228/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  49% (4316/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  32% (2819/8808), 3.24 MiB | 6.46 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  33% (2907/8808), 3.24 MiB | 6.46 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  50% (4404/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  51% (4493/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  34% (2995/8808), 3.24 MiB | 6.46 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  35% (3083/8808), 3.24 MiB | 6.46 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  52% (4581/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  36% (3171/8808), 3.24 MiB | 6.46 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  53% (4669/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  54% (4757/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  55% (4845/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  56% (4933/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  37% (3259/8808), 3.24 MiB | 6.46 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  38% (3348/8808), 3.24 MiB | 6.46 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  39% (3436/8808), 3.24 MiB | 6.46 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  57% (5021/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  58% (5109/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  40% (3524/8808), 3.24 MiB | 6.46 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  59% (5197/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  41% (3612/8808), 3.24 MiB | 6.46 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  60% (5285/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  41% (3660/8808), 6.52 MiB | 6.52 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  60% (5351/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  61% (5373/8808), 5.23 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  62% (5461/8808), 10.45 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  63% (5550/8808), 10.45 MiB | 10.40 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  42% (3700/8808), 6.52 MiB | 6.52 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  64% (5638/8808), 10.45 MiB | 10.40 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  43% (3788/8808), 6.52 MiB | 6.52 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  65% (5726/8808), 10.45 MiB | 10.40 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  44% (3876/8808), 6.52 MiB | 6.52 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  66% (5814/8808), 10.45 MiB | 10.40 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  45% (3964/8808), 6.52 MiB | 6.52 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  67% (5902/8808), 10.45 MiB | 10.40 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  46% (4052/8808), 6.52 MiB | 6.52 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  68% (5990/8808), 10.45 MiB | 10.40 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  47% (4140/8808), 6.52 MiB | 6.52 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  69% (6078/8808), 10.45 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  70% (6166/8808), 10.45 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  71% (6254/8808), 10.45 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  72% (6342/8808), 10.45 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  73% (6430/8808), 10.45 MiB | 10.40 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  48% (4228/8808), 6.52 MiB | 6.52 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  74% (6518/8808), 10.45 MiB | 10.40 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  49% (4316/8808), 6.52 MiB | 6.52 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  75% (6606/8808), 10.45 MiB | 10.40 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  50% (4404/8808), 6.52 MiB | 6.52 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  76% (6695/8808), 10.45 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  77% (6783/8808), 10.45 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  78% (6871/8808), 10.45 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  79% (6959/8808), 10.45 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  80% (7047/8808), 10.45 MiB | 10.40 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  51% (4493/8808), 6.52 MiB | 6.52 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  81% (7135/8808), 10.45 MiB | 10.40 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  82% (7223/8808), 10.45 MiB | 10.40 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  52% (4581/8808), 6.52 MiB | 6.52 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  53% (4669/8808), 6.52 MiB | 6.52 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  54% (4757/8808), 6.52 MiB | 6.52 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  55% (4845/8808), 6.52 MiB | 6.52 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  56% (4933/8808), 6.52 MiB | 6.52 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  57% (5021/8808), 9.74 MiB | 6.46 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  83% (7311/8808), 15.85 MiB | 10.48 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  58% (5109/8808), 9.74 MiB | 6.46 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  84% (7399/8808), 15.85 MiB | 10.48 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  85% (7487/8808), 15.85 MiB | 10.48 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  86% (7575/8808), 15.85 MiB | 10.48 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  59% (5197/8808), 9.74 MiB | 6.46 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  60% (5285/8808), 9.74 MiB | 6.46 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  61% (5373/8808), 9.74 MiB | 6.46 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  87% (7663/8808), 15.85 MiB | 10.48 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  62% (5461/8808), 9.74 MiB | 6.46 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  88% (7752/8808), 15.85 MiB | 10.48 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  63% (5550/8808), 9.74 MiB | 6.46 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  64% (5638/8808), 9.74 MiB | 6.46 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  65% (5726/8808), 9.74 MiB | 6.46 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  89% (7840/8808), 15.85 MiB | 10.48 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  66% (5814/8808), 9.74 MiB | 6.46 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  90% (7928/8808), 15.85 MiB | 10.48 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  67% (5902/8808), 9.74 MiB | 6.46 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  68% (5990/8808), 9.74 MiB | 6.46 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  69% (6078/8808), 9.74 MiB | 6.46 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  70% (6166/8808), 9.74 MiB | 6.46 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  71% (6254/8808), 9.74 MiB | 6.46 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  91% (8016/8808), 15.85 MiB | 10.48 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  72% (6342/8808), 9.74 MiB | 6.46 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  73% (6430/8808), 9.74 MiB | 6.46 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  73% (6500/8808), 12.68 MiB | 6.31 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  74% (6518/8808), 12.68 MiB | 6.31 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  92% (8104/8808), 15.85 MiB | 10.48 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  75% (6606/8808), 12.68 MiB | 6.31 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  93% (8192/8808), 21.04 MiB | 10.44 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  76% (6695/8808), 12.68 MiB | 6.31 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  77% (6783/8808), 12.68 MiB | 6.31 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  78% (6871/8808), 12.68 MiB | 6.31 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  94% (8280/8808), 21.04 MiB | 10.44 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  95% (8368/8808), 21.04 MiB | 10.44 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  79% (6959/8808), 12.68 MiB | 6.31 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  96% (8456/8808), 21.04 MiB | 10.44 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  97% (8544/8808), 21.04 MiB | 10.44 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  98% (8632/8808), 21.04 MiB | 10.44 MiB/s   
+ DEBUG [89812a71] 	Receiving objects:  99% (8720/8808), 21.04 MiB | 10.44 MiB/s   
+ DEBUG [89812a71] 	remote: Total 8808 (delta 6), reused 29 (delta 6), pack-reused 8764[K
+ DEBUG [89812a71] 	
+ DEBUG [89812a71] 	Receiving objects: 100% (8808/8808), 21.04 MiB | 10.44 MiB/s   
+ DEBUG [89812a71] 	Receiving objects: 100% (8808/8808), 23.47 MiB | 10.44 MiB/s, done.
+ DEBUG [89812a71] 	
+ DEBUG [89812a71] 	Resolving deltas:   0% (0/1656)   
+ DEBUG [3e52f9c6] 	Receiving objects:  80% (7047/8808), 12.68 MiB | 6.31 MiB/s   
+ DEBUG [89812a71] 	Resolving deltas:   3% (61/1656)   
+ DEBUG [89812a71] 	Resolving deltas:   4% (68/1656)   
+ DEBUG [3e52f9c6] 	Receiving objects:  81% (7135/8808), 12.68 MiB | 6.31 MiB/s   
+ DEBUG [89812a71] 	Resolving deltas:   7% (131/1656)   
+ DEBUG [89812a71] 	Resolving deltas:   8% (136/1656)   
+ DEBUG [89812a71] 	Resolving deltas:   9% (150/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  10% (166/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  11% (192/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  12% (201/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  13% (218/1656)   
+ DEBUG [3e52f9c6] 	Receiving objects:  82% (7223/8808), 12.68 MiB | 6.31 MiB/s   
+ DEBUG [89812a71] 	Resolving deltas:  15% (257/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  16% (266/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  17% (295/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  18% (303/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  19% (315/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  20% (334/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  21% (350/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  22% (365/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  24% (404/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  25% (417/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  26% (432/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  27% (449/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  28% (466/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  29% (481/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  30% (501/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  31% (514/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  32% (530/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  33% (547/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  34% (572/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  35% (585/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  36% (601/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  37% (620/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  38% (632/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  39% (650/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  40% (664/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  41% (679/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  42% (697/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  43% (713/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  44% (734/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  45% (751/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  46% (764/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  47% (779/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  48% (799/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  49% (812/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  50% (828/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  51% (850/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  52% (866/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  53% (881/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  54% (900/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  55% (912/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  56% (930/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  57% (944/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  58% (964/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  59% (978/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  60% (997/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  61% (1019/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  62% (1031/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  63% (1044/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  64% (1061/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  65% (1077/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  66% (1094/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  67% (1110/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  68% (1127/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  69% (1143/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  70% (1164/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  71% (1177/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  72% (1195/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  73% (1212/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  74% (1230/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  75% (1242/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  76% (1260/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  77% (1280/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  78% (1292/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  79% (1311/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  80% (1326/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  81% (1350/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  82% (1365/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  84% (1400/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  87% (1452/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  88% (1473/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  89% (1474/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  90% (1495/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  91% (1507/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  92% (1524/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  93% (1543/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  94% (1558/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  95% (1575/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  96% (1590/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  97% (1607/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  98% (1629/1656)   
+ DEBUG [89812a71] 	Resolving deltas:  99% (1646/1656)   
+ DEBUG [89812a71] 	Resolving deltas: 100% (1656/1656)   
+ DEBUG [89812a71] 	Resolving deltas: 100% (1656/1656), done.
+ DEBUG [89812a71] 	
+ DEBUG [89812a71] 	Checking connectivity... 
+ DEBUG [89812a71] 	done.
+ DEBUG [89812a71] 	
+  INFO [89812a71] Finished in 4.076 seconds with exit status 0 (successful).
+ DEBUG [3e52f9c6] 	Receiving objects:  83% (7311/8808), 12.68 MiB | 6.31 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  84% (7399/8808), 15.92 MiB | 6.33 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  85% (7487/8808), 15.92 MiB | 6.33 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  86% (7575/8808), 15.92 MiB | 6.33 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  87% (7663/8808), 15.92 MiB | 6.33 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  88% (7752/8808), 15.92 MiB | 6.33 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  89% (7840/8808), 15.92 MiB | 6.33 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  90% (7928/8808), 15.92 MiB | 6.33 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  90% (7967/8808), 15.92 MiB | 6.33 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  91% (8016/8808), 19.51 MiB | 6.48 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  92% (8104/8808), 19.51 MiB | 6.48 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  93% (8192/8808), 19.51 MiB | 6.48 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  94% (8280/8808), 19.51 MiB | 6.48 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  95% (8368/8808), 19.51 MiB | 6.48 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  96% (8456/8808), 19.51 MiB | 6.48 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  97% (8544/8808), 19.51 MiB | 6.48 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  98% (8632/8808), 19.51 MiB | 6.48 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects:  99% (8720/8808), 19.51 MiB | 6.48 MiB/s   
+ DEBUG [3e52f9c6] 	remote: Total 8808 (delta 6), reused 29 (delta 6), pack-reused 8764[K
+ DEBUG [3e52f9c6] 	
+ DEBUG [3e52f9c6] 	Receiving objects: 100% (8808/8808), 19.51 MiB | 6.48 MiB/s   
+ DEBUG [3e52f9c6] 	Receiving objects: 100% (8808/8808), 23.47 MiB | 6.48 MiB/s, done.
+ DEBUG [3e52f9c6] 	
+ DEBUG [3e52f9c6] 	Resolving deltas:   0% (0/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:   3% (61/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:   4% (68/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:   7% (131/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:   8% (136/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:   9% (150/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  10% (166/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  11% (192/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  12% (201/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  13% (218/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  15% (257/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  16% (266/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  17% (295/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  18% (303/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  19% (315/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  20% (334/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  21% (350/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  22% (365/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  24% (404/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  25% (417/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  26% (432/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  27% (449/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  28% (466/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  29% (481/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  30% (501/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  31% (514/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  32% (530/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  33% (547/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  34% (572/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  35% (585/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  36% (601/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  37% (620/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  38% (632/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  39% (650/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  40% (664/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  41% (679/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  42% (697/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  43% (713/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  44% (734/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  45% (751/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  46% (764/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  47% (779/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  48% (799/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  49% (812/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  50% (828/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  51% (850/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  52% (866/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  53% (881/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  54% (900/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  55% (912/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  56% (930/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  57% (944/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  58% (964/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  59% (978/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  60% (997/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  61% (1019/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  62% (1031/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  63% (1044/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  64% (1061/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  65% (1077/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  66% (1094/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  67% (1110/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  68% (1127/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  69% (1143/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  70% (1164/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  71% (1177/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  72% (1195/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  73% (1212/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  74% (1230/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  75% (1242/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  76% (1260/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  77% (1280/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  78% (1292/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  79% (1311/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  80% (1326/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  81% (1350/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  82% (1365/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  84% (1400/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  87% (1452/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  88% (1473/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  89% (1474/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  90% (1495/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  91% (1507/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  92% (1524/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  93% (1543/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  94% (1558/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  95% (1575/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  96% (1590/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  97% (1607/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  98% (1629/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas:  99% (1646/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas: 100% (1656/1656)   
+ DEBUG [3e52f9c6] 	Resolving deltas: 100% (1656/1656), done.
+ DEBUG [3e52f9c6] 	
+ DEBUG [3e52f9c6] 	Checking connectivity... 
+ DEBUG [3e52f9c6] 	done.
+ DEBUG [3e52f9c6] 	
+f
+ DEBUG [3e52f9c6] 	atal: 
+ DEBUG [3e52f9c6] 	B
+ DEBUG [3e52f9c6] 	UG: initial ref transaction called with existing refs
+ DEBUG [3e52f9c6] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-08-21 17:35:37 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [7ff8386d] Running /usr/bin/env mkdir -p /tmp as deploy@54.202.109.74
+  INFO [6f2378a5] Running /usr/bin/env mkdir -p /tmp on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [7ff8386d] Command: /usr/bin/env mkdir -p /tmp
+ DEBUG [6f2378a5] Command: /usr/bin/env mkdir -p /tmp
+  INFO [7ff8386d] Finished in 7.702 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO [6f2378a5] Finished in 9.181 seconds with exit status 0 (successful).
+  INFO [7cb29c8e] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh as deploy@54.202.109.74
+ DEBUG [7cb29c8e] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+  INFO [7cb29c8e] Finished in 0.613 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO [6c63bd74] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [6c63bd74] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh
+  INFO [6c63bd74] Finished in 0.614 seconds with exit status 0 (successful).
+  INFO [bb09ec4e] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD as deploy@54.202.109.74
+  INFO [21f1c444] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [bb09ec4e] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+ DEBUG [21f1c444] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+ DEBUG [21f1c444] 	fb659ed7014348740fad6d0e9017e4a896216757
+ DEBUG [21f1c444] 		
+ DEBUG [21f1c444] 	HEAD
+  INFO [21f1c444] Finished in 1.585 seconds with exit status 0 (successful).
+ DEBUG [bb09ec4e] 	fb659ed7014348740fad6d0e9017e4a896216757	HEAD
+  INFO [bb09ec4e] Finished in 1.599 seconds with exit status 0 (successful).
+  INFO [bc1d44aa] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [183bb35c] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases as deploy@54.202.109.74
+ DEBUG [bc1d44aa] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases
+ DEBUG [183bb35c] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases
+  INFO [183bb35c] Finished in 0.645 seconds with exit status 0 (successful).
+  INFO [bc1d44aa] Finished in 0.952 seconds with exit status 0 (successful).
+  INFO [2580ec33] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [ba6d115f] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets as deploy@54.202.109.74
+ DEBUG [2580ec33] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets
+ DEBUG [ba6d115f] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets
+  INFO [ba6d115f] Finished in 0.612 seconds with exit status 0 (successful).
+  INFO [2580ec33] Finished in 0.616 seconds with exit status 0 (successful).
+ DEBUG [8df5ae72] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [5b7c2fcd] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] as deploy@54.202.109.74
+ DEBUG [8df5ae72] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [5b7c2fcd] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [8df5ae72] Finished in 0.610 seconds with exit status 0 (successful).
+ DEBUG [5b7c2fcd] Finished in 0.610 seconds with exit status 0 (successful).
+ DEBUG [1929cc01] Running [ -f /home/deploy/apps/mac/current/REVISION ] as deploy@54.202.109.74
+ DEBUG [a93d4da8] Running [ -f /home/deploy/apps/mac/current/REVISION ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [a93d4da8] Command: [ -f /home/deploy/apps/mac/current/REVISION ]
+ DEBUG [1929cc01] Command: [ -f /home/deploy/apps/mac/current/REVISION ]
+ DEBUG [1929cc01] Finished in 0.611 seconds with exit status 1 (failed).
+ DEBUG [a93d4da8] Finished in 0.614 seconds with exit status 1 (failed).
+ DEBUG [12c3424b] Running [ -f /home/deploy/apps/mac/repo/HEAD ] as deploy@54.202.109.74
+ DEBUG [ca6a612e] Running [ -f /home/deploy/apps/mac/repo/HEAD ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [12c3424b] Command: [ -f /home/deploy/apps/mac/repo/HEAD ]
+ DEBUG [ca6a612e] Command: [ -f /home/deploy/apps/mac/repo/HEAD ]
+ DEBUG [ca6a612e] Finished in 0.609 seconds with exit status 1 (failed).
+ DEBUG [a32ca83f] Running if test ! -d /home/deploy/apps/mac; then echo "Directory does not exist '/home/deploy/apps/mac'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [12c3424b] Finished in 0.612 seconds with exit status 1 (failed).
+ DEBUG [a32ca83f] Command: if test ! -d /home/deploy/apps/mac; then echo "Directory does not exist '/home/deploy/apps/mac'" 1>&2; false; fi
+ DEBUG [7f9a1b94] Running if test ! -d /home/deploy/apps/mac; then echo "Directory does not exist '/home/deploy/apps/mac'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [7f9a1b94] Command: if test ! -d /home/deploy/apps/mac; then echo "Directory does not exist '/home/deploy/apps/mac'" 1>&2; false; fi
+ DEBUG [a32ca83f] Finished in 0.613 seconds with exit status 0 (successful).
+ DEBUG [7f9a1b94] Finished in 0.613 seconds with exit status 0 (successful).
+  INFO [e2d701d9] Running /usr/bin/env git clone --mirror git@github.com:st118173/maa.git /home/deploy/apps/mac/repo on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [5acd2f31] Running /usr/bin/env git clone --mirror git@github.com:st118173/maa.git /home/deploy/apps/mac/repo as deploy@54.202.109.74
+ DEBUG [e2d701d9] Command: cd /home/deploy/apps/mac && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git clone --mirror git@github.com:st118173/maa.git /home/deploy/apps/mac/repo )
+ DEBUG [5acd2f31] Command: cd /home/deploy/apps/mac && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git clone --mirror git@github.com:st118173/maa.git /home/deploy/apps/mac/repo )
+ DEBUG [e2d701d9] 	fatal: destination path '/home/deploy/apps/mac/repo' already exists and is not an empty directory.
+ DEBUG [5acd2f31] 	Cloning into bare repository '/home/deploy/apps/mac/repo'...
+ DEBUG [e2d701d9] 	
+ DEBUG [5acd2f31] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-08-21 17:37:35 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [67b2268d] Running /usr/bin/env mkdir -p /tmp on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [0b3c33c7] Running /usr/bin/env mkdir -p /tmp as deploy@54.202.109.74
+ DEBUG [67b2268d] Command: /usr/bin/env mkdir -p /tmp
+ DEBUG [0b3c33c7] Command: /usr/bin/env mkdir -p /tmp
+  INFO [67b2268d] Finished in 5.384 seconds with exit status 0 (successful).
+  INFO [0b3c33c7] Finished in 5.389 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO [cafc74c1] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh as deploy@54.202.109.74
+  INFO [dae8f372] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [cafc74c1] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh
+ DEBUG [dae8f372] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh
+  INFO [dae8f372] Finished in 0.613 seconds with exit status 0 (successful).
+  INFO [cafc74c1] Finished in 0.613 seconds with exit status 0 (successful).
+  INFO [a318a6a7] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD as deploy@54.202.109.74
+  INFO [94c21e8c] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [a318a6a7] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+ DEBUG [94c21e8c] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+ DEBUG [94c21e8c] 	fb659ed7014348740fad6d0e9017e4a896216757	
+ DEBUG [a318a6a7] 	fb659ed7014348740fad6d0e9017e4a896216757
+ DEBUG [94c21e8c] 	HEAD
+ DEBUG [a318a6a7] 		HEAD
+  INFO [a318a6a7] Finished in 1.736 seconds with exit status 0 (successful).
+  INFO [94c21e8c] Finished in 1.738 seconds with exit status 0 (successful).
+  INFO [06090bea] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [4f99700d] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases as deploy@54.202.109.74
+ DEBUG [06090bea] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases
+ DEBUG [4f99700d] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases
+  INFO [06090bea] Finished in 0.917 seconds with exit status 0 (successful).
+  INFO [4f99700d] Finished in 0.920 seconds with exit status 0 (successful).
+  INFO [15e95e8b] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets as deploy@54.202.109.74
+  INFO [6630ecc4] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [15e95e8b] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets
+ DEBUG [6630ecc4] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets
+  INFO [15e95e8b] Finished in 0.611 seconds with exit status 0 (successful).
+  INFO [6630ecc4] Finished in 0.611 seconds with exit status 0 (successful).
+ DEBUG [e7d28e17] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [e0fbaaa5] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] as deploy@54.202.109.74
+ DEBUG [e7d28e17] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [e0fbaaa5] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [e0fbaaa5] Finished in 0.611 seconds with exit status 0 (successful).
+ DEBUG [e7d28e17] Finished in 0.615 seconds with exit status 0 (successful).
+ DEBUG [bc038233] Running [ -f /home/deploy/apps/mac/current/REVISION ] as deploy@54.202.109.74
+ DEBUG [10cbd063] Running [ -f /home/deploy/apps/mac/current/REVISION ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [bc038233] Command: [ -f /home/deploy/apps/mac/current/REVISION ]
+ DEBUG [10cbd063] Command: [ -f /home/deploy/apps/mac/current/REVISION ]
+ DEBUG [10cbd063] Finished in 0.610 seconds with exit status 1 (failed).
+ DEBUG [bc038233] Finished in 0.612 seconds with exit status 1 (failed).
+ DEBUG [2c509cb5] Running [ -f /home/deploy/apps/mac/repo/HEAD ] as deploy@54.202.109.74
+ DEBUG [fcf9ae85] Running [ -f /home/deploy/apps/mac/repo/HEAD ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [2c509cb5] Command: [ -f /home/deploy/apps/mac/repo/HEAD ]
+ DEBUG [fcf9ae85] Command: [ -f /home/deploy/apps/mac/repo/HEAD ]
+ DEBUG [fcf9ae85] Finished in 0.610 seconds with exit status 1 (failed).
+ DEBUG [2c509cb5] Finished in 0.613 seconds with exit status 1 (failed).
+ DEBUG [adbe4057] Running if test ! -d /home/deploy/apps/mac; then echo "Directory does not exist '/home/deploy/apps/mac'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [cfa2071f] Running if test ! -d /home/deploy/apps/mac; then echo "Directory does not exist '/home/deploy/apps/mac'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [adbe4057] Command: if test ! -d /home/deploy/apps/mac; then echo "Directory does not exist '/home/deploy/apps/mac'" 1>&2; false; fi
+ DEBUG [cfa2071f] Command: if test ! -d /home/deploy/apps/mac; then echo "Directory does not exist '/home/deploy/apps/mac'" 1>&2; false; fi
+ DEBUG [adbe4057] Finished in 0.613 seconds with exit status 0 (successful).
+  INFO [043ee1d0] Running /usr/bin/env git clone --mirror git@github.com:st118173/maa.git /home/deploy/apps/mac/repo on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [cfa2071f] Finished in 0.614 seconds with exit status 0 (successful).
+ DEBUG [043ee1d0] Command: cd /home/deploy/apps/mac && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git clone --mirror git@github.com:st118173/maa.git /home/deploy/apps/mac/repo )
+  INFO [25924770] Running /usr/bin/env git clone --mirror git@github.com:st118173/maa.git /home/deploy/apps/mac/repo as deploy@54.202.109.74
+ DEBUG [25924770] Command: cd /home/deploy/apps/mac && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git clone --mirror git@github.com:st118173/maa.git /home/deploy/apps/mac/repo )
+ DEBUG [25924770] 	fatal: destination path '/home/deploy/apps/mac/repo' already exists and is not an empty directory.
+ DEBUG [043ee1d0] 	Cloning into bare repository '/home/deploy/apps/mac/repo'...
+ DEBUG [25924770] 	
+ DEBUG [043ee1d0] 	
+ DEBUG [043ee1d0] 	remote: Counting objects: 8808, done.[K
+ DEBUG [043ee1d0] 	
+ DEBUG [043ee1d0] 	remote: Compressing objects:   2% (1/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:   5% (2/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:   8% (3/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  11% (4/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  14% (5/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  17% (6/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:
+ DEBUG [043ee1d0] 	  20% (7/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  22% (8/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  25% (9/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  28% (10/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  31% (11/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  34% (12/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  37% (13/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  40% (14/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  42% (15/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  45% (16/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  48% (17/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  51% (18/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  54% (19/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  57% (20/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  60% (21/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  62% (22/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  65% (23/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  68% (24/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  71% (25/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  74% (26/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  77% (27/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  80% (28/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  82% (29/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  85% (30/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objec
+ DEBUG [043ee1d0] 	ts:  88% (31/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  91% (32/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  94% (33/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects:  97% (34/35) 
+ DEBUG [043ee1d0] 	  [K
+ DEBUG [043ee1d0] 	remote: Compressing objects: 100% (35/35)   [K
+ DEBUG [043ee1d0] 	remote: Compressing objects: 100% (35/35), done.[K
+ DEBUG [043ee1d0] 	
+ DEBUG [043ee1d0] 	Receiving objects:   0% (1/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:   1% (89/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:   2% (177/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:   3% (265/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:   4% (353/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:   5% (441/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:   6% (529/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:   7% (617/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:   8% (705/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:   9% (793/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  10% (881/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  11% (969/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  12% (1057/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  13% (1146/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  14% (1234/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  15% (1322/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  16% (1410/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  17% (1498/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  18% (1586/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  19% (1674/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  20% (1762/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  21% (1850/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  22% (1938/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  23% (2026/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  24% (2114/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  25% (2202/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  26% (2291/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  27% (2379/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  28% (2467/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  29% (2555/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  30% (2643/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  31% (2731/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  32% (2819/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  33% (2907/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  34% (2995/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  35% (3083/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  36% (3171/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  37% (3259/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  38% (3348/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  39% (3436/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  40% (3524/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  41% (3612/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  42% (3700/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  43% (3788/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  44% (3876/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  45% (3964/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  46% (4052/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  47% (4140/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  48% (4228/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  49% (4316/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  50% (4404/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  51% (4493/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  52% (4581/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  53% (4669/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  54% (4757/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  55% (4845/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  56% (4933/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  57% (5021/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  58% (5109/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  59% (5197/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  60% (5285/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  61% (5373/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  62% (5461/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  63% (5550/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  64% (5638/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  65% (5726/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  66% (5814/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  67% (5902/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  68% (5990/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  69% (6078/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  70% (6166/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  71% (6254/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  72% (6342/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  73% (6430/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  74% (6518/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  75% (6606/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  76% (6695/8808)   
+ DEBUG [043ee1d0] 	Receiving objects:  77% (6783/8808), 13.34 MiB | 26.66 MiB/s   
+ DEBUG [043ee1d0] 	Receiving objects:  78% (6871/8808), 13.34 MiB | 26.66 MiB/s   
+ DEBUG [043ee1d0] 	Receiving objects:  79% (6959/8808), 13.34 MiB | 26.66 MiB/s   
+ DEBUG [043ee1d0] 	Receiving objects:  80% (7047/8808), 13.34 MiB | 26.66 MiB/s   
+ DEBUG [043ee1d0] 	Receiving objects:  81% (7135/8808), 13.34 MiB | 26.66 MiB/s   
+ DEBUG [043ee1d0] 	Receiving objects:  82% (7223/8808), 13.34 MiB | 26.66 MiB/s   
+ DEBUG [043ee1d0] 	Receiving objects:  83% (7311/8808), 13.34 MiB | 26.66 MiB/s   
+ DEBUG [043ee1d0] 	Receiving objects:  84% (7399/8808), 13.34 MiB | 26.66 MiB/s   
+ DEBUG [043ee1d0] 	Receiving objects:  85% (7487/8808), 13.34 MiB | 26.66 MiB/s   
+ DEBUG [043ee1d0] 	Receiving objects:  86% (7575/8808), 13.34 MiB | 26.66 MiB/s   
+ DEBUG [043ee1d0] 	Receiving objects:  87% (7663/8808), 13.34 MiB | 26.66 MiB/s   
+ DEBUG [043ee1d0] 	Receiving objects:  88% (7752/8808), 13.34 MiB | 26.66 MiB/s   
+ DEBUG [043ee1d0] 	Receiving objects:  89% (7840/8808), 13.34 MiB | 26.66 MiB/s   
+ DEBUG [043ee1d0] 	Receiving objects:  90% (7928/8808), 13.34 MiB | 26.66 MiB/s   
+ DEBUG [043ee1d0] 	Receiving objects:  91% (8016/8808), 13.34 MiB | 26.66 MiB/s   
+ DEBUG [043ee1d0] 	Receiving objects:  92% (8104/8808), 13.34 MiB | 26.66 MiB/s   
+ DEBUG [043ee1d0] 	Receiving objects:  93% (8192/8808), 13.34 MiB | 26.66 MiB/s   
+ DEBUG [043ee1d0] 	Receiving objects:  94% (8280/8808), 13.34 MiB | 26.66 MiB/s   
+ DEBUG [043ee1d0] 	Receiving objects:  95% (8368/8808), 13.34 MiB | 26.66 MiB/s   
+ DEBUG [043ee1d0] 	Receiving objects:  96% (8456/8808), 13.34 MiB | 26.66 MiB/s   
+ DEBUG [043ee1d0] 	Receiving objects:  97% (8544/8808), 13.34 MiB | 26.66 MiB/s   
+ DEBUG [043ee1d0] 	Receiving objects:  98% (8632/8808), 13.34 MiB | 26.66 MiB/s   
+ DEBUG [043ee1d0] 	Receiving objects:  99% (8720/8808), 13.34 MiB | 26.66 MiB/s   
+ DEBUG [043ee1d0] 	remote: Total 8808 (delta 6), reused 29 (delta 6), pack-reused 8764[K
+ DEBUG [043ee1d0] 	
+ DEBUG [043ee1d0] 	Receiving objects: 100% (8808/8808), 13.34 MiB | 26.66 MiB/s   
+ DEBUG [043ee1d0] 	Receiving objects: 100% (8808/8808), 23.47 MiB | 26.66 MiB/s, done.
+ DEBUG [043ee1d0] 	
+ DEBUG [043ee1d0] 	Resolving deltas:   0% (0/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:   3% (61/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:   4% (68/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:   7% (131/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:   8% (136/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:   9% (150/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  10% (166/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  11% (192/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  12% (201/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  13% (218/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  15% (257/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  16% (266/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  17% (295/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  18% (303/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  19% (315/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  20% (334/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  21% (350/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  22% (365/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  24% (404/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  25% (417/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  26% (432/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  27% (449/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  28% (466/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  29% (481/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  30% (501/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  31% (514/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  32% (530/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  33% (547/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  34% (572/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  35% (585/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  36% (601/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  37% (620/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  38% (632/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  39% (650/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  40% (664/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  41% (679/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  42% (697/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  43% (713/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  44% (734/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  45% (751/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  46% (764/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  47% (779/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  48% (799/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  49% (812/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  50% (828/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  51% (850/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  52% (866/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  53% (881/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  54% (900/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  55% (912/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  56% (930/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  57% (944/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  58% (964/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  59% (978/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  60% (997/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  61% (1019/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  62% (1031/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  63% (1044/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  64% (1061/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  65% (1077/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  66% (1094/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  67% (1110/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  68% (1127/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  69% (1143/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  70% (1164/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  71% (1177/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  72% (1195/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  73% (1212/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  74% (1230/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  75% (1242/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  76% (1260/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  77% (1280/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  78% (1292/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  79% (1311/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  80% (1326/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  81% (1350/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  82% (1365/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  84% (1400/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  87% (1452/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  88% (1473/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  89% (1474/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  90% (1495/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  91% (1507/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  92% (1524/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  93% (1543/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  94% (1558/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  95% (1575/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  96% (1590/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  97% (1607/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  98% (1629/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas:  99% (1646/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas: 100% (1656/1656)   
+ DEBUG [043ee1d0] 	Resolving deltas: 100% (1656/1656), done.
+ DEBUG [043ee1d0] 	
+ DEBUG [043ee1d0] 	Checking connectivity... 
+ DEBUG [043ee1d0] 	done.
+ DEBUG [043ee1d0] 	
+  INFO [043ee1d0] Finished in 2.673 seconds with exit status 0 (successful).
