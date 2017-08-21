@@ -3732,3 +3732,60 @@ remote: Total 9 (delta 7), reused 9 (delta 7), pack-reused 0[K
  DEBUG [ab73574c] 	failed to create symbolic link '/home/deploy/apps/mac/releases/20170821142214/public/assets/assets'
  DEBUG [ab73574c] 	: File exists
  DEBUG [ab73574c] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-08-21 21:30:33 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+  INFO [19bffcb0] Running /usr/bin/env mkdir -p /tmp as deploy@54.202.109.74
+  INFO [8282a1ed] Running /usr/bin/env mkdir -p /tmp on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [19bffcb0] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+ DEBUG [8282a1ed] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+  INFO [19bffcb0] Finished in 3.963 seconds with exit status 0 (successful).
+  INFO [8282a1ed] Finished in 3.967 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO [8ee42dd5] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [acb64403] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh as deploy@54.202.109.74
+ DEBUG [8ee42dd5] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh )
+ DEBUG [acb64403] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh )
+  INFO [acb64403] Finished in 1.219 seconds with exit status 0 (successful).
+  INFO [8ee42dd5] Finished in 1.223 seconds with exit status 0 (successful).
+  INFO [94c2ca32] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD as deploy@54.202.109.74
+  INFO [343a0350] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [94c2ca32] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+ DEBUG [343a0350] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+ DEBUG [343a0350] 	e1b8dd6a1c141f45ca957219f8946eb34652bcc6
+ DEBUG [94c2ca32] 	e1b8dd6a1c141f45ca957219f8946eb34652bcc6
+ DEBUG [343a0350] 		HEAD
+ DEBUG [94c2ca32] 		HEAD
+  INFO [343a0350] Finished in 2.446 seconds with exit status 0 (successful).
+  INFO [94c2ca32] Finished in 2.454 seconds with exit status 0 (successful).
+  INFO [dc5cf648] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases as deploy@54.202.109.74
+  INFO [dc44a759] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [dc5cf648] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases )
+ DEBUG [dc44a759] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases )
+  INFO [dc5cf648] Finished in 0.901 seconds with exit status 0 (successful).
+  INFO [dc44a759] Finished in 0.901 seconds with exit status 0 (successful).
+  INFO [93642fa3] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/bin /home/deploy/apps/mac/shared/log /home/deploy/apps/mac/shared/tmp/pids /home/deploy/apps/mac/shared/tmp/cache /home/deploy/apps/mac/shared/tmp/sockets /home/deploy/apps/mac/shared/vendor/bundle /home/deploy/apps/mac/shared/public/system /home/deploy/apps/mac/shared/public/assets on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [36ed6af2] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/bin /home/deploy/apps/mac/shared/log /home/deploy/apps/mac/shared/tmp/pids /home/deploy/apps/mac/shared/tmp/cache /home/deploy/apps/mac/shared/tmp/sockets /home/deploy/apps/mac/shared/vendor/bundle /home/deploy/apps/mac/shared/public/system /home/deploy/apps/mac/shared/public/assets as deploy@54.202.109.74
+ DEBUG [93642fa3] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/bin /home/deploy/apps/mac/shared/log /home/deploy/apps/mac/shared/tmp/pids /home/deploy/apps/mac/shared/tmp/cache /home/deploy/apps/mac/shared/tmp/sockets /home/deploy/apps/mac/shared/vendor/bundle /home/deploy/apps/mac/shared/public/system /home/deploy/apps/mac/shared/public/assets )
+ DEBUG [36ed6af2] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/bin /home/deploy/apps/mac/shared/log /home/deploy/apps/mac/shared/tmp/pids /home/deploy/apps/mac/shared/tmp/cache /home/deploy/apps/mac/shared/tmp/sockets /home/deploy/apps/mac/shared/vendor/bundle /home/deploy/apps/mac/shared/public/system /home/deploy/apps/mac/shared/public/assets )
+  INFO [36ed6af2] Finished in 0.599 seconds with exit status 0 (successful).
+  INFO [93642fa3] Finished in 0.607 seconds with exit status 0 (successful).
+  INFO [51e0317d] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/config on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [dd3acbeb] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/config as deploy@54.202.109.74
+ DEBUG [51e0317d] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/config )
+ DEBUG [dd3acbeb] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/config )
+  INFO [51e0317d] Finished in 0.597 seconds with exit status 0 (successful).
+  INFO [dd3acbeb] Finished in 0.595 seconds with exit status 0 (successful).
+ DEBUG [167214b1] Running [ -f /home/deploy/apps/mac/shared/config/database.yml ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [167214b1] Command: [ -f /home/deploy/apps/mac/shared/config/database.yml ]
+ DEBUG [87ad86cb] Running [ -f /home/deploy/apps/mac/shared/config/database.yml ] as deploy@54.202.109.74
+ DEBUG [87ad86cb] Command: [ -f /home/deploy/apps/mac/shared/config/database.yml ]
+ DEBUG [87ad86cb] Finished in 0.611 seconds with exit status 1 (failed).
+ DEBUG [167214b1] Finished in 0.616 seconds with exit status 1 (failed).
+ ERROR linked file /home/deploy/apps/mac/shared/config/database.yml does not exist on 54.202.109.74
+ ERROR linked file /home/deploy/apps/mac/shared/config/database.yml does not exist on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
