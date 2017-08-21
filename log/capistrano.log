@@ -3436,3 +3436,299 @@ remote: Total 13 (delta 9), reused 13 (delta 9), pack-reused 0[K
  DEBUG [2825c34c] 	: No such file or directory
  DEBUG [6a1a1ed5] 	
  DEBUG [2825c34c] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-08-21 21:19:35 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+  INFO [e917693e] Running /usr/bin/env mkdir -p /tmp on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [184e9a69] Running /usr/bin/env mkdir -p /tmp as deploy@54.202.109.74
+ DEBUG [e917693e] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+ DEBUG [184e9a69] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+  INFO [184e9a69] Finished in 4.048 seconds with exit status 0 (successful).
+  INFO [e917693e] Finished in 4.050 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO [06aee508] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [9a62a92f] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh as deploy@54.202.109.74
+ DEBUG [06aee508] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh )
+ DEBUG [9a62a92f] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh )
+  INFO [06aee508] Finished in 0.610 seconds with exit status 0 (successful).
+  INFO [9a62a92f] Finished in 0.610 seconds with exit status 0 (successful).
+  INFO [3052a58f] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [3052a58f] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+  INFO [ac6bbcf8] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD as deploy@54.202.109.74
+ DEBUG [ac6bbcf8] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+ DEBUG [ac6bbcf8] 	a751f8db987af8c90684592ceeb3b1eb637ff0c6
+ DEBUG [3052a58f] 	a751f8db987af8c90684592ceeb3b1eb637ff0c6
+ DEBUG [ac6bbcf8] 		
+ DEBUG [3052a58f] 		HEAD
+ DEBUG [ac6bbcf8] 	HEAD
+  INFO [3052a58f] Finished in 1.740 seconds with exit status 0 (successful).
+  INFO [ac6bbcf8] Finished in 1.743 seconds with exit status 0 (successful).
+  INFO [ddabfdb1] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [726e12bc] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases as deploy@54.202.109.74
+ DEBUG [ddabfdb1] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases )
+ DEBUG [726e12bc] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases )
+  INFO [ddabfdb1] Finished in 0.906 seconds with exit status 0 (successful).
+  INFO [726e12bc] Finished in 0.913 seconds with exit status 0 (successful).
+  INFO [f7f8e97b] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [f7f8e97b] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets )
+  INFO [912b6e25] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets as deploy@54.202.109.74
+ DEBUG [912b6e25] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets )
+  INFO [912b6e25] Finished in 0.603 seconds with exit status 0 (successful).
+  INFO [f7f8e97b] Finished in 0.611 seconds with exit status 0 (successful).
+ DEBUG [55abe100] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] as deploy@54.202.109.74
+ DEBUG [c49a63f5] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [55abe100] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [c49a63f5] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [55abe100] Finished in 0.608 seconds with exit status 0 (successful).
+ DEBUG [c49a63f5] Finished in 0.606 seconds with exit status 0 (successful).
+ DEBUG [d88bf5e4] Running [ -f /home/deploy/apps/mac/current/REVISION ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [d88bf5e4] Command: [ -f /home/deploy/apps/mac/current/REVISION ]
+ DEBUG [955fab6b] Running [ -f /home/deploy/apps/mac/current/REVISION ] as deploy@54.202.109.74
+ DEBUG [955fab6b] Command: [ -f /home/deploy/apps/mac/current/REVISION ]
+ DEBUG [d88bf5e4] Finished in 0.611 seconds with exit status 1 (failed).
+ DEBUG [955fab6b] Finished in 0.615 seconds with exit status 1 (failed).
+ DEBUG [37081813] Running [ -f /home/deploy/apps/mac/repo/HEAD ] as deploy@54.202.109.74
+ DEBUG [e9a73a79] Running [ -f /home/deploy/apps/mac/repo/HEAD ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [37081813] Command: [ -f /home/deploy/apps/mac/repo/HEAD ]
+ DEBUG [e9a73a79] Command: [ -f /home/deploy/apps/mac/repo/HEAD ]
+ DEBUG [37081813] Finished in 0.604 seconds with exit status 0 (successful).
+ DEBUG [e9a73a79] Finished in 0.605 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/apps/mac/repo
+  INFO The repository mirror is at /home/deploy/apps/mac/repo
+ DEBUG [4e7ea92f] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [6c19d822] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [4e7ea92f] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [6c19d822] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [4e7ea92f] Finished in 0.607 seconds with exit status 0 (successful).
+ DEBUG [6c19d822] Finished in 0.607 seconds with exit status 0 (successful).
+  INFO [9dbc83f6] Running /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git as deploy@54.202.109.74
+  INFO [42f82f02] Running /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [9dbc83f6] Command: cd /home/deploy/apps/mac/repo && ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git )
+ DEBUG [42f82f02] Command: cd /home/deploy/apps/mac/repo && ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git )
+  INFO [42f82f02] Finished in 0.605 seconds with exit status 0 (successful).
+  INFO [9dbc83f6] Finished in 0.611 seconds with exit status 0 (successful).
+  INFO [7e92d21a] Running /usr/bin/env git remote update --prune on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [1e5e82c4] Running /usr/bin/env git remote update --prune as deploy@54.202.109.74
+ DEBUG [7e92d21a] Command: cd /home/deploy/apps/mac/repo && ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [1e5e82c4] Command: cd /home/deploy/apps/mac/repo && ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [1e5e82c4] 	Fetching origin
+ DEBUG [7e92d21a] 	Fetching origin
+ DEBUG [1e5e82c4] 	
+ DEBUG [7e92d21a] 	
+ DEBUG [7e92d21a] 	remote: Counting objects: 9, done.[K
+ DEBUG [7e92d21a] 	
+remote: Compressing objects:  50% (1/2)   [Kremote: Compressing objects: 100% (2/2)   [Kremote: Compressing objects: 100% (2/2), done.[K
+remote: Total 9 (delta 7), reused 9 (delta 7), pack-reused 0[K
+ DEBUG [7e92d21a] 	
+ DEBUG [7e92d21a] 	Unpacking objects:  11% (1/9)   
+ DEBUG [7e92d21a] 	Unpacking objects:  22% (2/9)   
+ DEBUG [7e92d21a] 	Unpacking objects:  33% (3/9)   
+ DEBUG [7e92d21a] 	Unpacking objects:  44% (4/9)   
+ DEBUG [7e92d21a] 	Unpacking objects:  55% (5/9)   
+ DEBUG [7e92d21a] 	Unpacking objects:  66% (6/9)   
+ DEBUG [7e92d21a] 	Unpacking objects:  77% (7/9)   
+ DEBUG [1e5e82c4] 	remote: Counting objects: 9, done.[K
+ DEBUG [1e5e82c4] 	
+remote: Compressing objects:  50% (1/2)   [Kremote: Compressing objects: 100% (2/2)   [Kremote: Compressing objects: 100% (2/2), done.[K
+remote: Total 9 (delta 7), reused 9 (delta 7), pack-reused 0[K
+ DEBUG [1e5e82c4] 	
+ DEBUG [1e5e82c4] 	Unpacking objects:  11% (1/9)   
+ DEBUG [1e5e82c4] 	Unpacking objects:  22% (2/9)   
+ DEBUG [1e5e82c4] 	Unpacking objects:  33% (3/9)   
+ DEBUG [1e5e82c4] 	Unpacking objects:  44% (4/9)   
+ DEBUG [1e5e82c4] 	Unpacking objects:  55% (5/9)   
+ DEBUG [1e5e82c4] 	Unpacking objects:  66% (6/9)   
+ DEBUG [1e5e82c4] 	Unpacking objects:  77% (7/9)   
+ DEBUG [1e5e82c4] 	Unpacking objects:  88% (8/9)   
+ DEBUG [7e92d21a] 	Unpacking objects:  88% (8/9)   
+ DEBUG [1e5e82c4] 	Unpacking objects: 100% (9/9)   
+ DEBUG [7e92d21a] 	Unpacking objects: 100% (9/9)   
+ DEBUG [1e5e82c4] 	Unpacking objects: 100% (9/9), done.
+ DEBUG [7e92d21a] 	Unpacking objects: 100% (9/9), done.
+ DEBUG [1e5e82c4] 	
+ DEBUG [7e92d21a] 	
+ DEBUG [1e5e82c4] 	e
+ DEBUG [7e92d21a] 	From github.com:st118173/maa
+ DEBUG [1e5e82c4] 	rror: 
+ DEBUG [7e92d21a] 	
+ DEBUG [1e5e82c4] 	c
+ DEBUG [7e92d21a] 	   de9939c..a751f8d  master     -> master
+ DEBUG [1e5e82c4] 	annot lock ref 'refs/heads/master': ref refs/heads/master is at a751f8db987af8c90684592ceeb3b1eb637ff0c6 but expected de9939cf53f05189cff15518d2db45e7d369a75e
+ DEBUG [7e92d21a] 	
+ DEBUG [1e5e82c4] 	
+  INFO [7e92d21a] Finished in 2.052 seconds with exit status 0 (successful).
+ DEBUG [1e5e82c4] 	F
+ DEBUG [1e5e82c4] 	rom 
+ DEBUG [1e5e82c4] 	g
+ DEBUG [1e5e82c4] 	ithub.com:st118173/maa
+ DEBUG [1e5e82c4] 	
+ DEBUG [1e5e82c4] 	 
+ DEBUG [1e5e82c4] 	! de9939c..a751f8d  master     -> master  (unable to update local ref)
+ DEBUG [1e5e82c4] 	
+ DEBUG [1e5e82c4] 	error: Could not fetch origin
+ DEBUG [1e5e82c4] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-08-21 21:22:03 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+  INFO [1520ae53] Running /usr/bin/env mkdir -p /tmp as deploy@54.202.109.74
+  INFO [ea98cf55] Running /usr/bin/env mkdir -p /tmp on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [1520ae53] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+ DEBUG [ea98cf55] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+  INFO [1520ae53] Finished in 3.995 seconds with exit status 0 (successful).
+  INFO [ea98cf55] Finished in 4.001 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO [0e7ab694] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh as deploy@54.202.109.74
+  INFO [ba09d3c2] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [0e7ab694] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh )
+ DEBUG [ba09d3c2] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh )
+  INFO [0e7ab694] Finished in 0.629 seconds with exit status 0 (successful).
+  INFO [ba09d3c2] Finished in 0.629 seconds with exit status 0 (successful).
+  INFO [cc76a4c6] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [59d3492c] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD as deploy@54.202.109.74
+ DEBUG [cc76a4c6] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+ DEBUG [59d3492c] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+ DEBUG [59d3492c] 	a751f8db987af8c90684592ceeb3b1eb637ff0c6
+ DEBUG [59d3492c] 		
+ DEBUG [59d3492c] 	HEAD
+ DEBUG [59d3492c] 	
+  INFO [59d3492c] Finished in 1.682 seconds with exit status 0 (successful).
+ DEBUG [cc76a4c6] 	a751f8db987af8c90684592ceeb3b1eb637ff0c6	HEAD
+ DEBUG [cc76a4c6] 	
+  INFO [cc76a4c6] Finished in 1.691 seconds with exit status 0 (successful).
+  INFO [2b70f9c3] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [b3400290] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases as deploy@54.202.109.74
+ DEBUG [2b70f9c3] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases )
+ DEBUG [b3400290] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases )
+  INFO [b3400290] Finished in 0.950 seconds with exit status 0 (successful).
+  INFO [2b70f9c3] Finished in 0.954 seconds with exit status 0 (successful).
+  INFO [600d4916] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [600d4916] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets )
+  INFO [07c1bb92] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets as deploy@54.202.109.74
+ DEBUG [07c1bb92] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets )
+  INFO [07c1bb92] Finished in 0.612 seconds with exit status 0 (successful).
+  INFO [600d4916] Finished in 0.617 seconds with exit status 0 (successful).
+ DEBUG [aaa86a1a] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [44081425] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] as deploy@54.202.109.74
+ DEBUG [aaa86a1a] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [44081425] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [44081425] Finished in 0.606 seconds with exit status 0 (successful).
+ DEBUG [aaa86a1a] Finished in 0.611 seconds with exit status 0 (successful).
+ DEBUG [d999fefd] Running [ -f /home/deploy/apps/mac/current/REVISION ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [a78341e9] Running [ -f /home/deploy/apps/mac/current/REVISION ] as deploy@54.202.109.74
+ DEBUG [d999fefd] Command: [ -f /home/deploy/apps/mac/current/REVISION ]
+ DEBUG [a78341e9] Command: [ -f /home/deploy/apps/mac/current/REVISION ]
+ DEBUG [a78341e9] Finished in 0.607 seconds with exit status 1 (failed).
+ DEBUG [d999fefd] Finished in 0.614 seconds with exit status 1 (failed).
+ DEBUG [307d19a7] Running [ -f /home/deploy/apps/mac/repo/HEAD ] as deploy@54.202.109.74
+ DEBUG [39f0a9c0] Running [ -f /home/deploy/apps/mac/repo/HEAD ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [307d19a7] Command: [ -f /home/deploy/apps/mac/repo/HEAD ]
+ DEBUG [39f0a9c0] Command: [ -f /home/deploy/apps/mac/repo/HEAD ]
+ DEBUG [307d19a7] Finished in 0.607 seconds with exit status 0 (successful).
+ DEBUG [39f0a9c0] Finished in 0.607 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/apps/mac/repo
+  INFO The repository mirror is at /home/deploy/apps/mac/repo
+ DEBUG [dd4d6082] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [dd4d6082] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [a8ffbc8b] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [a8ffbc8b] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [dd4d6082] Finished in 0.608 seconds with exit status 0 (successful).
+ DEBUG [a8ffbc8b] Finished in 0.607 seconds with exit status 0 (successful).
+  INFO [8e5ca4c9] Running /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [b31eb0d1] Running /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git as deploy@54.202.109.74
+ DEBUG [8e5ca4c9] Command: cd /home/deploy/apps/mac/repo && ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git )
+ DEBUG [b31eb0d1] Command: cd /home/deploy/apps/mac/repo && ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git )
+  INFO [b31eb0d1] Finished in 0.548 seconds with exit status 0 (successful).
+  INFO [8e5ca4c9] Finished in 0.552 seconds with exit status 0 (successful).
+  INFO [d9a5815f] Running /usr/bin/env git remote update --prune as deploy@54.202.109.74
+  INFO [4dbdf8f3] Running /usr/bin/env git remote update --prune on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [d9a5815f] Command: cd /home/deploy/apps/mac/repo && ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [4dbdf8f3] Command: cd /home/deploy/apps/mac/repo && ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [d9a5815f] 	Fetching origin
+ DEBUG [4dbdf8f3] 	Fetching origin
+ DEBUG [d9a5815f] 	
+ DEBUG [4dbdf8f3] 	
+  INFO [d9a5815f] Finished in 1.590 seconds with exit status 0 (successful).
+  INFO [4dbdf8f3] Finished in 1.591 seconds with exit status 0 (successful).
+ DEBUG [f2ce3235] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [f2ce3235] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [88a3183c] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [88a3183c] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [f2ce3235] Finished in 0.914 seconds with exit status 0 (successful).
+ DEBUG [88a3183c] Finished in 0.913 seconds with exit status 0 (successful).
+  INFO [b564aa2f] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821142214 on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [bc1e60c7] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821142214 as deploy@54.202.109.74
+ DEBUG [b564aa2f] Command: cd /home/deploy/apps/mac/repo && ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821142214 )
+ DEBUG [bc1e60c7] Command: cd /home/deploy/apps/mac/repo && ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821142214 )
+  INFO [bc1e60c7] Finished in 0.607 seconds with exit status 0 (successful).
+  INFO [b564aa2f] Finished in 0.614 seconds with exit status 0 (successful).
+  INFO [47f1278e] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/apps/mac/releases/20170821142214 as deploy@54.202.109.74
+  INFO [270b08e7] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/apps/mac/releases/20170821142214 on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [47f1278e] Command: cd /home/deploy/apps/mac/repo && ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/apps/mac/releases/20170821142214 )
+ DEBUG [270b08e7] Command: cd /home/deploy/apps/mac/repo && ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/apps/mac/releases/20170821142214 )
+  INFO [270b08e7] Finished in 1.220 seconds with exit status 0 (successful).
+  INFO [47f1278e] Finished in 1.228 seconds with exit status 0 (successful).
+ DEBUG [8ec5f316] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [8ec5f316] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [7ba7bbeb] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [7ba7bbeb] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [8ec5f316] Finished in 0.607 seconds with exit status 0 (successful).
+ DEBUG [7ba7bbeb] Finished in 0.606 seconds with exit status 0 (successful).
+ DEBUG [dbf397f7] Running /usr/bin/env git rev-list --max-count=1 master on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [07425c08] Running /usr/bin/env git rev-list --max-count=1 master as deploy@54.202.109.74
+ DEBUG [dbf397f7] Command: cd /home/deploy/apps/mac/repo && ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [07425c08] Command: cd /home/deploy/apps/mac/repo && ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [dbf397f7] 	a751f8db987af8c90684592ceeb3b1eb637ff0c6
+ DEBUG [dbf397f7] 	
+ DEBUG [07425c08] 	a751f8db987af8c90684592ceeb3b1eb637ff0c6
+ DEBUG [dbf397f7] Finished in 0.610 seconds with exit status 0 (successful).
+ DEBUG [07425c08] 	
+ DEBUG [07425c08] Finished in 0.612 seconds with exit status 0 (successful).
+ DEBUG [3e4bfa17] Running if test ! -d /home/deploy/apps/mac/releases/20170821142214; then echo "Directory does not exist '/home/deploy/apps/mac/releases/20170821142214'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [8d5cd577] Running if test ! -d /home/deploy/apps/mac/releases/20170821142214; then echo "Directory does not exist '/home/deploy/apps/mac/releases/20170821142214'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [3e4bfa17] Command: if test ! -d /home/deploy/apps/mac/releases/20170821142214; then echo "Directory does not exist '/home/deploy/apps/mac/releases/20170821142214'" 1>&2; false; fi
+ DEBUG [8d5cd577] Command: if test ! -d /home/deploy/apps/mac/releases/20170821142214; then echo "Directory does not exist '/home/deploy/apps/mac/releases/20170821142214'" 1>&2; false; fi
+ DEBUG [8d5cd577] Finished in 0.538 seconds with exit status 0 (successful).
+  INFO [6ac5a6f7] Running /usr/bin/env echo "a751f8db987af8c90684592ceeb3b1eb637ff0c6" >> REVISION as deploy@54.202.109.74
+ DEBUG [3e4bfa17] Finished in 0.546 seconds with exit status 0 (successful).
+ DEBUG [6ac5a6f7] Command: cd /home/deploy/apps/mac/releases/20170821142214 && ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env echo "a751f8db987af8c90684592ceeb3b1eb637ff0c6" >> REVISION )
+  INFO [bc1261d0] Running /usr/bin/env echo "a751f8db987af8c90684592ceeb3b1eb637ff0c6" >> REVISION on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [bc1261d0] Command: cd /home/deploy/apps/mac/releases/20170821142214 && ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env echo "a751f8db987af8c90684592ceeb3b1eb637ff0c6" >> REVISION )
+  INFO [6ac5a6f7] Finished in 0.572 seconds with exit status 0 (successful).
+  INFO [bc1261d0] Finished in 0.573 seconds with exit status 0 (successful).
+  INFO [4efa66df] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821142214/public on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [4efa66df] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821142214/public )
+  INFO [1b6666f2] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821142214/public as deploy@54.202.109.74
+ DEBUG [1b6666f2] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821142214/public )
+  INFO [1b6666f2] Finished in 1.139 seconds with exit status 0 (successful).
+  INFO [4efa66df] Finished in 1.146 seconds with exit status 0 (successful).
+ DEBUG [5e909eb1] Running [ -L /home/deploy/apps/mac/releases/20170821142214/public/assets ] as deploy@54.202.109.74
+ DEBUG [18daa5c0] Running [ -L /home/deploy/apps/mac/releases/20170821142214/public/assets ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [5e909eb1] Command: [ -L /home/deploy/apps/mac/releases/20170821142214/public/assets ]
+ DEBUG [18daa5c0] Command: [ -L /home/deploy/apps/mac/releases/20170821142214/public/assets ]
+ DEBUG [5e909eb1] Finished in 1.108 seconds with exit status 1 (failed).
+ DEBUG [18daa5c0] Finished in 1.109 seconds with exit status 1 (failed).
+ DEBUG [96165192] Running [ -d /home/deploy/apps/mac/releases/20170821142214/public/assets ] as deploy@54.202.109.74
+ DEBUG [dfa8fb3c] Running [ -d /home/deploy/apps/mac/releases/20170821142214/public/assets ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [96165192] Command: [ -d /home/deploy/apps/mac/releases/20170821142214/public/assets ]
+ DEBUG [dfa8fb3c] Command: [ -d /home/deploy/apps/mac/releases/20170821142214/public/assets ]
+ DEBUG [dfa8fb3c] Finished in 0.697 seconds with exit status 1 (failed).
+ DEBUG [96165192] Finished in 0.701 seconds with exit status 1 (failed).
+  INFO [b25801e7] Running /usr/bin/env ln -s /home/deploy/apps/mac/shared/public/assets /home/deploy/apps/mac/releases/20170821142214/public/assets on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [ab73574c] Running /usr/bin/env ln -s /home/deploy/apps/mac/shared/public/assets /home/deploy/apps/mac/releases/20170821142214/public/assets as deploy@54.202.109.74
+ DEBUG [b25801e7] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env ln -s /home/deploy/apps/mac/shared/public/assets /home/deploy/apps/mac/releases/20170821142214/public/assets )
+ DEBUG [ab73574c] Command: ( export RBENV_ROOT="/home/deploy/.rbenv/" RBENV_VERSION="" ; /usr/bin/env ln -s /home/deploy/apps/mac/shared/public/assets /home/deploy/apps/mac/releases/20170821142214/public/assets )
+  INFO [b25801e7] Finished in 0.550 seconds with exit status 0 (successful).
+ DEBUG [ab73574c] 	ln: 
+ DEBUG [ab73574c] 	failed to create symbolic link '/home/deploy/apps/mac/releases/20170821142214/public/assets/assets'
+ DEBUG [ab73574c] 	: File exists
+ DEBUG [ab73574c] 	
