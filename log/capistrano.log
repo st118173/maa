@@ -3110,3 +3110,329 @@ f
  DEBUG [043ee1d0] 	done.
  DEBUG [043ee1d0] 	
   INFO [043ee1d0] Finished in 2.673 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-08-21 21:12:09 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [417b983e] Running /usr/bin/env mkdir -p /tmp as deploy@54.202.109.74
+  INFO [d72a2c95] Running /usr/bin/env mkdir -p /tmp on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [417b983e] Command: /usr/bin/env mkdir -p /tmp
+ DEBUG [d72a2c95] Command: /usr/bin/env mkdir -p /tmp
+  INFO [d72a2c95] Finished in 4.015 seconds with exit status 0 (successful).
+  INFO [417b983e] Finished in 3.997 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO [eee925ef] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [39f57453] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh as deploy@54.202.109.74
+ DEBUG [eee925ef] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh
+ DEBUG [39f57453] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh
+  INFO [eee925ef] Finished in 0.612 seconds with exit status 0 (successful).
+  INFO [39f57453] Finished in 0.614 seconds with exit status 0 (successful).
+  INFO [a435ad8b] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [f0dbeaf5] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD as deploy@54.202.109.74
+ DEBUG [a435ad8b] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+ DEBUG [f0dbeaf5] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+ DEBUG [f0dbeaf5] 	de9939cf53f05189cff15518d2db45e7d369a75e
+ DEBUG [f0dbeaf5] 		
+ DEBUG [f0dbeaf5] 	HEAD
+  INFO [f0dbeaf5] Finished in 1.571 seconds with exit status 0 (successful).
+ DEBUG [a435ad8b] 	de9939cf53f05189cff15518d2db45e7d369a75e	
+ DEBUG [a435ad8b] 	HEAD
+  INFO [a435ad8b] Finished in 1.580 seconds with exit status 0 (successful).
+  INFO [e166c329] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [78927de4] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases as deploy@54.202.109.74
+ DEBUG [e166c329] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases
+ DEBUG [78927de4] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases
+  INFO [78927de4] Finished in 0.955 seconds with exit status 0 (successful).
+  INFO [e166c329] Finished in 0.963 seconds with exit status 0 (successful).
+  INFO [0b86ddb3] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [7f890e12] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets as deploy@54.202.109.74
+ DEBUG [0b86ddb3] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets
+ DEBUG [7f890e12] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets
+  INFO [0b86ddb3] Finished in 0.610 seconds with exit status 0 (successful).
+  INFO [7f890e12] Finished in 0.611 seconds with exit status 0 (successful).
+ DEBUG [fb3eba7e] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [8a0f42e4] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] as deploy@54.202.109.74
+ DEBUG [fb3eba7e] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [8a0f42e4] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [8a0f42e4] Finished in 0.603 seconds with exit status 0 (successful).
+ DEBUG [fb3eba7e] Finished in 0.610 seconds with exit status 0 (successful).
+ DEBUG [5a5381f0] Running [ -f /home/deploy/apps/mac/current/REVISION ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [5a5381f0] Command: [ -f /home/deploy/apps/mac/current/REVISION ]
+ DEBUG [74da38b2] Running [ -f /home/deploy/apps/mac/current/REVISION ] as deploy@54.202.109.74
+ DEBUG [74da38b2] Command: [ -f /home/deploy/apps/mac/current/REVISION ]
+ DEBUG [5a5381f0] Finished in 0.609 seconds with exit status 1 (failed).
+ DEBUG [74da38b2] Finished in 0.609 seconds with exit status 1 (failed).
+ DEBUG [4aa98408] Running [ -f /home/deploy/apps/mac/repo/HEAD ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [4aa98408] Command: [ -f /home/deploy/apps/mac/repo/HEAD ]
+ DEBUG [98708f46] Running [ -f /home/deploy/apps/mac/repo/HEAD ] as deploy@54.202.109.74
+ DEBUG [98708f46] Command: [ -f /home/deploy/apps/mac/repo/HEAD ]
+ DEBUG [4aa98408] Finished in 0.608 seconds with exit status 0 (successful).
+ DEBUG [98708f46] Finished in 0.608 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/apps/mac/repo
+  INFO The repository mirror is at /home/deploy/apps/mac/repo
+ DEBUG [3ab29338] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [31ba4812] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [3ab29338] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [31ba4812] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [3ab29338] Finished in 1.139 seconds with exit status 0 (successful).
+ DEBUG [31ba4812] Finished in 1.138 seconds with exit status 0 (successful).
+  INFO [76a7d922] Running /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git as deploy@54.202.109.74
+  INFO [6cf537d5] Running /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [76a7d922] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git )
+ DEBUG [6cf537d5] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git )
+  INFO [76a7d922] Finished in 0.588 seconds with exit status 0 (successful).
+  INFO [6cf537d5] Finished in 0.588 seconds with exit status 0 (successful).
+  INFO [4995fa40] Running /usr/bin/env git remote update --prune as deploy@54.202.109.74
+  INFO [d7aa6745] Running /usr/bin/env git remote update --prune on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [4995fa40] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [d7aa6745] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [d7aa6745] 	Fetching origin
+ DEBUG [4995fa40] 	Fetching origin
+ DEBUG [d7aa6745] 	
+ DEBUG [4995fa40] 	
+ DEBUG [d7aa6745] 	remote: Counting objects: 13, done.[K
+ DEBUG [d7aa6745] 	
+remote: Compressing objects:  25% (1/4)   [Kremote: Compressing objects:  50% (2/4)   [Kremote: Compressing objects:  75% (3/4)   [Kremote: Compressing objects: 100% (4/4)   [Kremote: Compressing objects: 100% (4/4), done.[K
+ DEBUG [4995fa40] 	remote: Counting objects: 13, done.[K
+ DEBUG [d7aa6745] 	Unpacking objects:   7% (1/13)   
+ DEBUG [4995fa40] 	
+remote: Compressing objects:  25% (1/4)   [Kremote: Compressing objects:  50% (2/4)   [Kremote: Compressing objects:  75% (3/4)   [Kremote: Compressing objects: 100% (4/4)   [Kremote: Compressing objects: 100% (4/4), done.[K
+remote: Total 13 (delta 9), reused 13 (delta 9), pack-reused 0[K
+ DEBUG [d7aa6745] 	Unpacking objects:  15% (2/13)   
+ DEBUG [4995fa40] 	
+ DEBUG [d7aa6745] 	Unpacking objects:  23% (3/13)   
+ DEBUG [4995fa40] 	Unpacking objects:   7% (1/13)   
+ DEBUG [d7aa6745] 	Unpacking objects:  30% (4/13)   
+ DEBUG [4995fa40] 	Unpacking objects:  15% (2/13)   
+ DEBUG [d7aa6745] 	Unpacking objects:  38% (5/13)   
+ DEBUG [4995fa40] 	Unpacking objects:  23% (3/13)   
+ DEBUG [d7aa6745] 	Unpacking objects:  46% (6/13)   
+ DEBUG [4995fa40] 	Unpacking objects:  30% (4/13)   
+ DEBUG [d7aa6745] 	Unpacking objects:  53% (7/13)   
+ DEBUG [4995fa40] 	Unpacking objects:  38% (5/13)   
+ DEBUG [4995fa40] 	Unpacking objects:  46% (6/13)   
+ DEBUG [d7aa6745] 	Unpacking objects:  61% (8/13)   
+ DEBUG [4995fa40] 	Unpacking objects:  53% (7/13)   
+ DEBUG [d7aa6745] 	Unpacking objects:  69% (9/13)   
+ DEBUG [4995fa40] 	Unpacking objects:  61% (8/13)   
+ DEBUG [d7aa6745] 	Unpacking objects:  76% (10/13)   
+ DEBUG [4995fa40] 	Unpacking objects:  69% (9/13)   
+ DEBUG [d7aa6745] 	remote: Total 13 (delta 9), reused 13 (delta 9), pack-reused 0[K
+ DEBUG [4995fa40] 	Unpacking objects:  76% (10/13)   
+ DEBUG [4995fa40] 	Unpacking objects:  84% (11/13)   
+ DEBUG [d7aa6745] 	
+ DEBUG [4995fa40] 	Unpacking objects:  92% (12/13)   
+ DEBUG [d7aa6745] 	Unpacking objects:  84% (11/13)   
+ DEBUG [4995fa40] 	Unpacking objects: 100% (13/13)   
+ DEBUG [d7aa6745] 	Unpacking objects:  92% (12/13)   
+ DEBUG [d7aa6745] 	Unpacking objects: 100% (13/13)   
+ DEBUG [d7aa6745] 	Unpacking objects: 100% (13/13), done.
+ DEBUG [d7aa6745] 	
+ DEBUG [4995fa40] 	Unpacking objects: 100% (13/13), done.
+ DEBUG [d7aa6745] 	From github.com:st118173/maa
+ DEBUG [4995fa40] 	
+ DEBUG [d7aa6745] 	
+ DEBUG [4995fa40] 	e
+ DEBUG [d7aa6745] 	   fb659ed..de9939c  master     -> master
+ DEBUG [4995fa40] 	rror: 
+ DEBUG [d7aa6745] 	
+ DEBUG [4995fa40] 	c
+ DEBUG [4995fa40] 	annot lock ref 'refs/heads/master': ref refs/heads/master is at de9939cf53f05189cff15518d2db45e7d369a75e but expected fb659ed7014348740fad6d0e9017e4a896216757
+  INFO [d7aa6745] Finished in 1.958 seconds with exit status 0 (successful).
+ DEBUG [4995fa40] 	
+ DEBUG [4995fa40] 	F
+ DEBUG [4995fa40] 	rom 
+ DEBUG [4995fa40] 	g
+ DEBUG [4995fa40] 	ithub.com:st118173/maa
+ DEBUG [4995fa40] 	
+ DEBUG [4995fa40] 	 
+ DEBUG [4995fa40] 	! fb659ed..de9939c  master     -> master  (unable to update local ref)
+ DEBUG [4995fa40] 	
+ DEBUG [4995fa40] 	error: Could not fetch origin
+ DEBUG [4995fa40] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-08-21 21:16:29 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [5a5ce7de] Running /usr/bin/env mkdir -p /tmp as deploy@54.202.109.74
+  INFO [0ec58ada] Running /usr/bin/env mkdir -p /tmp on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [5a5ce7de] Command: /usr/bin/env mkdir -p /tmp
+ DEBUG [0ec58ada] Command: /usr/bin/env mkdir -p /tmp
+  INFO [0ec58ada] Finished in 4.030 seconds with exit status 0 (successful).
+  INFO [5a5ce7de] Finished in 4.033 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+ DEBUG Uploading /tmp/git-ssh-mac-production-arunkumar.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO Uploading /tmp/git-ssh-mac-production-arunkumar.sh 100.0%
+  INFO [1736ca1a] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [1736ca1a] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh
+  INFO [d4d76e92] Running /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh as deploy@54.202.109.74
+ DEBUG [d4d76e92] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mac-production-arunkumar.sh
+  INFO [1736ca1a] Finished in 0.615 seconds with exit status 0 (successful).
+  INFO [d4d76e92] Finished in 0.617 seconds with exit status 0 (successful).
+  INFO [772f35b1] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [b03ff5c3] Running /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD as deploy@54.202.109.74
+ DEBUG [772f35b1] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+ DEBUG [b03ff5c3] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git ls-remote git@github.com:st118173/maa.git HEAD )
+ DEBUG [772f35b1] 	de9939cf53f05189cff15518d2db45e7d369a75e
+ DEBUG [b03ff5c3] 	de9939cf53f05189cff15518d2db45e7d369a75e	HEAD
+ DEBUG [772f35b1] 		HEAD
+  INFO [b03ff5c3] Finished in 1.727 seconds with exit status 0 (successful).
+  INFO [772f35b1] Finished in 1.736 seconds with exit status 0 (successful).
+  INFO [0640b412] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases as deploy@54.202.109.74
+ DEBUG [0640b412] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases
+  INFO [8b949b56] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [8b949b56] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared /home/deploy/apps/mac/releases
+  INFO [8b949b56] Finished in 0.910 seconds with exit status 0 (successful).
+  INFO [0640b412] Finished in 0.917 seconds with exit status 0 (successful).
+  INFO [bc60a4bb] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets as deploy@54.202.109.74
+  INFO [c29a86ff] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [bc60a4bb] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets
+ DEBUG [c29a86ff] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/shared/public/assets
+  INFO [bc60a4bb] Finished in 0.817 seconds with exit status 0 (successful).
+  INFO [c29a86ff] Finished in 0.824 seconds with exit status 0 (successful).
+ DEBUG [56ba5dde] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [56ba5dde] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [a52d3523] Running [ -f /home/deploy/apps/mac/shared/puma.rb ] as deploy@54.202.109.74
+ DEBUG [a52d3523] Command: [ -f /home/deploy/apps/mac/shared/puma.rb ]
+ DEBUG [56ba5dde] Finished in 0.913 seconds with exit status 0 (successful).
+ DEBUG [a52d3523] Finished in 0.910 seconds with exit status 0 (successful).
+ DEBUG [996170bd] Running [ -f /home/deploy/apps/mac/current/REVISION ] as deploy@54.202.109.74
+ DEBUG [fc039491] Running [ -f /home/deploy/apps/mac/current/REVISION ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [996170bd] Command: [ -f /home/deploy/apps/mac/current/REVISION ]
+ DEBUG [fc039491] Command: [ -f /home/deploy/apps/mac/current/REVISION ]
+ DEBUG [996170bd] Finished in 0.630 seconds with exit status 1 (failed).
+ DEBUG [fc039491] Finished in 0.631 seconds with exit status 1 (failed).
+ DEBUG [04a834f8] Running [ -f /home/deploy/apps/mac/repo/HEAD ] as deploy@54.202.109.74
+ DEBUG [a7f52c69] Running [ -f /home/deploy/apps/mac/repo/HEAD ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [04a834f8] Command: [ -f /home/deploy/apps/mac/repo/HEAD ]
+ DEBUG [a7f52c69] Command: [ -f /home/deploy/apps/mac/repo/HEAD ]
+ DEBUG [04a834f8] Finished in 1.207 seconds with exit status 0 (successful).
+ DEBUG [a7f52c69] Finished in 1.210 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/apps/mac/repo
+  INFO The repository mirror is at /home/deploy/apps/mac/repo
+ DEBUG [16089da3] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [16089da3] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [1ee8275b] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [1ee8275b] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [16089da3] Finished in 0.902 seconds with exit status 0 (successful).
+  INFO [24ca36b0] Running /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [1ee8275b] Finished in 0.900 seconds with exit status 0 (successful).
+ DEBUG [24ca36b0] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git )
+  INFO [a0b52c16] Running /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git as deploy@54.202.109.74
+ DEBUG [a0b52c16] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote set-url origin git@github.com:st118173/maa.git )
+  INFO [a0b52c16] Finished in 0.612 seconds with exit status 0 (successful).
+  INFO [a6590662] Running /usr/bin/env git remote update --prune as deploy@54.202.109.74
+  INFO [24ca36b0] Finished in 0.617 seconds with exit status 0 (successful).
+ DEBUG [a6590662] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote update --prune )
+  INFO [7112b85b] Running /usr/bin/env git remote update --prune on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [7112b85b] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [7112b85b] 	Fetching origin
+ DEBUG [a6590662] 	Fetching origin
+ DEBUG [7112b85b] 	
+ DEBUG [a6590662] 	
+  INFO [7112b85b] Finished in 1.732 seconds with exit status 0 (successful).
+  INFO [a6590662] Finished in 1.737 seconds with exit status 0 (successful).
+ DEBUG [08153f98] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [e35cdac0] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [08153f98] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [e35cdac0] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [08153f98] Finished in 0.920 seconds with exit status 0 (successful).
+  INFO [b8b36ba0] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821141641 as deploy@54.202.109.74
+ DEBUG [e35cdac0] Finished in 0.925 seconds with exit status 0 (successful).
+ DEBUG [b8b36ba0] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821141641 )
+  INFO [e494f77b] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821141641 on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [e494f77b] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821141641 )
+  INFO [e494f77b] Finished in 0.600 seconds with exit status 0 (successful).
+  INFO [b8b36ba0] Finished in 0.608 seconds with exit status 0 (successful).
+  INFO [0e464b10] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/apps/mac/releases/20170821141641 on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [3c03ae1c] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/apps/mac/releases/20170821141641 as deploy@54.202.109.74
+ DEBUG [0e464b10] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/apps/mac/releases/20170821141641 )
+ DEBUG [3c03ae1c] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/apps/mac/releases/20170821141641 )
+  INFO [0e464b10] Finished in 1.222 seconds with exit status 0 (successful).
+  INFO [3c03ae1c] Finished in 1.220 seconds with exit status 0 (successful).
+ DEBUG [e0bded8e] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [47cb94dd] Running if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [e0bded8e] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [47cb94dd] Command: if test ! -d /home/deploy/apps/mac/repo; then echo "Directory does not exist '/home/deploy/apps/mac/repo'" 1>&2; false; fi
+ DEBUG [e0bded8e] Finished in 0.608 seconds with exit status 0 (successful).
+ DEBUG [9a5e4302] Running /usr/bin/env git rev-list --max-count=1 master on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [47cb94dd] Finished in 0.607 seconds with exit status 0 (successful).
+ DEBUG [9a5e4302] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [1c960273] Running /usr/bin/env git rev-list --max-count=1 master as deploy@54.202.109.74
+ DEBUG [1c960273] Command: cd /home/deploy/apps/mac/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mac-production-arunkumar.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [9a5e4302] 	de9939cf53f05189cff15518d2db45e7d369a75e
+ DEBUG [1c960273] 	de9939cf53f05189cff15518d2db45e7d369a75e
+ DEBUG [9a5e4302] 	
+ DEBUG [1c960273] 	
+ DEBUG [9a5e4302] Finished in 0.611 seconds with exit status 0 (successful).
+ DEBUG [1c960273] Finished in 0.611 seconds with exit status 0 (successful).
+ DEBUG [d2beed9c] Running if test ! -d /home/deploy/apps/mac/releases/20170821141641; then echo "Directory does not exist '/home/deploy/apps/mac/releases/20170821141641'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [d2beed9c] Command: if test ! -d /home/deploy/apps/mac/releases/20170821141641; then echo "Directory does not exist '/home/deploy/apps/mac/releases/20170821141641'" 1>&2; false; fi
+ DEBUG [61237729] Running if test ! -d /home/deploy/apps/mac/releases/20170821141641; then echo "Directory does not exist '/home/deploy/apps/mac/releases/20170821141641'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [61237729] Command: if test ! -d /home/deploy/apps/mac/releases/20170821141641; then echo "Directory does not exist '/home/deploy/apps/mac/releases/20170821141641'" 1>&2; false; fi
+ DEBUG [d2beed9c] Finished in 0.607 seconds with exit status 0 (successful).
+ DEBUG [61237729] Finished in 0.607 seconds with exit status 0 (successful).
+  INFO [06e3caed] Running /usr/bin/env echo "de9939cf53f05189cff15518d2db45e7d369a75e" >> REVISION on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [716d8be7] Running /usr/bin/env echo "de9939cf53f05189cff15518d2db45e7d369a75e" >> REVISION as deploy@54.202.109.74
+ DEBUG [06e3caed] Command: cd /home/deploy/apps/mac/releases/20170821141641 && /usr/bin/env echo "de9939cf53f05189cff15518d2db45e7d369a75e" >> REVISION
+ DEBUG [716d8be7] Command: cd /home/deploy/apps/mac/releases/20170821141641 && /usr/bin/env echo "de9939cf53f05189cff15518d2db45e7d369a75e" >> REVISION
+  INFO [06e3caed] Finished in 0.608 seconds with exit status 0 (successful).
+  INFO [716d8be7] Finished in 0.607 seconds with exit status 0 (successful).
+  INFO [953f5b29] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821141641/public on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [953f5b29] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821141641/public
+  INFO [bc83ea9d] Running /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821141641/public as deploy@54.202.109.74
+ DEBUG [bc83ea9d] Command: /usr/bin/env mkdir -p /home/deploy/apps/mac/releases/20170821141641/public
+  INFO [bc83ea9d] Finished in 0.604 seconds with exit status 0 (successful).
+  INFO [953f5b29] Finished in 0.609 seconds with exit status 0 (successful).
+ DEBUG [1869661c] Running [ -L /home/deploy/apps/mac/releases/20170821141641/public/assets ] as deploy@54.202.109.74
+ DEBUG [aa27de08] Running [ -L /home/deploy/apps/mac/releases/20170821141641/public/assets ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [1869661c] Command: [ -L /home/deploy/apps/mac/releases/20170821141641/public/assets ]
+ DEBUG [aa27de08] Command: [ -L /home/deploy/apps/mac/releases/20170821141641/public/assets ]
+ DEBUG [1869661c] Finished in 0.612 seconds with exit status 1 (failed).
+ DEBUG [aa27de08] Finished in 0.613 seconds with exit status 1 (failed).
+ DEBUG [183818ef] Running [ -d /home/deploy/apps/mac/releases/20170821141641/public/assets ] as deploy@54.202.109.74
+ DEBUG [02e8b061] Running [ -d /home/deploy/apps/mac/releases/20170821141641/public/assets ] on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [183818ef] Command: [ -d /home/deploy/apps/mac/releases/20170821141641/public/assets ]
+ DEBUG [02e8b061] Command: [ -d /home/deploy/apps/mac/releases/20170821141641/public/assets ]
+ DEBUG [183818ef] Finished in 0.613 seconds with exit status 1 (failed).
+ DEBUG [02e8b061] Finished in 0.614 seconds with exit status 1 (failed).
+  INFO [288842d8] Running /usr/bin/env ln -s /home/deploy/apps/mac/shared/public/assets /home/deploy/apps/mac/releases/20170821141641/public/assets as deploy@54.202.109.74
+  INFO [8127fd66] Running /usr/bin/env ln -s /home/deploy/apps/mac/shared/public/assets /home/deploy/apps/mac/releases/20170821141641/public/assets on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [288842d8] Command: /usr/bin/env ln -s /home/deploy/apps/mac/shared/public/assets /home/deploy/apps/mac/releases/20170821141641/public/assets
+ DEBUG [8127fd66] Command: /usr/bin/env ln -s /home/deploy/apps/mac/shared/public/assets /home/deploy/apps/mac/releases/20170821141641/public/assets
+  INFO [8127fd66] Finished in 0.605 seconds with exit status 0 (successful).
+  INFO [288842d8] Finished in 0.612 seconds with exit status 0 (successful).
+ DEBUG [e47a7773] Running if test ! -d /home/deploy/apps/mac/releases/20170821141641; then echo "Directory does not exist '/home/deploy/apps/mac/releases/20170821141641'" 1>&2; false; fi as deploy@54.202.109.74
+ DEBUG [97d6f2e4] Running if test ! -d /home/deploy/apps/mac/releases/20170821141641; then echo "Directory does not exist '/home/deploy/apps/mac/releases/20170821141641'" 1>&2; false; fi on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [e47a7773] Command: if test ! -d /home/deploy/apps/mac/releases/20170821141641; then echo "Directory does not exist '/home/deploy/apps/mac/releases/20170821141641'" 1>&2; false; fi
+ DEBUG [97d6f2e4] Command: if test ! -d /home/deploy/apps/mac/releases/20170821141641; then echo "Directory does not exist '/home/deploy/apps/mac/releases/20170821141641'" 1>&2; false; fi
+ DEBUG [97d6f2e4] Finished in 0.604 seconds with exit status 0 (successful).
+ DEBUG [e47a7773] Finished in 0.611 seconds with exit status 0 (successful).
+ DEBUG [518172e3] Running /usr/bin/env bundle check --path /home/deploy/apps/mac/shared/bundle on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+ DEBUG [5e405ef3] Running /usr/bin/env bundle check --path /home/deploy/apps/mac/shared/bundle as deploy@54.202.109.74
+ DEBUG [518172e3] Command: cd /home/deploy/apps/mac/releases/20170821141641 && /usr/bin/env bundle check --path /home/deploy/apps/mac/shared/bundle
+ DEBUG [5e405ef3] Command: cd /home/deploy/apps/mac/releases/20170821141641 && /usr/bin/env bundle check --path /home/deploy/apps/mac/shared/bundle
+ DEBUG [518172e3] 	/usr/bin/env: 
+ DEBUG [5e405ef3] 	/usr/bin/env: 
+ DEBUG [518172e3] 	'bundle'
+ DEBUG [5e405ef3] 	'bundle'
+ DEBUG [518172e3] 	: No such file or directory
+ DEBUG [5e405ef3] 	: No such file or directory
+ DEBUG [518172e3] 	
+ DEBUG [5e405ef3] 	
+ DEBUG [518172e3] Finished in 0.613 seconds with exit status 127 (failed).
+ DEBUG [5e405ef3] Finished in 0.614 seconds with exit status 127 (failed).
+  INFO [6a1a1ed5] Running /usr/bin/env bundle install --path /home/deploy/apps/mac/shared/bundle --without development test --deployment --quiet on ec2-54-202-109-74.us-west-2.compute.amazonaws.com
+  INFO [2825c34c] Running /usr/bin/env bundle install --path /home/deploy/apps/mac/shared/bundle --without development test --deployment --quiet as deploy@54.202.109.74
+ DEBUG [6a1a1ed5] Command: cd /home/deploy/apps/mac/releases/20170821141641 && /usr/bin/env bundle install --path /home/deploy/apps/mac/shared/bundle --without development test --deployment --quiet
+ DEBUG [2825c34c] Command: cd /home/deploy/apps/mac/releases/20170821141641 && /usr/bin/env bundle install --path /home/deploy/apps/mac/shared/bundle --without development test --deployment --quiet
+ DEBUG [6a1a1ed5] 	/usr/bin/env: 
+ DEBUG [2825c34c] 	/usr/bin/env: 
+ DEBUG [6a1a1ed5] 	'bundle'
+ DEBUG [2825c34c] 	'bundle'
+ DEBUG [6a1a1ed5] 	: No such file or directory
+ DEBUG [2825c34c] 	: No such file or directory
+ DEBUG [6a1a1ed5] 	
+ DEBUG [2825c34c] 	
