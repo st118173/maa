@@ -27,11 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="deploy.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="deploy.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="735">
               <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="production.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/deploy/production.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="31" column="55" selection-start-line="29" selection-start-column="2" selection-end-line="31" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -102,10 +112,10 @@
         <option value="$PROJECT_DIR$/app/views/programs/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/programs/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/programs/_in.html.erb" />
-        <option value="$PROJECT_DIR$/config/deploy/production.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/intro.html.erb" />
         <option value="$PROJECT_DIR$/Capfile" />
         <option value="$PROJECT_DIR$/config/deploy.rb" />
+        <option value="$PROJECT_DIR$/config/deploy/production.rb" />
       </list>
     </option>
   </component>
@@ -535,12 +545,12 @@
       <workItem from="1503302073215" duration="736000" />
       <workItem from="1503304153185" duration="1770000" />
       <workItem from="1503306656298" duration="3545000" />
-      <workItem from="1503322113587" duration="2422000" />
+      <workItem from="1503322113587" duration="2784000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="704033000" />
+    <option name="totallyTimeSpent" value="704395000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -919,13 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/deploy/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -945,6 +948,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
           <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/deploy/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="31" column="55" selection-start-line="29" selection-start-column="2" selection-end-line="31" selection-end-column="55" />
           <folding />
         </state>
       </provider>
