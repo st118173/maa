@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fd17c730-0a42-45e9-8455-34889a581939" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/capistrano.log" afterPath="$PROJECT_DIR$/log/capistrano.log" />
     </list>
     <ignored path="maa.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -517,12 +516,12 @@
       <workItem from="1503302073215" duration="736000" />
       <workItem from="1503304153185" duration="1770000" />
       <workItem from="1503306656298" duration="3545000" />
-      <workItem from="1503322113587" duration="4330000" />
+      <workItem from="1503322113587" duration="4526000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="705941000" />
+    <option name="totallyTimeSpent" value="706137000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
