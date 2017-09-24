@@ -84,14 +84,15 @@ gem 'capistrano-rails-collection'
 group :production do
   gem 'rails_12factor'
 end
+gem 'figaro'
+gem 'puma'
 group :development do
-  gem 'capistrano',         require: false
-  gem 'capistrano-rvm',     require: false
-  gem 'capistrano-rails',   require: false
+  gem 'capistrano'
+  gem 'capistrano3-puma'
+  gem 'capistrano-rails', require: false
   gem 'capistrano-bundler', require: false
-  gem 'capistrano3-puma',   require: false
+  gem 'capistrano-rvm'
 end
-
 gem 'puma'
 group :test do
   gem 'cucumber-rails', :require => false
@@ -118,6 +119,7 @@ group :development do
 
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+
 gem 'paypal-sdk-merchant'
 group :assets do
   gem 'turbo-sprockets-rails3'
