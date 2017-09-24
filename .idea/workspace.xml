@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fd17c730-0a42-45e9-8455-34889a581939" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/capistrano.log" afterPath="$PROJECT_DIR$/log/capistrano.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
     </list>
     <ignored path="maa.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -678,7 +676,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="715532000" />
+    <option name="totallyTimeSpent" value="716075000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
