@@ -90,8 +90,17 @@ background: transparent;
             background: green;
           }
           </style>
+        <script>
+          function NoScroll() {
+            $('#Carousel,.carousel-inner').hover(function() {
+              $(this).carousel('pause');
+            }, function() {
+              $(this).carousel('cycle');
+            });
+          }
+        </script>
 
-    <section id="slider" class="parallax section" style="background-image: url(http://i66.tinypic.com/v4qsg6.jpg);opacity: 0.8;">
+    <section id="slider" class="parallax section" style="background-image: url(http://i66.tinypic.com/v4qsg6.jpg);opacity: 0.8;" onmouseover="NoScroll()">
       <!--<a href="http://tinypic.com?ref=zinaeb" target="_blank"><img src="http://i67.tinypic.com/zinaeb.jpg" border="0" alt="Image and video hosting by TinyPic"></a>-->
 
       <div class="wrapsection">
@@ -100,7 +109,7 @@ background: transparent;
           <div class="row">
             <div class="col-md-12" id="ho">
               <br><br>
-              <div id="Carousel" class="carousel slide">
+              <div id="Carousel" class="carousel slide" onmouseover="NoScroll();">
                 <ol class="carousel-indicators">
                   <li data-target="#Carousel" data-slide-to="0" class="active"></li>
                   <li data-target="#Carousel" data-slide-to="1"></li>
@@ -478,12 +487,12 @@ background: transparent;
 <!--88888888888888888888888888888888888888888888888888888888888888888888888888888888888-->
         <!-- Text Carousel
           ================================================== -->
-        <section id="slider" class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/4.jpg);">
+        <section id="slider" class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/4.jpg);" onmouseover="NoScroll()">
           <div class="wrapsection">
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
-                  <div id="Carousel" class="carousel slide">
+                  <div id="Carousel" class="carousel slide" onmouseover="NoScroll()">
                     <ol class="carousel-indicators">
                       <li data-target="#Carousel" data-slide-to="0" class="active"></li>
                       <li data-target="#Carousel" data-slide-to="1"></li>
