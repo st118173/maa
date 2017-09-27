@@ -40,7 +40,11 @@
 
 
 </head>
-
+<style>
+a{
+background: transparent;
+}
+</style>
 <%= content_tag :body, data: { controller: controller_path, action: action_name }  do%>
 
 <% if !user_signed_in? %>
@@ -107,17 +111,18 @@
                     <blockquote>
                       <%= image_tag 'pp1.png', style: "width: 8cm;",class: 'pp' %>
                       <% if params[:action] != "registrations/new" && params[:controller] != "devise"%>
-                          <script>
-                            $(document).ready(function(){
+                         <!--Scroll to top-->
+                          <!--<script>-->
+                            <!--$(document).ready(function(){-->
 
-                              $('html, body').animate({
+                              <!--$('html, body').animate({-->
 
-                                scrollTop: $(".col-md-12").offset().top
+                                <!--scrollTop: $(".col-md-1").offset().top-->
 
-                              },1000);
+                              <!--},1000);-->
 
-                            });
-                          </script>
+                            <!--});-->
+                          <!--</script>-->
                       <% end %>
                       <p class="lead" style="color: #2b542;background-color: #d0efa0;color: #0d2054">
 
@@ -197,8 +202,6 @@
 
                                 </div>
                               </div>
-                              <li></li>
-
                             </td></tr></table><% end %>
 
 
@@ -729,15 +732,15 @@
         =============================================== -->
         <section id="credits" class="text-center">
 	<span class="social wow zoomIn">
-	<a href="#"><i class="fa fa-facebook"></i></a>
-	<a href="#"><i class="fa fa-twitter"></i></a>
-	<a href="#"><i class="fa fa-skype"></i></a>
-	<a href="#"><i class="fa fa-linkedin"></i></a>
-	<a href="#"><i class="fa fa-pinterest"></i></a>
-	<a href="#"><i class="fa fa-google-plus"></i></a>
+	<a href="http://fb.com/395507610597406" style="background: transparent"><i class="fa fa-facebook"></i></a>
+	<!--<a href="#" style="background: transparent"><i class="fa fa-twitter"></i></a>-->
+	<!--<a href="#" style="background: transparent"><i class="fa fa-skype"></i></a>-->
+	<!--<a href="#" style="background: transparent"><i class="fa fa-linkedin"></i></a>-->
+	<!--<a href="#" style="background: transparent"><i class="fa fa-pinterest"></i></a>-->
+	<a href="https://plus.google.com/109257433153105209508" style="background: transparent"><i class="fa fa-google-plus"></i></a>
 	</span><br/>
           Copyright &copy; <%=link_to 'Maa-Aapki Chaaya',root_path,style: 'background: transparent' %>
-          <br/> By<br> <i class="fa fa-heart"></i> Maa-Aapki Chaaya Group
+          <br/> By<br> <i class="fa fa-heart"></i> Maa-Aapki Chaaya Organization
         </section>
         <!-- Bootstrap core JavaScript
           ================================================== -->
