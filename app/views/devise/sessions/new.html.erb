@@ -1,3 +1,10 @@
+<style>
+  input.btn.btn-lg.btn-success.btn-block:hover {
+
+    background: black;
+    color: red;
+  }
+</style>
 <body background="pp1.png">
 
 
@@ -125,12 +132,14 @@ init();
 
 
 				</span>
+
                       <hr class="colorgraph">
                       <div class="col-xs-6 col-sm-6 col-md-6">
-                        <%= f.submit "Log in" ,:class=>"btn btn-lg btn-success btn-block", :value=>"Sign In"%>
+                        <%= f.submit "Log in" ,:class=>"btn btn-lg btn-success btn-block", :value=>"Sign In",style:"background:green;color:white" %>
                       </div>
+
                       <div class="col-xs-6 col-sm-6 col-md-6">
-                        <%= link_to "Sign up", new_user_registration_path,:class=>"btn btn-lg btn-primary btn-block" %>
+                        <%= link_to "Sign up", new_user_registration_path,:class=>"btn btn-lg btn-primary btn-block",style:"color:white" %>
 
         <% end %>
 
