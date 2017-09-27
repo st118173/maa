@@ -152,7 +152,8 @@
         <%= image_tag 'pp1.png', style: 'width: 2cm; height: 2cm' %>
         <h4 class="modal-title" id="myModalLabel">Maa Aapki Chaaya</h4>
       </div>
-      <div class="modal-body" align="center">
+      <!--UUUUUUU-->
+      <div class="modal-body" align="center" >
 
         <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
 
@@ -203,7 +204,23 @@
                     <div class="row">
                       <div class="col-xs-4 col-sm-3 col-md-3">
 					<span class="button-checkbox">
-						<button type="button" class="btn" data-color="success" tabindex="7" style="background-color: #01b0d1">I Agree</button>
+            <script>
+              function Agree() {
+//                if(document.getElementById('t_and_c').checked == false)
+//                {
+                  document.getElementById('sub').disabled = false;
+//                }
+//                else
+//                {
+//                  document.getElementById('sub').disabled =  true;
+//                }
+                function DisAgree() {
+                  document.getElementById('sub').disabled = true;
+                }
+
+              }
+            </script>
+						<button type="button" class="btn" id="t_and_c" data-color="success" tabindex="7" style="background-color: #01b0d1" onclick="Agree()" onchange="DisAgree">I Agree</button>
                         <input type="checkbox" name="t_and_c" id="t_and_c" class="hidden" value="1">
 					</span>
                       </div>
@@ -215,7 +232,7 @@
                     <hr class="colorgraph">
                     <div class="row">
                       <div class="col-xs-12 col-md-6">
-                        <%= f.submit "Register",id: 'sub',:value=>"Register", :class=>"btn btn-primary btn-block btn-lg", :tabindex=>"7" %>
+                        <%= f.submit "Register",id: 'sub',:value=>"Register", :class=>"btn btn-primary btn-block btn-lg", :tabindex=>"7",disabled: true%>
                       </div>
                       <div class="col-xs-12 col-md-6">
                         <%= link_to( "Login", new_user_session_path, :class=>"btn btn-success btn-block btn-lg", :method => :get )%>
@@ -229,11 +246,11 @@
               <div class="modal fade" id="t_and_c_m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header" style="width: 16cm;float: left;">
                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                       <h4 class="modal-title" id="myModalLabel">Terms & Conditions</h4>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body" style="width: 16cm;float: left;">
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
@@ -243,7 +260,7 @@
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-primary" data-dismiss="modal">I Agree</button>
+                      <button type="button" class="btn btn-primary" data-dismiss="modal" onchange="">I Agree</button>
                     </div>
                   </div><!-- /.modal-content -->
                 </div><!-- /.modal-dialog -->

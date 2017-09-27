@@ -94,13 +94,13 @@
                       </li>
                       <li class=""><%= link_to "Log out", destroy_user_session_path, method: :delete,style: 'height: 2cm'  %></li>
                   <%else%>
-                      <li class="" onclick"window.location.href='www.google.com'"> <a type="text" data-toggle="modal" data-target="#loginmodal" style="height: 2cm" class="glyphicon glyphicon-log-in">
+                      <li class=""> <a type="text" data-toggle="modal" data-target="#loginmodal" style="height: 2cm" class="glyphicon glyphicon-log-in">
                         Login
                       </a>
 
                       <li class=""><a type="text"  data-toggle="modal" data-target="#loginmodal" style="height: 2cm" class="glyphicon glyphicon-user">
                         Sign up
-                      </a></li></li>
+                      </a></li>
                   <%end%>
                 </ul>
 
